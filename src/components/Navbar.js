@@ -4,7 +4,7 @@ import Dropdown from "./Dropdown";
 
 export function Navbar() {
   return (
-    <div className="flex justify-between font-sans font-thin  items-center  h-32 ml-4 mr-4 bg-opacity-0">
+    <div className="fixed top-0 left-0 right-0 flex justify-between font-thin  items-center  h-32 ml-4 mr-4 bg-opacity-0">
       <Image src={logo} alt="Logo smart Business" height="75px" width="222px" />
       <ul className="flex space-x-20">
         <li>
