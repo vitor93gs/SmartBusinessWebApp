@@ -43,16 +43,13 @@ export function Navbar() {
             info5="Smart Academy"
           />
         </li>
-
-        <li>
-          <a
-            className="no-underline text-gray1 transition  delay-150 hover:text-golden "
-            href=""
-          >
-            LOGIN
-          </a>
-        </li>
       </ul>
+      <a
+        className="no-underline text-gray1 transition  delay-150 hover:text-golden pr-8"
+        href=""
+      >
+        LOGIN
+      </a>
     </div>
   );
 }

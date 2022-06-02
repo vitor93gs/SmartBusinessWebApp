@@ -1,7 +1,6 @@
 import Head from "next/head";
-import Image from "next/image";
-import { Navbar } from "../components/Navbar";
-import { FrontPage } from "./FrontPage";
+import { Tabs } from "../components/Tabs";
+import { Loading } from "./Loading";
 
 export default function Home() {
   return (
@@ -16,8 +15,8 @@ export default function Home() {
           type="text/css"
         />
       </Head>
-      <Navbar />
-      <FrontPage />
+      <Loading />
+      <Tabs />
       <section className="h-46"></section>
     </div>
   );
