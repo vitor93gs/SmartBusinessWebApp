@@ -6,12 +6,15 @@ module.exports = {
   theme: {
     extend: {},
     colors: {
-      theme: "#131517",
+      theme: "#000013",
       golden: "#D6A84C",
       lightGolden: "#D0B281",
       gray1: "#91A3AD",
       white2: "#FEF2E8",
-      theme2: "#1B1D1E",
+      theme2: "#04042D",
+    },
+    backgroundImage: {
+      background: "url('/fundo.png')",
     },
     fontFamily: {
       gotham: "Gotham HTF Medium",

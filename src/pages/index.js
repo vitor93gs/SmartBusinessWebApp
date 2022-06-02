@@ -10,9 +10,9 @@ export default function Home() {
   setTimeout(() => {
     setLoading(false);
   }, 3500);
-
+  //className=" bg-gradient-to-r from-theme to-theme2"
   return (
-    <div className=" bg-gradient-to-r from-theme to-theme2">
+    <div className="bg-background bg-center bg-no-repeat bg-fixed bg-cover">
       <Head>
         <title>Smart Business</title>
         <meta name="description" content="Smart Business web app" />
@@ -23,7 +23,6 @@ export default function Home() {
           type="text/css"
         />
       </Head>
-
       {isLoading ? <Loading /> : <Tabs />}
     </div>
   );

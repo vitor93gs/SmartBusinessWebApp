@@ -4,7 +4,7 @@ import CountUp from "react-countup";
 
 export function Loading() {
   return (
-    <div className="absolute flex items-center justify-center h-full w-full bg-gradient-to-r from-theme to-theme2">
+    <div className="absolute flex items-center justify-center h-full w-full bg-background bg-center bg-no-repeat bg-fixed bg-cover">
       <div className="absolute">
         <Image src={myGif} alt="my gif" height={200} width={204} />
       </div>
