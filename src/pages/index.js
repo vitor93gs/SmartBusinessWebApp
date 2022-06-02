@@ -16,7 +16,7 @@ export default function Home() {
         />
       </Head>
       <Loading />
-      <Tabs />
+
       <section className="h-46"></section>
     </div>
   );
