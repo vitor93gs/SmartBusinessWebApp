@@ -7,9 +7,9 @@ function classNames(...classes) {
 
 export default function Dropdown(props) {
   return (
-    <Menu as="div" className="relative inline-block text-left">
+    <Menu as="div" className="relative inline-block text-left text-s">
       <div>
-        <Menu.Button className=" no-underline text-gray1 transition  delay-150 hover:text-golden ">
+        <Menu.Button className=" no-underline text-gray1 transition  delay-150 hover:text-golden font-thin">
           {props.header}
         </Menu.Button>
       </div>

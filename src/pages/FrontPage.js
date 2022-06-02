@@ -9,8 +9,7 @@ export function FrontPage() {
         width="1080px"
         height="712"
       />
-      <h1 className="text-white2 text-5xl text-right">
-        {" "}
+      <h1 className="text-gray1 text-5xl text-right text-opacity-70">
         A CHAVE DE ENTRADA PARA UM NOVO MUNDO!
       </h1>
     </div>

@@ -1,8 +1,16 @@
 import Head from "next/head";
+import { useState } from "react";
+
 import { Tabs } from "../components/Tabs";
 import { Loading } from "./Loading";
 
 export default function Home() {
+  const [isLoading, setLoading] = useState(true);
+
+  setTimeout(() => {
+    setLoading(false);
+  }, 3500);
+
   return (
     <div className=" bg-gradient-to-r from-theme to-theme2">
       <Head>
@@ -15,9 +23,8 @@ export default function Home() {
           type="text/css"
         />
       </Head>
-      <Loading />
 
-      <section className="h-46"></section>
+      {isLoading ? <Loading /> : <Tabs />}
     </div>
   );
 }
