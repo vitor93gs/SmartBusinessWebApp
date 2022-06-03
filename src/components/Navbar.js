@@ -13,7 +13,7 @@ export function Navbar() {
   }
 
   return (
-    <div className="fixed top-0 left-0 right-0 flex justify-between font-thin  items-center h-14 mt-8 ml-4 mr-4 bg-opacity-0 text-op">
+    <div className="fixed top-0 left-0 right-0 flex justify-between font-thin  items-center h-14 mt-8 ml-4 mr-4 bg-opacity-0 text-op z-10">
       <Image src={logo} alt="Logo smart Business" height="75px" width="275px" />
 
       <ul className="flex space-x-20 ">

@@ -2,7 +2,7 @@ import Image from "next/dist/client/image";
 import logoBig from "../assets/logoBig.png";
 export function FrontPage() {
   return (
-    <div className="flex justify-center h-screen items-center mr-36 ml-36">
+    <div className="flex justify-center items-center mr-36 ml-36 h-screen">
       <Image
         src={logoBig}
         alt="Logo smart Business"

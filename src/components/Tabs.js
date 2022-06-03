@@ -6,17 +6,22 @@ import { useState } from "react";
 
 export function Tabs() {
   const [selectedIndex, setSelectedIndex] = useState(0);
-  var newtab;
-  //setInterval(() => {
-  //  newtab = selectedIndex + 1;
-  //  setSelectedIndex(newtab);
-  //}, 6000);
+
+  //const intervalo = setInterval(() => {
+  //  selectedIndex === 6
+  //    ? setSelectedIndex(0)
+  //    : setSelectedIndex(selectedIndex + 1);
+  //}, 1500);
 
   function handleAnt() {
-    setSelectedIndex(selectedIndex - 1);
+    selectedIndex === 0
+      ? setSelectedIndex(6)
+      : setSelectedIndex(selectedIndex - 1);
   }
   function handleProx() {
-    setSelectedIndex(selectedIndex + 1);
+    selectedIndex === 6
+      ? setSelectedIndex(0)
+      : setSelectedIndex(selectedIndex + 1);
   }
 
   return (

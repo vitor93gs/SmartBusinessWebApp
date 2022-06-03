@@ -3,39 +3,32 @@ import { Popover, Transition } from "@headlessui/react";
 import { loadGetInitialProps } from "next/dist/shared/lib/utils";
 
 export default function FlyoutMenu(props) {
-  let timeout; // NodeJS.Timeout
+  let timeout;
   const timeoutDuration = 400;
 
-  const buttonRef = useRef(null); // useRef<HTMLButtonElement>(null)
+  const buttonRef = useRef(null);
   const [openState, setOpenState] = useState(false);
 
   const toggleMenu = (open) => {
-    // log the current open state in React (toggle open state)
     setOpenState((openState) => !openState);
-    // toggle the menu by clicking on buttonRef
-    buttonRef?.current?.click(); // eslint-disable-line
+
+    buttonRef?.current?.click();
   };
 
-  // Open the menu after a delay of timeoutDuration
   const onHover = (open, action) => {
-    // if the modal is currently closed, we need to open it
-    // OR
-    // if the modal is currently open, we need to close it
     if (
       (!open && !openState && action === "onMouseEnter") ||
       (open && openState && action === "onMouseLeave")
     ) {
-      // clear the old timeout, if any
       clearTimeout(timeout);
-      // open the modal after a timeout
+
       timeout = setTimeout(() => toggleMenu(open), timeoutDuration);
     }
-    // else: don't click! 😁
   };
 
   const handleClick = (open) => {
-    setOpenState(!open); // toggle open state in React state
-    clearTimeout(timeout); // stop the hover timer if it's running
+    setOpenState(!open);
+    clearTimeout(timeout);
   };
 
   const handleClickOutside = (event) => {
