@@ -20,6 +20,7 @@ module.exports = {
     },
     fontFamily: {
       gotham: "Gotham HTF Medium",
+      gothamBold: "Gotham",
     },
     textUnderlineOffset: {
       10: "1.3rem",

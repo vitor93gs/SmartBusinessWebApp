@@ -5,12 +5,19 @@ import { Navbar } from "./Navbar";
 import { useState } from "react";
 
 export function Tabs() {
-  const [selectedIndex, setSelectedIndex] = useState(50);
+  const [selectedIndex, setSelectedIndex] = useState(0);
   var newtab;
   //setInterval(() => {
   //  newtab = selectedIndex + 1;
   //  setSelectedIndex(newtab);
   //}, 6000);
+
+  function handleAnt() {
+    setSelectedIndex(selectedIndex - 1);
+  }
+  function handleProx() {
+    setSelectedIndex(selectedIndex + 1);
+  }
 
   return (
     <div className="flex items-end">
@@ -36,32 +43,79 @@ export function Tabs() {
               <Transition
                 appear={true}
                 show={true}
-                enter="transition-opacity duration-1000 "
-                enterFrom="opacity-0"
-                enterTo="opacity-100"
-                leave="transition-opacity duration-1000"
-                leaveFrom="opacity-100"
-                leaveTo="opacity-0"
+                enter="transition ease-out duration-1000"
+                enterFrom="opacity-0 -translate-x-28"
+                enterTo="opacity-100 translate-x-0"
+                leave="transition ease-in duration-1000"
+                leaveFrom="opacity-100 translate-x-0"
+                leaveTo="opacity-0 translate-x-28"
               >
                 <Who />
               </Transition>
             </Tab.Panel>
 
             <Tab.Panel className="h-screen flex items-center w-screen text-gray1 text-5xl text-center text-opacity-70">
-              Content 3
+              <Transition
+                appear={true}
+                show={true}
+                enter="transition ease-out duration-1000"
+                enterFrom="opacity-0 -translate-x-28"
+                enterTo="opacity-100 translate-x-0"
+                leave="transition ease-in duration-1000"
+                leaveFrom="opacity-100 translate-x-0"
+                leaveTo="opacity-0 translate-x-28"
+              >
+                Content 3
+              </Transition>
             </Tab.Panel>
             <Tab.Panel className="h-screen flex items-center w-screen text-gray1 text-5xl text-center text-opacity-70">
-              Content 4
+              <Transition
+                appear={true}
+                show={true}
+                enter="transition ease-out duration-1000"
+                enterFrom="opacity-0 -translate-x-28"
+                enterTo="opacity-100 translate-x-0"
+                leave="transition ease-in duration-1000"
+                leaveFrom="opacity-100 translate-x-0"
+                leaveTo="opacity-0 translate-x-28"
+              >
+                Content 4
+              </Transition>
             </Tab.Panel>
             <Tab.Panel className="h-screen flex items-center w-screen text-gray1 text-5xl text-center text-opacity-70">
-              Content 5
+              <Transition
+                appear={true}
+                show={true}
+                enter="transition ease-out duration-1000"
+                enterFrom="opacity-0 -translate-x-28"
+                enterTo="opacity-100 translate-x-0"
+                leave="transition ease-in duration-1000"
+                leaveFrom="opacity-100 translate-x-0"
+                leaveTo="opacity-0 translate-x-28"
+              >
+                Content 5
+              </Transition>
             </Tab.Panel>
             <Tab.Panel className="h-screen flex items-center w-screen text-gray1 text-5xl text-center text-opacity-70">
-              Content 6
+              <Transition
+                appear={true}
+                show={true}
+                enter="transition ease-out duration-1000"
+                enterFrom="opacity-0 -translate-x-28"
+                enterTo="opacity-100 translate-x-0"
+                leave="transition ease-in duration-1000"
+                leaveFrom="opacity-100 translate-x-0"
+                leaveTo="opacity-0 translate-x-28"
+              >
+                Content 6
+              </Transition>
             </Tab.Panel>
           </Tab.Panels>
-          <div className="flex justify-center absolute bottom-5 w-full">
-            <Tab.List className="font-thin text-gray1 flex justify-center space-x-10 w-full ">
+          <div className="flex justify-around pr-72 pl-72 absolute bottom-5 w-full">
+            <button onClick={handleAnt} className="text-gray1 font-medium">
+              ANTERIOR
+            </button>
+            <Tab.List className="flex justify-center space-x-10">
               <Tab className="bg-gifTab h-5 w-5 bg-center bg-contain"></Tab>
               <Tab className="bg-bolinha h-5 w-5 bg-center bg-contain"></Tab>
               <Tab className="bg-bolinha h-5 w-5 bg-center bg-contain"></Tab>
@@ -69,6 +123,10 @@ export function Tabs() {
               <Tab className="bg-bolinha h-5 w-5 bg-center bg-contain"></Tab>
               <Tab className="bg-bolinha h-5 w-5 bg-center bg-contain"></Tab>
             </Tab.List>
+            <button onClick={handleProx} className="text-gray1 font-medium">
+              {" "}
+              PRÓXIMO
+            </button>
           </div>
         </div>
       </Tab.Group>

@@ -22,6 +22,11 @@ export default function Home() {
           rel="stylesheet"
           type="text/css"
         />
+        <link
+          href="//db.onlinewebfonts.com/c/bd317adf74e5e7e564eb61ce9926cc6d?family=Gotham"
+          rel="stylesheet"
+          type="text/css"
+        />
       </Head>
       <Tabs />
     </div>
