@@ -116,20 +116,79 @@ export function Tabs() {
               </Transition>
             </Tab.Panel>
           </Tab.Panels>
-          <div className="flex justify-around pr-72 pl-72 absolute bottom-5 w-full">
+          <div className="flex justify-around pr-96 pl-96 absolute bottom-5 w-full">
             <button onClick={handleAnt} className="text-gray1 font-medium">
               ANTERIOR
             </button>
             <Tab.List className="flex justify-center space-x-10">
-              <Tab className="bg-gifTab h-5 w-5 bg-center bg-contain"></Tab>
-              <Tab className="bg-bolinha h-5 w-5 bg-center bg-contain"></Tab>
-              <Tab className="bg-bolinha h-5 w-5 bg-center bg-contain"></Tab>
-              <Tab className="bg-bolinha h-5 w-5 bg-center bg-contain"></Tab>
-              <Tab className="bg-bolinha h-5 w-5 bg-center bg-contain"></Tab>
-              <Tab className="bg-bolinha h-5 w-5 bg-center bg-contain"></Tab>
+              <Tab>
+                {({ selected }) => (
+                  <div
+                    className={
+                      selected
+                        ? "bg-bolinha h-5 w-5 bg-center bg-contain"
+                        : "bg-gifTab h-5 w-5 bg-center bg-contain"
+                    }
+                  />
+                )}
+              </Tab>
+              <Tab>
+                {({ selected }) => (
+                  <div
+                    className={
+                      selected
+                        ? "bg-gifTab h-5 w-5 bg-center bg-contain"
+                        : "bg-bolinha h-5 w-5 bg-center bg-contain"
+                    }
+                  />
+                )}
+              </Tab>
+              <Tab>
+                {({ selected }) => (
+                  <div
+                    className={
+                      selected
+                        ? "bg-gifTab h-5 w-5 bg-center bg-contain"
+                        : "bg-bolinha h-5 w-5 bg-center bg-contain"
+                    }
+                  />
+                )}
+              </Tab>
+              <Tab>
+                {({ selected }) => (
+                  <div
+                    className={
+                      selected
+                        ? "bg-gifTab h-5 w-5 bg-center bg-contain"
+                        : "bg-bolinha h-5 w-5 bg-center bg-contain"
+                    }
+                  />
+                )}
+              </Tab>
+              <Tab>
+                {({ selected }) => (
+                  <div
+                    className={
+                      selected
+                        ? "bg-gifTab h-5 w-5 bg-center bg-contain"
+                        : "bg-bolinha h-5 w-5 bg-center bg-contain"
+                    }
+                  />
+                )}
+              </Tab>
+              <Tab>
+                {({ selected }) => (
+                  <div
+                    className={
+                      selected
+                        ? "bg-gifTab h-5 w-5 bg-center bg-contain"
+                        : "bg-bolinha h-5 w-5 bg-center bg-contain"
+                    }
+                  />
+                )}
+              </Tab>
             </Tab.List>
             <button onClick={handleProx} className="text-gray1 font-medium">
-              {" "}
               PRÓXIMO
             </button>
           </div>

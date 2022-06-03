@@ -1,6 +1,5 @@
 import { Fragment, useRef, useState, useEffect } from "react";
 import { Popover, Transition } from "@headlessui/react";
-import { loadGetInitialProps } from "next/dist/shared/lib/utils";
 
 export default function FlyoutMenu(props) {
   let timeout;
