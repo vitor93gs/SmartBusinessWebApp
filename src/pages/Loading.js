@@ -15,7 +15,7 @@ export function Loading() {
 
       <div className="absolute">
         <p className="text-gray1 text-l text-right mt-56">
-          <CountUp start={0} end={100} duration={4.5} />%
+          <CountUp start={0} end={100} duration={4.4} />%
         </p>
       </div>
     </div>

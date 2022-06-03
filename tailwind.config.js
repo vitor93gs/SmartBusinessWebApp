@@ -15,6 +15,8 @@ module.exports = {
     },
     backgroundImage: {
       background: "url('/fundo.png')",
+      gifTab: "url('/botaoTab.gif')",
+      bolinha: "url('/bolinha.png')",
     },
     fontFamily: {
       gotham: "Gotham HTF Medium",

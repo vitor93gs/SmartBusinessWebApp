@@ -1,7 +1,7 @@
 export function Who() {
   return (
     <>
-      <span className="text-white2 text-3xl text-center flex justify-center pb-96 pt-80 items-center mr-36 ml-36">
+      <span className="text-gray1 text-opacity-70 text-3xl text-center flex justify-center h-screen items-center mr-36 ml-36">
         QUEM SOMOS: Smart Business é uma holding de alta performance na gestão
         de ativos físicos e digitais. Possuímos um ecossistema de
         retroalimentação formado por 8 empresas principais. Nossa expertise e

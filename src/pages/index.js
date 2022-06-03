@@ -10,9 +10,7 @@ export default function Home() {
   setTimeout(() => {
     setLoading(false);
   }, 4500);
-  //{
-  //isLoading ? <Loading /> : <Tabs />;
-  //
+  //{isLoading ? <Loading /> : <Tabs />}
   return (
     <div className="bg-background bg-center bg-no-repeat bg-fixed bg-cover">
       <Head>
@@ -25,7 +23,7 @@ export default function Home() {
           type="text/css"
         />
       </Head>
-      {isLoading ? <Loading /> : <Tabs />}
+      <Tabs />
     </div>
   );
 }
