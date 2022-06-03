@@ -9,8 +9,10 @@ export default function Home() {
 
   setTimeout(() => {
     setLoading(false);
-  }, 3500);
-  //className=" bg-gradient-to-r from-theme to-theme2"
+  }, 4500);
+  //{
+  //isLoading ? <Loading /> : <Tabs />;
+  //
   return (
     <div className="bg-background bg-center bg-no-repeat bg-fixed bg-cover">
       <Head>

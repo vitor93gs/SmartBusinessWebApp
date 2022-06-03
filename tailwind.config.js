@@ -22,6 +22,10 @@ module.exports = {
     textUnderlineOffset: {
       10: "1.3rem",
     },
+    gradientColorStops: {
+      theme: "#000013",
+      theme2: "#04042D",
+    },
   },
   plugins: [],
 };

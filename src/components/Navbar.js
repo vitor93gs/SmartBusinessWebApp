@@ -3,7 +3,7 @@ import { useState } from "react";
 import logo from "../assets/logo.png";
 import lupa1 from "../assets/lupa_1.png";
 import lupa2 from "../assets/lupa_2.png";
-import Dropdown from "./Dropdown";
+import FlyoutMenu from "./DropdownOnHover";
 
 export function Navbar() {
   const [isMouseOver, setMousover] = useState(false);
@@ -17,7 +17,8 @@ export function Navbar() {
       <Image src={logo} alt="Logo smart Business" height="75px" width="275px" />
 
       <ul className="flex space-x-20 ">
-        <li className="after:block after:absolute after:transition-all after:ml-px after:mt-0 after:w-3 after:bg-golden after:bg-opacity-60 after:h-0.5 after:duration-600 after:ease-in-out after:bottom-px after:hover:w-6 after:hover:bg-golden after:hover:bg-opacity-60 after:hover:h-0.5 ">
+        <li></li>
+        <li className="after:block after:absolute after:transition-all after:ml-px after:mt-0 after:w-3 after:bg-golden after:bg-opacity-60 after:h-0.5 after:duration-600 after:ease-in-out after:bottom-px after:hover:w-6 after:hover:bg-golden after:hover:bg-opacity-60 after:hover:h-0.5 pr-20">
           <a
             className="no-underline  text-gray1 transition-all  delay-150 hover:text-golden "
             href=""
@@ -26,7 +27,7 @@ export function Navbar() {
           </a>
         </li>
 
-        <li className="after:block after:absolute after:transition-all after:ml-px after:mt-0 after:w-3 after:bg-golden after:bg-opacity-60 after:h-0.5 after:duration-600 after:ease-in-out after:bottom-px after:hover:w-6 after:hover:bg-golden after:hover:bg-opacity-60 after:hover:h-0.5 ">
+        <li className="after:block after:absolute after:transition-all after:ml-px after:mt-0 after:w-3 after:bg-golden after:bg-opacity-60 after:h-0.5 after:duration-600 after:ease-in-out after:bottom-px after:hover:w-6 after:hover:bg-golden after:hover:bg-opacity-60 after:hover:h-0.5 pr-20">
           <a
             className="no-underline text-gray1 transition  delay-150 hover:text-golden "
             href=""
@@ -34,8 +35,8 @@ export function Navbar() {
             BLOG
           </a>
         </li>
-        <li className="after:block after:absolute after:transition-all after:ml-px after:mt-0 after:w-3 after:bg-golden after:bg-opacity-60 after:h-0.5 after:duration-600 after:ease-in-out after:bottom-px after:hover:w-24 after:hover:bg-golden after:hover:bg-opacity-60 after:hover:h-0.5 ">
-          <Dropdown
+        <li className="after:block after:absolute after:transition-all after:ml-px after:mt-0 after:w-3 after:bg-golden after:bg-opacity-60 after:h-0.5 after:duration-600 after:ease-in-out after:bottom-px after:hover:w-24 after:hover:bg-golden after:hover:bg-opacity-60 after:hover:h-0.5 pr-32">
+          <FlyoutMenu
             header="SMART ACADEMY"
             info1="PROSPERA"
             info2="SUPERA"
@@ -44,8 +45,8 @@ export function Navbar() {
             info5=""
           />
         </li>
-        <li className="after:block after:absolute after:transition-all after:ml-px after:mt-0 after:w-3 after:bg-golden after:bg-opacity-60 after:h-0.5 after:duration-600 after:ease-in-out after:bottom-px after:hover:w-28 after:hover:bg-golden after:hover:bg-opacity-60 after:hover:h-0.5 ">
-          <Dropdown
+        <li className="after:block after:absolute after:transition-all after:ml-px after:mt-0 after:w-3 after:bg-golden after:bg-opacity-60 after:h-0.5 after:duration-600 after:ease-in-out after:bottom-px after:hover:w-28 after:hover:bg-golden after:hover:bg-opacity-60 after:hover:h-0.5 pr-32 ">
+          <FlyoutMenu
             header="NOSSAS EMPRESAS"
             info1="Projeto CRD"
             info2="EXCHANGE"
@@ -56,7 +57,7 @@ export function Navbar() {
         </li>
         <li>
           <a
-            className="no-underline text-golden transition  delay-150 hover:text-gray1 pr-8"
+            className="no-underline text-golden transition  delay-150 hover:text-gray1 pr-32"
             href=""
           >
             LOGIN

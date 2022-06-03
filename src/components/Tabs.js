@@ -5,7 +5,7 @@ import { Navbar } from "./Navbar";
 
 export function Tabs() {
   return (
-    <div className="flex items-end border-2">
+    <div className="flex items-end">
       <Navbar />
       <Tab.Group>
         <div className="flex-col justify-center">
@@ -21,7 +21,7 @@ export function Tabs() {
             <Tab.Panel>Content 5</Tab.Panel>
             <Tab.Panel>Content 6</Tab.Panel>
           </Tab.Panels>
-          <div className="flex justify-center">
+          <div className="flex justify-center absolute bottom-5">
             <Tab.List>
               <Tab>Tab 1</Tab>
               <Tab>Tab 2</Tab>
