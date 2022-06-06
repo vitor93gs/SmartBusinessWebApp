@@ -1,8 +1,6 @@
 import Head from "next/head";
 import { useState } from "react";
 import { Navbar } from "../components/Navbar";
-
-import { Tabs } from "../components/Tabs";
 import Tabs2 from "../components/Tabs2";
 import { Loading } from "../components/Loading";
 
@@ -11,7 +9,7 @@ export default function Home() {
 
   setTimeout(() => {
     setLoading(false);
-  }, 4500);
+  }, 1500);
 
   return (
     <div className="bg-theme z-0">
@@ -30,9 +28,14 @@ export default function Home() {
           type="text/css"
         />
       </Head>
-      {/* {isLoading ? <Loading /> : <Tabs />} */}
-      <Navbar />
-      <Tabs2 />
+      {isLoading ? (
+        <Loading />
+      ) : (
+        <div>
+          <Navbar />
+          <Tabs2 />
+        </div>
+      )}
     </div>
   );
 }

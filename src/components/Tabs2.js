@@ -20,7 +20,7 @@ export default function Tabs2() {
     setSelectedIndex(0);
 
     setTimeout(() => {
-      state === 0 ? setSelectedIndex(7) : setSelectedIndex(state - 1);
+      state === 1 ? setSelectedIndex(7) : setSelectedIndex(state - 1);
     }, 980);
     setTimeout(() => {
       setDisabled(false);

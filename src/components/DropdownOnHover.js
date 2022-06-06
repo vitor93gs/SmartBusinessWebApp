@@ -1,7 +1,9 @@
 import { Fragment, useRef, useState, useEffect } from "react";
 import { Popover, Transition } from "@headlessui/react";
+import { useRouter } from "next/router";
 
-export default function FlyoutMenu(props) {
+export default function DropdownOnHover(props) {
+  const router = useRouter();
   let timeout;
   const timeoutDuration = 400;
 
@@ -26,6 +28,7 @@ export default function FlyoutMenu(props) {
   };
 
   const handleClick = (open) => {
+    router.push(props.button);
     setOpenState(!open);
     clearTimeout(timeout);
   };
@@ -81,12 +84,14 @@ export default function FlyoutMenu(props) {
                 {prps.map((cur, index) => {
                   return (
                     <Fragment key={("PopoverPanel<>", index)}>
-                      <a
-                        href={"#"}
-                        className="no-underline text-gray1 transition duration-300 delay-100 hover:text-golden block px-4 py-2 text-sm"
-                      >
-                        {cur}
-                      </a>
+                      {cur === "" ? null : (
+                        <a
+                          href={`./${props.button}/${cur}`}
+                          className="no-underline text-gray1 transition duration-300 delay-100 hover:text-golden block px-4 py-2 text-sm"
+                        >
+                          {cur}
+                        </a>
+                      )}
                     </Fragment>
                   );
                 })}
