@@ -1,7 +1,9 @@
 import Head from "next/head";
 import { useState } from "react";
+import { Navbar } from "../components/Navbar";
 
 import { Tabs } from "../components/Tabs";
+import Tabs2 from "../components/Tabs2";
 import { Loading } from "./Loading";
 
 export default function Home() {
@@ -10,9 +12,9 @@ export default function Home() {
   setTimeout(() => {
     setLoading(false);
   }, 4500);
-  //{isLoading ? <Loading /> : <Tabs />}
+
   return (
-    <div className="bg-background bg-center bg-no-repeat bg-fixed bg-cover">
+    <div className="bg-theme z-0">
       <Head>
         <title>Smart Business</title>
         <meta name="description" content="Smart Business web app" />
@@ -28,7 +30,9 @@ export default function Home() {
           type="text/css"
         />
       </Head>
-      <Tabs />
+      {/* {isLoading ? <Loading /> : <Tabs />} */}
+      <Navbar />
+      <Tabs2 />
     </div>
   );
 }

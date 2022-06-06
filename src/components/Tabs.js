@@ -18,6 +18,7 @@ export function Tabs() {
       ? setSelectedIndex(6)
       : setSelectedIndex(selectedIndex - 1);
   }
+
   function handleProx() {
     selectedIndex === 6
       ? setSelectedIndex(0)
@@ -41,7 +42,7 @@ export function Tabs() {
                 leaveFrom="opacity-100 translate-x-0"
                 leaveTo="opacity-0 translate-x-28"
               >
-                <FrontPage />
+                <FrontPage className="bg-gray1" />
               </Transition>
             </Tab.Panel>
             <Tab.Panel>
@@ -117,7 +118,7 @@ export function Tabs() {
             </Tab.Panel>
           </Tab.Panels>
           <div className="flex justify-around pr-96 pl-96 absolute bottom-5 w-full">
-            <button onClick={handleAnt} className="text-gray1 font-medium">
+            <button onClick={handleAnt} className="text-golden font-medium">
               ANTERIOR
             </button>
             <Tab.List className="flex justify-center space-x-10">
@@ -126,17 +127,6 @@ export function Tabs() {
                   <div
                     className={
                       selected
-                        ? "bg-bolinha h-5 w-5 bg-center bg-contain"
-                        : "bg-gifTab h-5 w-5 bg-center bg-contain"
-                    }
-                  />
-                )}
-              </Tab>
-              <Tab>
-                {({ selected }) => (
-                  <div
-                    className={
-                      selected
                         ? "bg-gifTab h-5 w-5 bg-center bg-contain"
                         : "bg-bolinha h-5 w-5 bg-center bg-contain"
                     }
@@ -171,6 +161,17 @@ export function Tabs() {
                     className={
                       selected
                         ? "bg-gifTab h-5 w-5 bg-center bg-contain"
+                        : "bg-bolinha h-5 w-5 bg-center bg-contain"
+                    }
+                  />
+                )}
+              </Tab>
+              <Tab>
+                {({ selected }) => (
+                  <div
+                    className={
+                      selected
+                        ? "bg-gifTab h-5 w-5  bg-center bg-contain"
                         : "bg-bolinha h-5 w-5 bg-center bg-contain"
                     }
                   />
@@ -188,7 +189,7 @@ export function Tabs() {
                 )}
               </Tab>
             </Tab.List>
-            <button onClick={handleProx} className="text-gray1 font-medium">
+            <button onClick={handleProx} className="text-golden font-medium">
               PRÓXIMO
             </button>
           </div>
