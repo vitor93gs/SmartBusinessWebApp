@@ -15,7 +15,7 @@ module.exports = {
     },
     backgroundImage: {
       background: "url('/fundo.png')",
-      gifTab: "url('/botaoTab.gif')",
+      gifTab: "url('/DualRing.svg')",
       bolinha: "url('/bolinha.png')",
     },
     fontFamily: {

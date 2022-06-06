@@ -1,13 +1,18 @@
 import { Transition } from "@headlessui/react";
 import { useState } from "react";
-import { FrontPage } from "../pages/FrontPage";
-import { Who } from "../pages/Who";
+import { FrontPage } from "./front-page-tabs/FrontPage";
+import { Franqueado, Who } from "./front-page-tabs/Franqueado";
+import { FreeCourse } from "./front-page-tabs/FreeCourse";
+import { SmartAcademy } from "./front-page-tabs/SmartAcademy";
+import { SmatBusiness } from "./front-page-tabs/SmartBusiness";
+import { News } from "./front-page-tabs/News";
+import { FollowUs } from "./front-page-tabs/FollowUs";
 
 export default function Tabs2() {
   const [selectedIndex, setSelectedIndex] = useState(1);
   const [isDisabled, setDisabled] = useState(false);
 
-  const banners = [1, 2, 3, 4, 5, 6];
+  const banners = [1, 2, 3, 4, 5, 6, 7];
 
   function handleAnt() {
     setDisabled(true);
@@ -15,7 +20,7 @@ export default function Tabs2() {
     setSelectedIndex(0);
 
     setTimeout(() => {
-      state === 0 ? setSelectedIndex(6) : setSelectedIndex(state - 1);
+      state === 0 ? setSelectedIndex(7) : setSelectedIndex(state - 1);
     }, 980);
     setTimeout(() => {
       setDisabled(false);
@@ -28,7 +33,7 @@ export default function Tabs2() {
     setSelectedIndex(0);
 
     setTimeout(() => {
-      state === 6 ? setSelectedIndex(1) : setSelectedIndex(state + 1);
+      state === 7 ? setSelectedIndex(1) : setSelectedIndex(state + 1);
     }, 700);
     setTimeout(() => {
       setDisabled(false);
@@ -59,7 +64,7 @@ export default function Tabs2() {
           leaveFrom="opacity-100"
           leaveTo="opacity-100 scale-90"
         >
-          <Who />
+          <Franqueado />
         </Transition>
 
         <Transition
@@ -71,7 +76,9 @@ export default function Tabs2() {
           leaveFrom="opacity-100"
           leaveTo="opacity-100 scale-90"
         >
-          <h1 className="text-golden"> content 3</h1>
+          <h1 className="bg-theme2 text-gray1 text-opacity-70 text-3xl text-center flex justify-center items-center pr-36 pl-36 h-screen">
+            <FreeCourse />
+          </h1>
         </Transition>
 
         <Transition
@@ -83,7 +90,9 @@ export default function Tabs2() {
           leaveFrom="opacity-100"
           leaveTo="opacity-100 scale-90"
         >
-          <h1 className="text-golden">content 4</h1>
+          <h1 className="bg-theme2 text-gray1 text-opacity-70 text-3xl text-center flex justify-center items-center pr-36 pl-36 h-screen">
+            <SmartAcademy />
+          </h1>
         </Transition>
 
         <Transition
@@ -95,7 +104,9 @@ export default function Tabs2() {
           leaveFrom="opacity-100"
           leaveTo="opacity-100 scale-90"
         >
-          <h1 className="text-golden">content 5</h1>
+          <h1 className="bg-theme2 text-gray1 text-opacity-70 text-3xl text-center flex justify-center items-center pr-36 pl-36 h-screen">
+            <SmatBusiness />
+          </h1>
         </Transition>
 
         <Transition
@@ -107,7 +118,22 @@ export default function Tabs2() {
           leaveFrom="opacity-100"
           leaveTo="opacity-100 scale-90"
         >
-          <h1 className="text-golden">content 6</h1>
+          <h1 className="bg-theme2 text-gray1 text-opacity-70 text-3xl text-center flex justify-center items-center pr-36 pl-36 h-screen">
+            <News />
+          </h1>
+        </Transition>
+        <Transition
+          show={selectedIndex === 7}
+          enter="transition ease-out duration-500"
+          enterFrom="translate-x-full"
+          enterTo="translate-x-0"
+          leave="transition ease-in duration-700"
+          leaveFrom="opacity-100"
+          leaveTo="opacity-100 scale-90"
+        >
+          <h1 className="bg-theme2 text-gray1 text-opacity-70 text-3xl text-center flex justify-center items-center pr-36 pl-36 h-screen">
+            <FollowUs />
+          </h1>
         </Transition>
       </div>
     );
@@ -139,17 +165,19 @@ export default function Tabs2() {
             aria-label="Pagination"
           >
             <button
-              className="relative inline-flex items-center px-2 py-2 rounded-l-md  text-sm font-medium"
+              className="relative inline-flex items-center px-20 py-2  text-sm font-medium"
               onClick={handleAnt}
               disabled={isDisabled}
             >
               <span>ANTERIOR</span>
             </button>
-            <div className="flex justify-center space-x-10">
+            <div className="flex justify-center items-center space-x-10">
               {banners.map((current, index) => {
                 return (
                   <div
-                    className="bg-bolinha h-5 w-5 bg-center bg-contain"
+                    className={`${
+                      selectedIndex === current ? "bg-gifTab" : "bg-bolinha"
+                    } h-5 w-5 bg-center bg-contain`}
                     key={index}
                   ></div>
                 );
@@ -157,7 +185,7 @@ export default function Tabs2() {
             </div>
 
             <button
-              className="relative inline-flex items-center px-2 py-2 rounded-r-md  text-sm font-medium"
+              className="relative inline-flex items-center px-20 py-2  text-sm font-medium"
               onClick={handleProx}
               disabled={isDisabled}
             >

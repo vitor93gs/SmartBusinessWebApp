@@ -4,7 +4,7 @@ import { Navbar } from "../components/Navbar";
 
 import { Tabs } from "../components/Tabs";
 import Tabs2 from "../components/Tabs2";
-import { Loading } from "./Loading";
+import { Loading } from "../components/Loading";
 
 export default function Home() {
   const [isLoading, setLoading] = useState(true);

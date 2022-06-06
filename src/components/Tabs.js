@@ -1,6 +1,6 @@
 import { Tab, Transition } from "@headlessui/react";
-import { FrontPage } from "../pages/FrontPage";
-import { Who } from "../pages/Who";
+import { FrontPage } from "./front-page-tabs/FrontPage";
+import { Who } from "./front-page-tabs/Franqueado";
 import { Navbar } from "./Navbar";
 import { useState } from "react";
 
