@@ -21,10 +21,10 @@ export default function Tabs2() {
 
     setTimeout(() => {
       state === 1 ? setSelectedIndex(7) : setSelectedIndex(state - 1);
-    }, 980);
+    }, 300);
     setTimeout(() => {
       setDisabled(false);
-    }, 1000);
+    }, 800);
   }
 
   function handleProx() {
@@ -34,10 +34,10 @@ export default function Tabs2() {
 
     setTimeout(() => {
       state === 7 ? setSelectedIndex(1) : setSelectedIndex(state + 1);
-    }, 700);
+    }, 300);
     setTimeout(() => {
       setDisabled(false);
-    }, 1000);
+    }, 800);
   }
 
   function handlePage() {
@@ -48,7 +48,7 @@ export default function Tabs2() {
           enter="transition ease-out duration-500"
           enterFrom="translate-x-full"
           enterTo="translate-x-0"
-          leave="transition ease-in duration-700"
+          leave="transition ease-in duration-300"
           leaveFrom="opacity-100"
           leaveTo="opacity-100 scale-90"
         >
@@ -60,7 +60,7 @@ export default function Tabs2() {
           enter="transition ease-out duration-500"
           enterFrom="translate-x-full"
           enterTo="translate-x-0"
-          leave="transition ease-in duration-700"
+          leave="transition ease-in duration-300"
           leaveFrom="opacity-100"
           leaveTo="opacity-100 scale-90"
         >
@@ -72,7 +72,7 @@ export default function Tabs2() {
           enter="transition ease-out duration-500"
           enterFrom="translate-x-full"
           enterTo="translate-x-0"
-          leave="transition ease-in duration-700"
+          leave="transition ease-in duration-300"
           leaveFrom="opacity-100"
           leaveTo="opacity-100 scale-90"
         >
@@ -86,7 +86,7 @@ export default function Tabs2() {
           enter="transition ease-out duration-500"
           enterFrom="translate-x-full"
           enterTo="translate-x-0"
-          leave="transition ease-in duration-700"
+          leave="transition ease-in duration-300"
           leaveFrom="opacity-100"
           leaveTo="opacity-100 scale-90"
         >
@@ -100,7 +100,7 @@ export default function Tabs2() {
           enter="transition ease-out duration-500"
           enterFrom="translate-x-full"
           enterTo="translate-x-0"
-          leave="transition ease-in duration-700"
+          leave="transition ease-in duration-300"
           leaveFrom="opacity-100"
           leaveTo="opacity-100 scale-90"
         >
@@ -114,7 +114,7 @@ export default function Tabs2() {
           enter="transition ease-out duration-500"
           enterFrom="translate-x-full"
           enterTo="translate-x-0"
-          leave="transition ease-in duration-700"
+          leave="transition ease-in duration-300"
           leaveFrom="opacity-100"
           leaveTo="opacity-100 scale-90"
         >
@@ -127,7 +127,7 @@ export default function Tabs2() {
           enter="transition ease-out duration-500"
           enterFrom="translate-x-full"
           enterTo="translate-x-0"
-          leave="transition ease-in duration-700"
+          leave="transition ease-in duration-300"
           leaveFrom="opacity-100"
           leaveTo="opacity-100 scale-90"
         >

@@ -28,7 +28,7 @@ export function Navbar() {
         </li>
 
         <li className="after:block after:absolute after:transition-all after:ml-px after:mt-0 after:w-3 after:bg-golden after:bg-opacity-60 after:h-0.5 after:duration-600 after:ease-in-out after:bottom-px after:hover:w-6 after:hover:bg-golden after:hover:bg-opacity-60 after:hover:h-0.5 pr-20">
-          <a href="/home">
+          <a href="/">
             <a className="no-underline text-gray1 transition  delay-150 hover:text-golden ">
               COMUNIDADE
             </a>
