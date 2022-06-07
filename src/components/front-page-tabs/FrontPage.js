@@ -13,10 +13,10 @@ export function FrontPage() {
               typewriter
                 .changeDelay(40)
                 .typeString("BAIXE NOSSOS EBOOKS!")
-                .pauseFor(2500)
+                .pauseFor(1500)
                 .deleteAll()
                 .typeString("Criptoeconomia ( Conceitos e Curiosidades )")
-                .pauseFor(2500)
+                .pauseFor(1500)
                 .start();
             }}
             options={{ loop: true }}
