@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { useState } from "react";
 import { Navbar } from "../components/Navbar";
-import Tabs2 from "../components/Tabs2";
+import Tabs from "../components/Tabs";
 import { Loading } from "../components/Loading";
 
 export default function Home() {
@@ -33,7 +33,7 @@ export default function Home() {
       ) : (
         <div>
           <Navbar />
-          <Tabs2 />
+          <Tabs />
         </div>
       )}
     </div>

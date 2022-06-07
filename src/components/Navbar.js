@@ -18,7 +18,7 @@ export function Navbar() {
       <Image src={logo} alt="Logo smart Business" height="75" width="275" />
 
       <ul className="flex space-x-20 ">
-        <li className="after:block after:absolute after:transition-all after:ml-px after:mt-0 after:w-3 after:bg-golden after:bg-opacity-60 after:h-0.5 after:duration-600 after:ease-in-out after:bottom-px after:hover:w-6 after:hover:bg-golden after:hover:bg-opacity-60 after:hover:h-0.5 pr-20 ">
+        <li className="after:block after:absolute after:transition-all after:ml-px after:mt-0 after:w-3 after:bg-golden after:bg-opacity-60 after:h-0.5 after:duration-600 after:ease-in-out after:bottom-px after:hover:w-6 after:hover:bg-golden after:hover:bg-opacity-60 pr-20 ">
           <a
             className="no-underline  text-gray1 transition-all  delay-150 hover:text-golden "
             href="/"
@@ -27,14 +27,14 @@ export function Navbar() {
           </a>
         </li>
 
-        <li className="after:block after:absolute after:transition-all after:ml-px after:mt-0 after:w-3 after:bg-golden after:bg-opacity-60 after:h-0.5 after:duration-600 after:ease-in-out after:bottom-px after:hover:w-6 after:hover:bg-golden after:hover:bg-opacity-60 after:hover:h-0.5 pr-20">
+        <li className="after:block after:absolute after:transition-all after:ml-px after:mt-0 after:w-3 after:bg-golden after:bg-opacity-60 after:h-0.5 after:duration-600 after:ease-in-out after:bottom-px after:hover:w-20 after:hover:bg-golden after:hover:bg-opacity-60 pr-20">
           <a href="/">
-            <a className="no-underline text-gray1 transition  delay-150 hover:text-golden ">
+            <span className="no-underline text-gray1 transition  delay-150 hover:text-golden ">
               COMUNIDADE
-            </a>
+            </span>
           </a>
         </li>
-        <li className="after:block after:absolute after:transition-all after:ml-px after:mt-0 after:w-3 after:bg-golden after:bg-opacity-60 after:h-0.5 after:duration-600 after:ease-in-out after:bottom-px after:hover:w-24 after:hover:bg-golden after:hover:bg-opacity-60 after:hover:h-0.5 pr-32">
+        <li className="after:block after:absolute after:transition-all after:ml-px after:mt-0 after:w-3 after:bg-golden after:bg-opacity-60 after:h-0.5 after:duration-600 after:ease-in-out after:bottom-px after:hover:w-24 after:hover:bg-golden after:hover:bg-opacity-60 pr-32">
           <DropdownOnHover
             header="SMART ACADEMY"
             info1="PROSPERA"
@@ -45,7 +45,7 @@ export function Navbar() {
             button="/smart-academy"
           />
         </li>
-        <li className="after:block after:absolute after:transition-all after:ml-px after:mt-0 after:w-3 after:bg-golden after:bg-opacity-60 after:h-0.5 after:duration-600 after:ease-in-out after:bottom-px after:hover:w-28 after:hover:bg-golden after:hover:bg-opacity-60 after:hover:h-0.5 pr-32 ">
+        <li className="after:block after:absolute after:transition-all after:ml-px after:mt-0 after:w-3 after:bg-golden after:bg-opacity-60 after:h-0.5 after:duration-600 after:ease-in-out after:bottom-px after:hover:w-28 after:hover:bg-golden after:hover:bg-opacity-60 pr-32 ">
           <DropdownOnHover
             header="NOSSAS EMPRESAS"
             info1="PROJETO CRD"

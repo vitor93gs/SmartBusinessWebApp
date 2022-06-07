@@ -7,14 +7,22 @@ import { SmartAcademy } from "./front-page-tabs/SmartAcademy";
 import { SmatBusiness } from "./front-page-tabs/SmartBusiness";
 import { News } from "./front-page-tabs/News";
 import { FollowUs } from "./front-page-tabs/FollowUs";
+import { useEffect } from "react";
 
-export default function Tabs2() {
+export default function Tabs() {
   const [selectedIndex, setSelectedIndex] = useState(1);
   const [isDisabled, setDisabled] = useState(false);
 
   const banners = [1, 2, 3, 4, 5, 6, 7];
 
+  // var screenChange = setInterval(() => {
+  //   selectedIndex === 7
+  //     ? setSelectedIndex(1)
+  //     : setSelectedIndex(selectedIndex + 1);
+  // }, 1000);
+
   function handleAnt() {
+    // clearInterval(screenChange);
     setDisabled(true);
     let state = selectedIndex;
     setSelectedIndex(0);
@@ -28,6 +36,7 @@ export default function Tabs2() {
   }
 
   function handleProx() {
+    // clearInterval(screenChange);
     setDisabled(true);
     let state = selectedIndex;
     setSelectedIndex(0);
@@ -51,6 +60,7 @@ export default function Tabs2() {
           leave="transition ease-in duration-300"
           leaveFrom="opacity-100"
           leaveTo="opacity-100 scale-90"
+          className="bg-ba"
         >
           <FrontPage />
         </Transition>

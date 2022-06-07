@@ -86,7 +86,7 @@ export default function DropdownOnHover(props) {
                     <Fragment key={("PopoverPanel<>", index)}>
                       {cur === "" ? null : (
                         <a
-                          href={`./${props.button}/${cur}`}
+                          href={`${props.button}/${cur}`}
                           className="no-underline text-gray1 transition duration-300 delay-100 hover:text-golden block px-4 py-2 text-sm"
                         >
                           {cur}
