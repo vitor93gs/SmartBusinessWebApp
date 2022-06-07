@@ -15,14 +15,17 @@ export default function Tabs() {
 
   const banners = [1, 2, 3, 4, 5, 6, 7];
 
-  // var screenChange = setInterval(() => {
-  //   selectedIndex === 7
-  //     ? setSelectedIndex(1)
-  //     : setSelectedIndex(selectedIndex + 1);
-  // }, 1000);
+  // useEffect(() => {
+  //   var screenChange = setInterval(() => {
+  //     selectedIndex === 7
+  //       ? setSelectedIndex(1)
+  //       : setSelectedIndex(selectedIndex + 1);
+  //   }, 6500);
+  //   console.log(selectedIndex);
+  //   return () => clearInterval(screenChange);
+  // });
 
   function handleAnt() {
-    // clearInterval(screenChange);
     setDisabled(true);
     let state = selectedIndex;
     setSelectedIndex(0);
@@ -36,7 +39,6 @@ export default function Tabs() {
   }
 
   function handleProx() {
-    // clearInterval(screenChange);
     setDisabled(true);
     let state = selectedIndex;
     setSelectedIndex(0);
@@ -60,7 +62,6 @@ export default function Tabs() {
           leave="transition ease-in duration-300"
           leaveFrom="opacity-100"
           leaveTo="opacity-100 scale-90"
-          className="bg-ba"
         >
           <FrontPage />
         </Transition>
