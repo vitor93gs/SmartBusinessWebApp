@@ -1,5 +1,4 @@
 import Image from "next/dist/client/image";
-import Link from "next/link";
 import { useState } from "react";
 import logo from "../assets/logo.png";
 import lupa1 from "../assets/lupa_1.png";
@@ -14,10 +13,10 @@ export function Navbar() {
   }
 
   return (
-    <div className="fixed top-0 left-0 right-0 flex justify-between font-thin  items-center h-14 mt-8 ml-4 mr-4 bg-opacity-0 text-op z-10">
+    <div className="fixed top-0 left-0 right-0 flex justify-between text-xs font-thin  items-center h-14 mt-8 ml-4 mr-4 bg-opacity-0 z-10">
       <Image src={logo} alt="Logo smart Business" height="75" width="275" />
 
-      <ul className="flex space-x-20 ">
+      <ul className="flex space-x-8 ">
         <li className="after:block after:absolute after:transition-all after:ml-px after:mt-0 after:w-3 after:bg-golden after:bg-opacity-60 after:h-0.5 after:duration-600 after:ease-in-out after:bottom-px after:hover:w-6 after:hover:bg-golden after:hover:bg-opacity-60 pr-20 ">
           <a
             className="no-underline  text-gray1 transition-all  delay-150 hover:text-golden "

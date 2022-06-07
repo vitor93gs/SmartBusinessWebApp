@@ -23,7 +23,7 @@ export function FrontPage() {
           />
         </h1>
 
-        <a className="div-neon opacity-60 rounded-sm text-center">
+        <a className="div-neon opacity-60 rounded-sm text-center text-sm">
           <span className="child1"></span>
           <span></span>
           <span></span>

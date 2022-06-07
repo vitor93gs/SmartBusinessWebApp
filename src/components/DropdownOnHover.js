@@ -54,7 +54,7 @@ export default function DropdownOnHover(props) {
   ];
 
   return (
-    <Popover className="absolute text-left text-s text-gray1">
+    <Popover className="absolute text-left text-xs text-gray1">
       {({ open }) => (
         <div
           onMouseEnter={() => onHover(open, "onMouseEnter")}
@@ -87,7 +87,7 @@ export default function DropdownOnHover(props) {
                       {cur === "" ? null : (
                         <a
                           href={`${props.button}/${cur}`}
-                          className="no-underline text-gray1 transition duration-300 delay-100 hover:text-golden block px-4 py-2 text-sm"
+                          className="no-underline text-gray1 transition duration-300 delay-100 hover:text-golden block px-4 py-2"
                         >
                           {cur}
                         </a>
