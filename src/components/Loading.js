@@ -2,6 +2,7 @@ import Image from "next/image";
 import myGif from "../assets/myGif.gif";
 import CountUp from "react-countup";
 
+
 export function Loading() {
   return (
     <div className="absolute flex items-center justify-center h-full w-full bg-theme ">

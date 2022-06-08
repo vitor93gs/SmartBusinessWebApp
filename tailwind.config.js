@@ -4,7 +4,11 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      spacing: {
+        custom: "275px",
+      },
+    },
     colors: {
       theme: "#000013",
       golden: "#D6A84C",
