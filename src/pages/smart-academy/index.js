@@ -1,10 +1,8 @@
 import { Navbar } from "../../components/Navbar";
 import Image from "next/image";
 import ebook from "../../assets/ebook.jpg";
-import Router from "next/router";
 
 export default function SmartAcademy() {
-  Router.push("/hola");
   return (
     <div className="bg-theme h-screen  z-0">
       <Navbar />
