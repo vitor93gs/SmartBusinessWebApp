@@ -15,15 +15,15 @@ export default function Tabs() {
 
   const banners = [1, 2, 3, 4, 5, 6, 7];
 
-  useEffect(() => {
-    var screenChange = setInterval(() => {
-      selectedIndex === 7
-        ? setSelectedIndex(1)
-        : setSelectedIndex(selectedIndex + 1);
-    }, 7500);
-    console.log(selectedIndex);
-    return () => clearInterval(screenChange);
-  });
+  // useEffect(() => {
+  //   var screenChange = setInterval(() => {
+  //     selectedIndex === 7
+  //       ? setSelectedIndex(1)
+  //       : setSelectedIndex(selectedIndex + 1);
+  //   }, 7500);
+  //   console.log(selectedIndex);
+  //   return () => clearInterval(screenChange);
+  // });
 
   function handleAnt() {
     setDisabled(true);

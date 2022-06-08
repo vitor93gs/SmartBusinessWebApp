@@ -4,7 +4,7 @@ import { useState } from "react";
 import logo from "../assets/logo.png";
 import lupa1 from "../assets/lupa_1.png";
 import lupa2 from "../assets/lupa_2.png";
-import DropdownOnHover from "./DropdownOnHover";
+
 import DropDown from "./Dropdown";
 
 export function Navbar() {
