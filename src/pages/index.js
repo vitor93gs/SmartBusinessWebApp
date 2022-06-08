@@ -5,6 +5,7 @@ import Tabs from "../components/Tabs";
 import { Loading } from "../components/Loading";
 import NProgress from "nprogress";
 import Router from "next/router";
+import { useEffect } from "react";
 
 export default function Home() {
   setTimeout(() => {
@@ -20,18 +21,20 @@ export default function Home() {
     setLoading(false);
   };
 
-  Router.events.on("routeChangeStart", () => {
-    NProgress.start();
-    handleStart();
-  });
-  Router.events.on("routeChangeComplete", () => {
-    handleComplete();
-    NProgress.done();
-  });
-  Router.events.on("routeChangeError", () => {
-    handleComplete();
-    NProgress.done();
-  });
+  useEffect(() => {
+    Router.events.on("routeChangeStart", () => {
+      NProgress.start();
+      handleStart();
+    });
+    Router.events.on("routeChangeComplete", () => {
+      handleComplete();
+      NProgress.done();
+    });
+    Router.events.on("routeChangeError", () => {
+      handleComplete();
+      NProgress.done();
+    });
+  }, []);
 
   return (
     <div className="bg-theme z-0">
