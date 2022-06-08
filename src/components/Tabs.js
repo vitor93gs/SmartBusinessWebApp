@@ -154,17 +154,17 @@ export default function Tabs() {
     <div className="h-screen overflow-hidden">
       {handlePage()}
       <div className=" text-golden px-4 py-3 flex items-center sm:px-6 absolute bottom-5 w-full ">
-        <div className="flex-1 flex justify-between sm:hidden">
+        <div className="flex-1 flex sm:hidden">
           <button
             onClick={handleAnt}
-            className="relative inline-flex items-center px-4 py-2 text-sm font-medium rounded-md"
+            className="relative inline-flex items-center px-4 py-2 text-xs font-medium rounded-md"
             disabled={isDisabled}
           >
             ANTERIOR
           </button>
           <button
             onClick={handleProx}
-            className="ml-3 relative inline-flex items-center px-4 py-2 text-sm font-medium rounded-md"
+            className="ml-3 relative inline-flex items-center px-4 py-2 text-xs font-medium rounded-md"
             disabled={isDisabled}
           >
             PRÓXIMO
@@ -172,11 +172,11 @@ export default function Tabs() {
         </div>
         <div className="hidden sm:flex-1 sm:flex sm:items-center sm:justify-center w-screen">
           <nav
-            className="relative z-0 inline-flex rounded-md shadow-sm -space-x-px justify-between"
+            className="relative z-0 inline-flex shadow-sm justify-around"
             aria-label="Pagination"
           >
             <button
-              className="relative inline-flex items-center px-20 py-2  text-sm font-medium"
+              className="relative inline-flex items-center px-8 py-2  text-xs font-medium"
               onClick={handleAnt}
               disabled={isDisabled}
             >
@@ -196,7 +196,7 @@ export default function Tabs() {
             </div>
 
             <button
-              className="relative inline-flex items-center px-20 py-2  text-sm font-medium"
+              className="relative inline-flex items-center px-8 py-2  text-xs font-medium"
               onClick={handleProx}
               disabled={isDisabled}
             >

@@ -2,7 +2,7 @@ import { Navbar } from "../../components/Navbar";
 import Image from "next/image";
 import ebook from "../../assets/ebook.jpg";
 
-export default function SmartFranchising() {
+export default function SmartDuck() {
   return (
     <div className="bg-theme h-screen  z-0">
       <Navbar />
@@ -11,7 +11,7 @@ export default function SmartFranchising() {
         <div>
           <Image src={ebook} alt="ebook" width={400} height={540} />
         </div>
-        <h1>SMART FRANCHISING</h1>
+        <h1>SMART DUCK</h1>
       </section>
       <section className="bg-theme h-96 flex text-gray1 text-4xl text-right text-opacity-70 justify-around items-center">
         <h1>CONTEUDO</h1>

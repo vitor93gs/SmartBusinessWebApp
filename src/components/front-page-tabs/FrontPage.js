@@ -1,6 +1,7 @@
 import Image from "next/dist/client/image";
 import logoBig from "../../assets/logoBig.png";
 import Typewriter from "typewriter-effect";
+import Link from "next/link";
 
 export function FrontPage() {
   return (
@@ -23,13 +24,15 @@ export function FrontPage() {
           />
         </h1>
 
-        <a className="div-neon opacity-60 rounded-sm text-center text-sm">
-          <span className="child1"></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          SAIBA MAIS
-        </a>
+        <Link href="">
+          <div className="div-neon opacity-60 rounded-sm text-center text-sm">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <button>SAIBA MAIS</button>
+          </div>
+        </Link>
       </div>
     </div>
   );

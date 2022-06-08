@@ -16,10 +16,10 @@ export function Navbar() {
 
   return (
     <div className="fixed top-0 left-0 right-0 flex justify-around text-xs font-thin  items-center h-14 mt-8 bg-opacity-0 z-10">
-      <Image src={logo} alt="Logo smart Business" height="75" width="275" />
+      <Image src={logo} alt="Logo smart Business" height="41" width="150" />
 
-      <ul className="flex space-x-8 ">
-        <li className="after:block after:absolute after:transition-all after:ml-px after:mt-0 after:w-3 after:bg-golden after:bg-opacity-60 after:h-0.5 after:duration-600 after:ease-in-out after:bottom-px after:hover:w-6 after:hover:bg-golden after:hover:bg-opacity-60 ">
+      <ul className="flex space-x-12 mx-10 ">
+        <li className="after:block after:absolute after:transition-all after:ml-px after:mt-0 after:w-3 after:bg-golden after:bg-opacity-60 after:h-0.5 after:duration-600 after:ease-in-out after:bottom-px after:hover:w-10 after:hover:bg-golden after:hover:bg-opacity-60 ">
           <Link href="/">
             <button className="no-underline  text-gray1 transition-all  delay-150 hover:text-golden h-14 mb-1">
               HOME
@@ -27,14 +27,14 @@ export function Navbar() {
           </Link>
         </li>
 
-        <li className="after:block after:absolute after:transition-all after:ml-px after:mt-0 after:w-3 after:bg-golden after:bg-opacity-60 after:h-0.5 after:duration-600 after:ease-in-out after:bottom-px after:hover:w-20 after:hover:bg-golden after:hover:bg-opacity-60">
+        <li className="after:block after:absolute after:transition-all after:ml-px after:mt-0 after:w-3 after:bg-golden after:bg-opacity-60 after:h-0.5 after:duration-600 after:ease-in-out after:bottom-px after:hover:w-10 after:hover:bg-golden after:hover:bg-opacity-60">
           <Link href="/">
             <button className="no-underline text-gray1 transition  delay-150 hover:text-golden h-14 mb-1">
               COMUNIDADE
             </button>
           </Link>
         </li>
-        <li className="after:block after:absolute after:transition-all after:ml-px after:mt-0 after:w-3 after:bg-golden after:bg-opacity-60 after:h-0.5 after:duration-600 after:ease-in-out after:bottom-px after:hover:w-24 after:hover:bg-golden after:hover:bg-opacity-60 ">
+        <li className="after:block after:absolute after:transition-all after:ml-px after:mt-0 after:w-3 after:bg-golden after:bg-opacity-60 after:h-0.5 after:duration-600 after:ease-in-out after:bottom-px after:hover:w-10 after:hover:bg-golden after:hover:bg-opacity-60 ">
           <DropDown
             header="SMART ACADEMY"
             info1="PROSPERA"
@@ -42,10 +42,11 @@ export function Navbar() {
             info3="EMPODERA"
             info4="CRYPTOMIND"
             info5=""
+            info6=""
             button="/smart-academy"
           />
         </li>
-        <li className="after:block after:absolute after:transition-all after:ml-px after:mt-0 after:w-3 after:bg-golden after:bg-opacity-60 after:h-0.5 after:duration-600 after:ease-in-out after:bottom-px after:hover:w-28 after:hover:bg-golden after:hover:bg-opacity-60  ">
+        <li className="after:block after:absolute after:transition-all after:ml-px after:mt-0 after:w-3 after:bg-golden after:bg-opacity-60 after:h-0.5 after:duration-600 after:ease-in-out after:bottom-px after:hover:w-10 after:hover:bg-golden after:hover:bg-opacity-60">
           <DropDown
             header="NOSSAS EMPRESAS"
             info1="PROJETO CRD"
@@ -53,6 +54,7 @@ export function Navbar() {
             info3="COMUNIDADE MULHERES INVESTIDORAS"
             info4="SMART FRANCHISING"
             info5="SMART ACADEMY"
+            info6="SMART DUCK"
             button="/nossas-empresas"
           />
         </li>
