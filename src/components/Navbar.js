@@ -2,10 +2,11 @@ import Image from "next/dist/client/image";
 import Link from "next/link";
 import { useState } from "react";
 import logo from "../assets/logo.png";
-import lupa1 from "../assets/lupa_1.png";
-import lupa2 from "../assets/lupa_2.png";
 import DropDown from "./Dropdown";
 import Burguer from "./Burguer";
+import brasil from "../assets/brasil.png";
+// import lupa1 from "../assets/lupa_1.png";
+// import lupa2 from "../assets/lupa_2.png";
 
 export function Navbar() {
   const [isMouseOver, setMousover] = useState(false);
@@ -15,15 +16,11 @@ export function Navbar() {
   }
 
   return (
-    <div className="fixed top-0 left-0 right-0 flex justify-around text-xs font-thin  items-center h-14 mt-8 bg-opacity-0 z-10">
-      <div className="absolute left-0 sm:static">
+    <div className="fixed flex text-xs font-thin items-center h-14 mt-8 bg-opacity-0 z-10 w-screen justify-around">
+      <div className="absolute left-0 sm:static sm:flex sm:justify-center w-36">
         <Image src={logo} alt="Logo smart Business" height="41" width="150" />
       </div>
-
-      <div className="flex-1 flex sm:hidden absolute w-12 h-12 right-10">
-        <Burguer />
-      </div>
-      <div className="hidden sm:flex-1 sm:flex sm:items-center sm:justify-center w-screen">
+      <div className="hidden sm:static sm:flex sm:items-center sm:justify-center">
         <ul className="flex space-x-12 mx-10 ">
           <li className="after:block after:absolute after:transition-all after:ml-px after:mt-0 after:w-3 after:bg-golden after:bg-opacity-60 after:h-0.5 after:duration-600 after:ease-in-out after:bottom-px after:hover:w-10 after:hover:bg-golden after:hover:bg-opacity-60 ">
             <Link href="/">
@@ -71,16 +68,24 @@ export function Navbar() {
           </li>
         </ul>
       </div>
-
-      <div className="sm:w-custom w-8 sm:mr-10 absolute sm:static right-1/3">
-        <Image
+      <div className="absolute right-1/3 sm:flex sm:justify-center sm:static w-36">
+        {/* <Image
           src={isMouseOver ? lupa2 : lupa1}
           alt="Logo smart Business"
           height="35"
           width="35"
           onMouseOver={mouseOverHandler}
           onMouseOut={mouseOverHandler}
+        /> */}
+        <Image
+          src={brasil}
+          alt="icon bandeira do brasil"
+          height="20"
+          width="20"
         />
+      </div>
+      <div className="flex-1 flex sm:hidden absolute w-12 h-12 right-10">
+        <Burguer />
       </div>
     </div>
   );

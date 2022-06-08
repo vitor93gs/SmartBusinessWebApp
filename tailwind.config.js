@@ -18,7 +18,7 @@ module.exports = {
       theme2: "#04042D",
     },
     backgroundImage: {
-      background: "url('/fundo.png')",
+      background: "url('/fundo.jpg')",
       gifTab: "url('/DualRing.svg')",
       bolinha: "url('/bolinha.png')",
       banner1: "url('/banner.jpg')",
