@@ -1,6 +1,9 @@
 import { useRouter } from "next/dist/client/router";
+import { useEffect } from "react/cjs/react.production.min";
 
 export default function ProjetoCRD() {
-  const router = useRouter();
-  router.push("/smart-academy");
+  useEffect(() => {
+    const router = useRouter();
+    router.push("/smart-academy");
+  }, []);
 }
