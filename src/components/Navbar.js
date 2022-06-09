@@ -25,7 +25,7 @@ export function Navbar() {
 			className={
 				!navbar
 					? 'fixed flex text-xxs font-thin items-center pt-navbartop pb-navbarbottom bg-opacity-0 z-10 w-screen justify-around'
-					: 'fixed flex text-xxs font-thin items-center pt-navbartop pb-navbarbottom z-10 w-screen justify-around bg-theme transition-all duration-500 ease-in-out'
+					: 'fixed flex text-xxs font-thin items-center pt-navbartop pb-navbarbottom z-10 w-screen justify-around bg-theme transition-all duration-300 ease-in-out'
 			}
 		>
 			<div className="absolute left-0 sm:static sm:flex sm:justify-center w-36">

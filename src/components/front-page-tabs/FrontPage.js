@@ -9,17 +9,25 @@ export function FrontPage() {
 			<div className="flex flex-col items-center sm:w-1/2 w-1/3 text-left sm:mr-96 mr-auto">
 				<h1 className="text-gray1 sm:text-2xl text-base text-opacity-70 text-left sm:mb-12 h-36 sm:ml-10">
 					<Typewriter
+						options={{
+							delay: 30,
+							cursor: '',
+							loop: false,
+						}}
 						onInit={(typewriter) => {
 							typewriter
-								.changeDelay(40)
 								.typeString('BAIXE NOSSOS EBOOKS!')
 								.start();
 						}}
 					/>
 					<Typewriter
+						options={{
+							delay: 30,
+							cursor: '',
+							loop: false,
+						}}
 						onInit={(typewriter) => {
 							typewriter
-								.changeDelay(40)
 								.typeString(
 									'Criptoeconomia ( Conceitos e Curiosidades )'
 								)
