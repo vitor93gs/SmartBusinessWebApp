@@ -13,7 +13,7 @@ export default function DropDown(props) {
   return (
     <div className="dropdown text-xs text-gray1">
       <Link href={props.button}>
-        <button className="dropbtn no-underline text-gray1 transition  delay-150 hover:text-golden font-thin h-14 mb-1">
+        <button className="dropbtn no-underline transition  delay-150 hover:text-golden font-thin h-14 mb-1">
           {props.header}
         </button>
       </Link>
@@ -23,7 +23,7 @@ export default function DropDown(props) {
             return info === "" ? null : (
               <li key={key} className="px-8 py-2">
                 <Link href={`${props.button}/${info}`}>
-                  <button className="no-underline text-gray1 text-left transition duration-300 delay-100 hover:text-golden block px-4 py-2">
+                  <button className="no-underline text-left transition duration-300 delay-100 hover:text-golden block px-4 py-2">
                     {info}
                   </button>
                 </Link>
