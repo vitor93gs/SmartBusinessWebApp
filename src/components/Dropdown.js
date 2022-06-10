@@ -22,7 +22,11 @@ export default function DropDown(props) {
 					{info.map((info, key) => {
 						return info === '' ? null : (
 							<li key={key} className="px-8 py-2">
-								<Link href={`${props.button}/${info}`}>
+								<Link
+									href={`${props.button}/${info
+										.replace(' ', '-')
+										.toLowerCase()}`}
+								>
 									<button className="no-underline text-left transition duration-300 delay-100 hover:text-golden block px-4 py-2">
 										{info}
 									</button>

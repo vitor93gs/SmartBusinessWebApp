@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Transition } from '@headlessui/react';
 import { FrontPage } from './front-page-tabs/FrontPage';
 import { Franqueado, Who } from './front-page-tabs/Franqueado';
 import { FreeCourse } from './front-page-tabs/FreeCourse';
