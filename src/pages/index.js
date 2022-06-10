@@ -9,11 +9,11 @@ import { Loading } from '../components/Loading';
 // import { useEffect } from "react";
 
 export default function Home() {
-	setTimeout(() => {
-		setLoading(false);
-	}, 1500);
+	// setTimeout(() => {
+	// 	setLoading(false);
+	// }, 1500);
 
-	const [isLoading, setLoading] = useState(true);
+	const [isLoading, setLoading] = useState(false);
 
 	// const handleStart = () => {
 	//   setLoading(true);

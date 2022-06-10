@@ -1,26 +1,52 @@
 import { useState } from 'react';
 import { Transition } from '@headlessui/react';
-import { FrontPage } from './front-page-tabs/FrontPage';
-import { Franqueado, Who } from './front-page-tabs/Franqueado';
-import { FreeCourse } from './front-page-tabs/FreeCourse';
-import { SmartAcademy } from './front-page-tabs/SmartAcademy';
-import { SmatBusiness } from './front-page-tabs/SmartBusiness';
-import { News } from './front-page-tabs/News';
-import { FollowUs } from './front-page-tabs/FollowUs';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 
-export default function Tabs() {
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
+
+import { Ebook } from './front-page-carousel/Ebook';
+import { FollowUs } from './front-page-carousel/FollowUs';
+
+export default function Tabs2() {
+	const [selected, setSelected] = useState(0);
+
 	return (
-		<Carousel>
+		<Carousel
+			emulateTouch={true}
+			useKeyboardArrows={true}
+			showArrows={false}
+			showThumbs={false}
+			infiniteLoop={true}
+			onChange={(current) => setSelected(current)}
+		>
 			<div>
-				<FrontPage />
+				<div className="bg-bg1 h-screen w-screen bg-no-repeat bg-cover">
+					<Transition
+						show={selected === 0}
+						enter="transition-all ease-in duration-1000"
+						enterFrom="opacity-0"
+						enterTo="opacity-100"
+					>
+						<div className=" bg-fumaca h-screen w-screen">
+							<div className="bg-elem1 bg-contain bg-no-repeat h-screen w-screen">
+								<Ebook />
+							</div>
+						</div>
+					</Transition>
+				</div>
 			</div>
 			<div>
-				<Franqueado />
-			</div>
-			<div>
-				<FreeCourse />
+				<div className="bg-bg2 h-screen w-screen bg-no-repeat bg-cover">
+					<Transition
+						show={selected === 1}
+						enter="transition-all ease-in duration-1000"
+						enterFrom="opacity-0"
+						enterTo="opacity-100"
+					>
+						<div className=" absolute bg-fumaca2 h-screen w-screen"></div>
+						<FollowUs selected={selected} />
+					</Transition>
+				</div>
 			</div>
 		</Carousel>
 	);
