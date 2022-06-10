@@ -2,17 +2,18 @@ import Head from 'next/head';
 import { useState } from 'react';
 import { Navbar } from '../components/Navbar';
 import Tabs from '../components/Tabs';
+import Tabs2 from '../components/TabCarousel';
 import { Loading } from '../components/Loading';
 // import NProgress from "nprogress";
 // import Router from "next/router";
 // import { useEffect } from "react";
 
 export default function Home() {
-	setTimeout(() => {
-		setLoading(false);
-	}, 1500);
+	// setTimeout(() => {
+	// 	setLoading(false);
+	// }, 1500);
 
-	const [isLoading, setLoading] = useState(true);
+	const [isLoading, setLoading] = useState(false);
 
 	// const handleStart = () => {
 	//   setLoading(true);
@@ -58,7 +59,7 @@ export default function Home() {
 			) : (
 				<div>
 					<Navbar />
-					<Tabs />
+					<Tabs2 />
 				</div>
 			)}
 		</div>
