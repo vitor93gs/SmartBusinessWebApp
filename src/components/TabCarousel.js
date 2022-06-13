@@ -25,15 +25,15 @@ export default function Tabs2() {
 			onChange={(current) => setSelected(current)}
 		>
 			<div>
-				<div className="bg-bg1 h-screen w-screen bg-no-repeat bg-cover">
+				<div className="bg-bg1 h-screen w-screen bg-no-repeat bg-cover bg-center">
 					<Transition
 						show={selected === 0}
 						enter="transition-all ease-in duration-1000"
 						enterFrom="opacity-0"
 						enterTo="opacity-100"
 					>
-						<div className=" bg-fumaca h-screen w-screen">
-							<div className="bg-elem1 bg-contain bg-no-repeat h-screen w-screen">
+						<div className=" bg-fumaca1 h-screen w-screen bg-center">
+							<div className="sm:bg-elem1 bg-contain bg-no-repeat h-screen w-screen">
 								<Ebook />
 							</div>
 						</div>
@@ -41,67 +41,98 @@ export default function Tabs2() {
 				</div>
 			</div>
 			<div>
-				<div className="bg-bg2 h-screen w-screen bg-no-repeat bg-cover">
+				<div className="bg-bg2 h-screen w-screen bg-no-repeat bg-cover bg-center">
 					<Transition
 						show={selected === 1}
 						enter="transition-all ease-in duration-1000"
 						enterFrom="opacity-0"
 						enterTo="opacity-100"
 					>
-						<div className=" absolute bg-fumaca2 h-screen w-screen"></div>
-						<Franqueado selected={selected} />
+						<div className=" absolute bg-fumaca2 h-screen w-screen bg-center">
+							<div className="sm:bg-elem2 bg-contain bg-no-repeat h-screen w-screen">
+								<Franqueado />
+							</div>
+						</div>
 					</Transition>
 				</div>
 			</div>
 			<div>
-				<div className="bg-bg3 h-screen w-screen bg-no-repeat bg-cover">
+				<div className="bg-bg3 h-screen w-screen bg-no-repeat bg-cover bg-center">
 					<Transition
 						show={selected === 2}
 						enter="transition-all ease-in duration-1000"
 						enterFrom="opacity-0"
 						enterTo="opacity-100"
 					>
-						<div className=" absolute bg-fumaca2 h-screen w-screen"></div>
-						<FreeCourse selected={selected} />
+						<div className=" absolute bg-fumaca3 h-screen w-screen bg-center">
+							<div className="sm:bg-elem3 bg-contain bg-no-repeat h-screen w-screen">
+								<FreeCourse />
+							</div>
+						</div>
 					</Transition>
 				</div>
 			</div>
 			<div>
-				<div className="bg-bg4 h-screen w-screen bg-no-repeat bg-cover">
+				<div className="bg-bg4 h-screen w-screen bg-no-repeat bg-cover bg-center">
 					<Transition
 						show={selected === 3}
 						enter="transition-all ease-in duration-1000"
 						enterFrom="opacity-0"
 						enterTo="opacity-100"
 					>
-						<div className=" absolute bg-fumaca2 h-screen w-screen"></div>
-						<SmartAcademy selected={selected} />
+						<div className=" absolute bg-fumaca4 h-screen w-screen bg-center">
+							<div className="sm:bg-elem4 bg-contain bg-no-repeat h-screen w-screen">
+								<News />
+							</div>
+						</div>
 					</Transition>
 				</div>
 			</div>
 			<div>
-				<div className="bg-bg5 h-screen w-screen bg-no-repeat bg-cover">
+				<div className="bg-bg5 h-screen w-screen bg-no-repeat bg-cover bg-center">
 					<Transition
 						show={selected === 4}
 						enter="transition-all ease-in duration-1000"
 						enterFrom="opacity-0"
 						enterTo="opacity-100"
 					>
-						<div className=" absolute bg-fumaca2 h-screen w-screen"></div>
-						<SmartBusiness selected={selected} />
+						<div className=" absolute bg-fumaca5 h-screen w-screen bg-center">
+							<div className="sm:bg-elem5 bg-contain bg-no-repeat h-screen w-screen">
+								<SmartBusiness />
+							</div>
+						</div>
 					</Transition>
 				</div>
 			</div>
 			<div>
-				<div className="bg-bg6 h-screen w-screen bg-no-repeat bg-cover">
+				<div className="bg-bg6 h-screen w-screen bg-no-repeat bg-cover bg-center">
 					<Transition
 						show={selected === 5}
 						enter="transition-all ease-in duration-1000"
 						enterFrom="opacity-0"
 						enterTo="opacity-100"
 					>
-						<div className=" absolute bg-fumaca2 h-screen w-screen"></div>
-						<FollowUs selected={selected} />
+						<div className=" absolute bg-fumaca6 h-screen w-screen bg-center">
+							<div className="sm:bg-elem6 bg-contain bg-no-repeat h-screen w-screen">
+								<SmartAcademy />
+							</div>
+						</div>
+					</Transition>
+				</div>
+			</div>
+			<div>
+				<div className="bg-bg7 h-screen w-screen bg-no-repeat bg-cover bg-center">
+					<Transition
+						show={selected === 6}
+						enter="transition-all ease-in duration-1000"
+						enterFrom="opacity-0"
+						enterTo="opacity-100"
+					>
+						<div className=" absolute bg-fumaca7 h-screen w-screen bg-center">
+							<div className="sm:bg-elem7 bg-contain bg-no-repeat h-screen w-screen">
+								<FollowUs />
+							</div>
+						</div>
 					</Transition>
 				</div>
 			</div>
