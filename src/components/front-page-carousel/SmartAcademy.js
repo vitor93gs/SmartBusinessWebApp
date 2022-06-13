@@ -28,7 +28,7 @@ export function SmartAcademy() {
 						}}
 					/>
 				</h1>
-				<div data-aos="fade-up" data-aos-duration="1500">
+				<div data-aos="fade-left" data-aos-duration="1500">
 					<Link href="">
 						<div className="div-neon opacity-60 rounded-sm text-center text-sm">
 							<span></span>
