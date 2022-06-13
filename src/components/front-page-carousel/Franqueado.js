@@ -30,7 +30,7 @@ export function Franqueado() {
 						/>
 					</h1>
 				</div>
-				<div data-aos="flip-down" data-aos-duration="1500">
+				<div data-aos="fade-right" data-aos-duration="1500">
 					<Link href="">
 						<div className="div-neon opacity-60 rounded-sm text-center text-sm">
 							<span></span>
