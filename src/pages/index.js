@@ -13,7 +13,7 @@ export default function Home() {
 		setLoading(false);
 	}, 1500);
 
-	const [isLoading, setLoading] = useState(false);
+	const [isLoading, setLoading] = useState(true);
 
 	const handleStart = () => {
 		setLoading(true);
