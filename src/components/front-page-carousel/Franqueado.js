@@ -3,7 +3,7 @@ import logoBig from '../../assets/book_-_livro.png';
 import Typewriter from 'typewriter-effect';
 import Link from 'next/link';
 
-export function Ebook() {
+export function Franqueado() {
 	return (
 		<div className="bg-transparent flex justify-between items-center w-screen h-screen sm:px-36 px-7 py-7">
 			<div className="flex flex-col items-center sm:w-1/2 w-1/3 text-left  mr-auto">

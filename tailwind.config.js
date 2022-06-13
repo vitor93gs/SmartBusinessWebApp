@@ -37,6 +37,10 @@ module.exports = {
 			bg1: "url('/background1.png')",
 			bg2: "url('/background2.png')",
 			elem1: "url('/element1.png')",
+			bg3: "url('/background3.png')",
+			bg4: "url('/background4.png')",
+			bg5: "url('/background5.png')",
+			bg6: "url('/background6.png')",
 		},
 		fontFamily: {
 			gotham: 'Gotham HTF Medium',
