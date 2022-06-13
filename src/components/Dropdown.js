@@ -24,7 +24,7 @@ export default function DropDown(props) {
 							<li key={key} className="px-8 py-2">
 								<Link
 									href={`${props.button}/${info
-										.replace(' ', '-')
+										.replaceAll(' ', '-')
 										.toLowerCase()}`}
 								>
 									<button className="no-underline text-left transition duration-300 delay-100 hover:text-golden block px-4 py-2">

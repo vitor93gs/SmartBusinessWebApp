@@ -6,7 +6,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 
-export function Ebook() {
+export function FreeCourse() {
 	useEffect(() => {
 		AOS.init();
 	}, []);
@@ -23,27 +23,14 @@ export function Ebook() {
 						onInit={(typewriter) => {
 							typewriter
 								.pauseFor(1000)
-								.typeString('BAIXE NOSSOS EBOOKS!')
+								.typeString('CURSO GRATUITO!')
 								.start();
 						}}
 					/>
-					<Typewriter
-						options={{
-							delay: 30,
-							cursor: '',
-							loop: false,
-						}}
-						onInit={(typewriter) => {
-							typewriter
-								.pauseFor(1000)
-								.typeString(
-									'Criptoeconomia ( Conceitos e Curiosidades )'
-								)
-								.start();
-						}}
-					/>
+					
 				</h1>
-				<div data-aos="zoom-out-down" data-aos-duration="1500">
+				FADE
+				<div data-aos="fade-up" data-aos-duration="1500">
 					<Link href="">
 						<div className="div-neon opacity-60 rounded-sm text-center text-sm">
 							<span></span>
