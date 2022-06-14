@@ -58,7 +58,7 @@ export function Ebook() {
         </div>
       </div>
       <div className="w-1/2 sm:mt-40">
-        <Image src={logoBig} alt="logoBig" width={400} height={540} />
+        <Image src={logoBig} alt="logoBig" width={500} height={675} />
       </div>
     </div>
   );
