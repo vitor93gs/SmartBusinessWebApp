@@ -25,7 +25,11 @@ export function SmartBusiness() {
             }}
           />
         </h1>
-        <div className="ml-10" data-aos="zoom-out-down" data-aos-duration="2500">
+        <div
+          className="ml-10"
+          data-aos="zoom-out-down"
+          data-aos-duration="3000"
+        >
           <Link href="">
             <button className="btn-5 btn-52">SAIBA MAIS!</button>
           </Link>

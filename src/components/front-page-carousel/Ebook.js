@@ -41,7 +41,11 @@ export function Ebook() {
             }}
           />
         </h1>
-        <div className="ml-10" data-aos="zoom-out-down" data-aos-duration="2500">
+        <div
+          className="ml-10"
+          data-aos="zoom-out-down"
+          data-aos-duration="3000"
+        >
           <Link href="">
             <div className="div-neon opacity-60 rounded-sm text-center text-sm">
               <span></span>

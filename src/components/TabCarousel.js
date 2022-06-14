@@ -21,7 +21,10 @@ export default function Tabs2() {
       useKeyboardArrows={true}
       showArrows={true}
       showThumbs={false}
-      transitionTime={1000}
+      transitionTime={1500}
+      autoPlay={true}
+      interval={4500}
+      stopOnHover={false}
       renderArrowNext={(clickHandler) => {
         const defStyle = {
           position: "fixed",
