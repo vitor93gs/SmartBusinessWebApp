@@ -41,7 +41,11 @@ export function Ebook() {
             }}
           />
         </h1>
-        <div className="ml-10" data-aos="zoom-out-down" data-aos-duration="2500">
+        <div
+          className="ml-10"
+          data-aos="zoom-out-down"
+          data-aos-duration="3000"
+        >
           <Link href="">
             <div className="div-neon opacity-60 rounded-sm text-center text-sm">
               <span></span>
@@ -54,7 +58,7 @@ export function Ebook() {
         </div>
       </div>
       <div className="w-1/2 sm:mt-40">
-        <Image src={logoBig} alt="logoBig" width={400} height={540} />
+        <Image src={logoBig} alt="logoBig" width={500} height={675} />
       </div>
     </div>
   );

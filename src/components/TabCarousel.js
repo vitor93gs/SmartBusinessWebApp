@@ -21,7 +21,10 @@ export default function Tabs2() {
       useKeyboardArrows={true}
       showArrows={true}
       showThumbs={false}
-      transitionTime={1000}
+      transitionTime={2000}
+      autoPlay={true}
+      interval={6500}
+      stopOnHover={false}
       renderArrowNext={(clickHandler) => {
         const defStyle = {
           position: "fixed",
@@ -85,13 +88,17 @@ export default function Tabs2() {
         );
       }}
       infiniteLoop={true}
-      onChange={(current) => setSelected(current)}
+      onChange={(current) =>
+        setTimeout(() => {
+          setSelected(current);
+        }, 1000)
+      }
     >
       <div>
         <div className="bg-bg1 h-screen w-screen bg-no-repeat bg-cover bg-center">
           <Transition
             show={selected === 0}
-            enter="transition-all ease-in duration-1000"
+            enter="transition-all ease-in duration-2000"
             enterFrom="opacity-0"
             enterTo="opacity-100"
             leave="transition-all ease-out duration-750"
@@ -110,7 +117,7 @@ export default function Tabs2() {
         <div className="bg-bg2 h-screen w-screen bg-no-repeat bg-cover bg-center">
           <Transition
             show={selected === 1}
-            enter="transition-all ease-in duration-1000"
+            enter="transition-all ease-in duration-2000"
             enterFrom="opacity-0"
             enterTo="opacity-100"
             leave="transition-all ease-out duration-750"
@@ -129,7 +136,7 @@ export default function Tabs2() {
         <div className="bg-bg3 h-screen w-screen bg-no-repeat bg-cover bg-center">
           <Transition
             show={selected === 2}
-            enter="transition-all ease-in duration-1000"
+            enter="transition-all ease-in duration-2000"
             enterFrom="opacity-0"
             enterTo="opacity-100"
             leave="transition-all ease-out duration-750"
@@ -148,7 +155,7 @@ export default function Tabs2() {
         <div className="bg-bg4 h-screen w-screen bg-no-repeat bg-cover bg-center">
           <Transition
             show={selected === 3}
-            enter="transition-all ease-in duration-1000"
+            enter="transition-all ease-in duration-2000"
             enterFrom="opacity-0"
             enterTo="opacity-100"
             leave="transition-all ease-out duration-750"
@@ -167,7 +174,7 @@ export default function Tabs2() {
         <div className="bg-bg5 h-screen w-screen bg-no-repeat bg-cover bg-center">
           <Transition
             show={selected === 4}
-            enter="transition-all ease-in duration-1000"
+            enter="transition-all ease-in duration-2000"
             enterFrom="opacity-0"
             enterTo="opacity-100"
             leave="transition-all ease-out duration-750"
@@ -186,7 +193,7 @@ export default function Tabs2() {
         <div className="bg-bg6 h-screen w-screen bg-no-repeat bg-cover bg-center">
           <Transition
             show={selected === 5}
-            enter="transition-all ease-in duration-1000"
+            enter="transition-all ease-in duration-2000"
             enterFrom="opacity-0"
             enterTo="opacity-100"
             leave="transition-all ease-out duration-750"
@@ -205,7 +212,7 @@ export default function Tabs2() {
         <div className="bg-bg7 h-screen w-screen bg-no-repeat bg-cover bg-center">
           <Transition
             show={selected === 6}
-            enter="transition-all ease-in duration-1000"
+            enter="transition-all ease-in duration-2000"
             enterFrom="opacity-0"
             enterTo="opacity-100"
             leave="transition-all ease-out duration-750"
