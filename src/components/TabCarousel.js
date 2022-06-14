@@ -23,7 +23,7 @@ export default function Tabs2() {
       showThumbs={false}
       transitionTime={1500}
       autoPlay={true}
-      interval={4500}
+      interval={6500}
       stopOnHover={false}
       renderArrowNext={(clickHandler) => {
         const defStyle = {

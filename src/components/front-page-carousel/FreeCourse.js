@@ -1,6 +1,5 @@
 import Image from "next/dist/client/image";
-import logoBig from "../../assets/book_-_livro.png";
-import Typewriter from "typewriter-effect";
+import logoBig from "../../assets/personagem.png";
 import Link from "next/link";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -12,6 +11,9 @@ export function FreeCourse() {
   }, []);
   return (
     <div className="bg-transparent flex justify-between items-center w-screen h-screen sm:px-36 px-7 py-7">
+      <div className="w-1/2 mt-36">
+        <Image src={logoBig} alt="logoBig" width={400} height={540} />
+      </div>
       <div className="flex flex-col items-center sm:w-1/2 w-1/3 text-left  mr-auto">
         <h1
           data-aos="zoom-in"
@@ -26,9 +28,6 @@ export function FreeCourse() {
             <button className="btn-1">SAIBA MAIS</button>
           </Link>
         </div>
-      </div>
-      <div className="w-1/2">
-        <Image src={logoBig} alt="logoBig" width={400} height={540} />
       </div>
     </div>
   );
