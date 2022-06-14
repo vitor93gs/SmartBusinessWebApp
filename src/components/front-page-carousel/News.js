@@ -28,7 +28,7 @@ export function News() {
             }}
           />
         </h1>
-        <div data-aos="zoom-in" data-aos-duration="1500">
+        <div data-aos="zoom-in" data-aos-duration="2500">
           <Link href="">
             <button className="btn-4">SAIBA MAIS</button>
           </Link>

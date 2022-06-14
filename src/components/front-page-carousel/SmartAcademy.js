@@ -25,7 +25,7 @@ export function SmartAcademy() {
             }}
           />
         </h1>
-        <div data-aos="fade-left" data-aos-duration="1500">
+        <div data-aos="fade-left" data-aos-duration="2500">
           <Link href="">
             <button className="btn-6 btn-62">SAIBA MAIS</button>
           </Link>
