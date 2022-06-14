@@ -1,5 +1,5 @@
 import Image from "next/dist/client/image";
-import logoBig from "../../assets/personagem.png";
+import logoBig from "../../assets/brasil.png";
 import Link from "next/link";
 import AOS from "aos";
 import "aos/dist/aos.css";
