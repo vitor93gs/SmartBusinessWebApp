@@ -32,7 +32,7 @@ export default function Tabs2() {
             enterFrom="opacity-0"
             enterTo="opacity-100"
           >
-            <div className=" bg-fumaca1 h-screen w-screen bg-center">
+            <div className=" bg-fumaca1 h-screen w-screen bg-center sm:bg-contain bg-no-repeat">
               <div className="sm:bg-elem1 bg-cover bg-no-repeat h-screen w-screen">
                 <Ebook />
               </div>
