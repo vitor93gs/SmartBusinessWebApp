@@ -26,7 +26,7 @@ export function FreeCourse() {
           />
         </h1>
 
-        <div data-aos="fade-up" data-aos-duration="1500">
+        <div data-aos="fade-up" data-aos-duration="2500">
           <Link href="">
             <button className="btn-1">SAIBA MAIS</button>
           </Link>

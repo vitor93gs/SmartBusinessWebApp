@@ -9,11 +9,11 @@ import Router from "next/router";
 import { useEffect } from "react";
 
 export default function Home() {
+  const [isLoading, setLoading] = useState(true);
+  
   setTimeout(() => {
     setLoading(false);
   }, 1500);
-
-  const [isLoading, setLoading] = useState(true);
 
   const handleStart = () => {
     setLoading(true);

@@ -19,8 +19,71 @@ export default function Tabs2() {
     <Carousel
       emulateTouch={true}
       useKeyboardArrows={true}
-      showArrows={false}
+      showArrows={true}
       showThumbs={false}
+      transitionTime={1000}
+      renderArrowNext={(clickHandler) => {
+        const defStyle = {
+          position: "fixed",
+          "z-index": "15",
+
+          bottom: "3%",
+          color: "#91a3ad",
+          "font-size": "0.8rem",
+        };
+        return (
+          <button
+            style={defStyle}
+            onClick={clickHandler}
+            onKeyDown={clickHandler}
+            className="sm:right-1/4 right-10"
+          >
+            PRÓXIMO
+          </button>
+        );
+      }}
+      renderArrowPrev={(clickHandler) => {
+        const defStyle = {
+          position: "fixed",
+          "z-index": "15",
+
+          bottom: "3%",
+          color: "#91a3ad",
+          "font-size": "0.8rem",
+        };
+        return (
+          <button
+            style={defStyle}
+            onClick={clickHandler}
+            onKeyDown={clickHandler}
+            className="sm:left-1/4 left-10"
+          >
+            ANTERIOR
+          </button>
+        );
+      }}
+      renderIndicator={(onClickHandler, isSelected, index) => {
+        const defStyle = {
+          marginLeft: "15px",
+          height: "20px",
+          width: "20px",
+          "background-position": "center",
+          "background-size": "contain",
+          marginBottom: "1em",
+        };
+        const style = isSelected
+          ? { ...defStyle, "background-image": "url('/DualRing.svg')" }
+          : { ...defStyle, "background-image": "url('/bolinha.png')" };
+        return (
+          <button
+            style={style}
+            onClick={onClickHandler}
+            onKeyDown={onClickHandler}
+            key={index}
+            className="invisible sm:visible"
+          ></button>
+        );
+      }}
       infiniteLoop={true}
       onChange={(current) => setSelected(current)}
     >
@@ -31,6 +94,9 @@ export default function Tabs2() {
             enter="transition-all ease-in duration-1000"
             enterFrom="opacity-0"
             enterTo="opacity-100"
+            leave="transition-all ease-out duration-750"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
           >
             <div className=" bg-fumaca1 h-screen w-screen bg-center sm:bg-contain bg-no-repeat">
               <div className="sm:bg-elem1 bg-cover bg-no-repeat h-screen w-screen">
@@ -47,6 +113,9 @@ export default function Tabs2() {
             enter="transition-all ease-in duration-1000"
             enterFrom="opacity-0"
             enterTo="opacity-100"
+            leave="transition-all ease-out duration-750"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
           >
             <div className=" absolute bg-fumaca2 h-screen w-screen bg-center">
               <div className="sm:bg-elem2 bg-cover bg-no-repeat h-screen w-screen">
@@ -63,6 +132,9 @@ export default function Tabs2() {
             enter="transition-all ease-in duration-1000"
             enterFrom="opacity-0"
             enterTo="opacity-100"
+            leave="transition-all ease-out duration-750"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
           >
             <div className=" absolute bg-fumaca3 h-screen w-screen bg-center">
               <div className="bg-elem3 bg-cover bg-no-repeat sm:bg-center h-screen w-screen">
@@ -79,6 +151,9 @@ export default function Tabs2() {
             enter="transition-all ease-in duration-1000"
             enterFrom="opacity-0"
             enterTo="opacity-100"
+            leave="transition-all ease-out duration-750"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
           >
             <div className=" absolute bg-fumaca4 h-screen w-screen bg-center">
               <div className="sm:bg-elem4 bg-cover bg-no-repeat h-screen w-screen">
@@ -95,6 +170,9 @@ export default function Tabs2() {
             enter="transition-all ease-in duration-1000"
             enterFrom="opacity-0"
             enterTo="opacity-100"
+            leave="transition-all ease-out duration-750"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
           >
             <div className=" absolute bg-fumaca5 h-screen w-screen bg-center">
               <div className="sm:bg-elem5 bg-cover bg-no-repeat h-screen w-screen">
@@ -111,6 +189,9 @@ export default function Tabs2() {
             enter="transition-all ease-in duration-1000"
             enterFrom="opacity-0"
             enterTo="opacity-100"
+            leave="transition-all ease-out duration-750"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
           >
             <div className=" absolute bg-fumaca6 h-screen w-screen bg-center">
               <div className="sm:bg-elem6 bg-cover bg-no-repeat h-screen w-screen">
@@ -127,6 +208,9 @@ export default function Tabs2() {
             enter="transition-all ease-in duration-1000"
             enterFrom="opacity-0"
             enterTo="opacity-100"
+            leave="transition-all ease-out duration-750"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
           >
             <div className=" absolute bg-fumaca7 h-screen w-screen bg-center">
               <div className="sm:bg-elem7 bg-cover bg-no-repeat h-screen w-screen">
