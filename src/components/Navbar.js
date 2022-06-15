@@ -24,12 +24,12 @@ export function Navbar() {
     <div
       className={
         !navbar
-          ? "fixed text-xxs font-thin items-center pt-navbartop pb-navbarbottom bg-opacity-0 z-10 w-full justify-around flex"
-          : "fixed flex text-xxs font-thin items-center pt-navbartop pb-navbarbottom z-10 w-full justify-around bg-theme transition-all duration-300 ease-in-out"
+          ? "absolute inline-flex text-xs font-thin items-center pt-navbartop pb-navbarbottom bg-opacity-0 z-10 w-full justify-around max-w-tela"
+          : "absolute inline-flex text-xs font-thin items-center pt-navbartop pb-navbarbottom z-10 w-full justify-around bg-theme transition-all duration-300 ease-in-out max-w-tela"
       }
     >
-      <div className="absolute left-0 sm:static sm:flex sm:justify-center w-36 mt-12">
-        <Image src={logo} alt="Logo smart Business" height="41" width="150" />
+      <div className="absolute left-1 sm:static sm:flex sm:justify-center w-44 mt-12 sm:mt-0">
+        <Image src={logo} alt="Logo smart Business" height="80" width="293" />
       </div>
       <div className="hidden sm:static sm:flex sm:items-center sm:justify-center">
         <ul className="flex space-x-12 mx-10 ">
@@ -79,7 +79,7 @@ export function Navbar() {
           </li>
         </ul>
       </div>
-      <div className="absolute right-1/3 sm:flex sm:justify-center sm:static sm:w-36 mt-12">
+      <div className="absolute right-1/3 sm:flex sm:justify-center sm:static sm:w-44 mt-14 sm:mt-0">
         {/* <Image
           src={isMouseOver ? lupa2 : lupa1}
           alt="Logo smart Business"
@@ -95,7 +95,7 @@ export function Navbar() {
           width="20"
         />
       </div>
-      <div className="flex-1 flex sm:hidden absolute w-12 h-12 right-10 mt-12">
+      <div className="flex-1 flex sm:hidden absolute w-12 h-12 right-10 mt-12 sm:mt-0">
         <Burguer />
       </div>
     </div>

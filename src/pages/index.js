@@ -57,8 +57,8 @@ export default function Home() {
       {isLoading ? (
         <Loading />
       ) : (
-        <body className="bg-theme">
-          <div className="max-w-screen-tela">
+        <body className="bg-theme max-w-tela">
+          <div>
             <Navbar />
             <Tabs2 />
           </div>

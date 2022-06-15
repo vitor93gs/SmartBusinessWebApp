@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 
+
 /* NPROGRESS */
 
 #nprogress {
@@ -360,5 +361,3 @@
 .btn-62:hover::before {
   height: 380%;
 }
-
-

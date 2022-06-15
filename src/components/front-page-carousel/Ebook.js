@@ -11,7 +11,7 @@ export function Ebook() {
     AOS.init();
   }, []);
   return (
-    <div className="bg-transparent flex justify-between items-center w-screen h-screen sm:px-36 px-7 py-7">
+    <div className="bg-transparent flex justify-between items-center max-w-tela w-screen h-screen sm:px-36 px-7 py-7">
       <div className="flex flex-col items-center sm:w-1/2 w-1/3 text-left sm:mt-20 mr-auto">
         <h1 className="text-gray1 sm:text-2xl text-base text-opacity-70 text-left sm:mb-12 h-36 w-full sm:ml-10">
           <Typewriter

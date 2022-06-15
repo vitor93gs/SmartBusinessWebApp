@@ -11,7 +11,7 @@ export function SmartBusiness() {
     AOS.init();
   }, []);
   return (
-    <div className="bg-transparent flex justify-between items-center w-screen h-screen sm:px-36 px-7 py-7">
+    <div className="max-w-tela bg-transparent flex justify-between items-center w-screen h-screen sm:px-36 px-7 py-7">
       <div className="flex flex-col items-center sm:w-1/2 w-1/3 mr-auto">
         <h1 className="text-gray1 sm:text-2xl text-base text-opacity-70 text-center sm:mb-12 h-36 w-full sm:ml-10">
           <Typewriter

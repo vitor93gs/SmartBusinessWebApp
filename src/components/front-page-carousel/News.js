@@ -10,7 +10,7 @@ export function News() {
     AOS.init();
   }, []);
   return (
-    <div className="bg-transparent flex justify-between items-center w-screen h-screen sm:px-36 px-7 py-7">
+    <div className="max-w-tela bg-transparent flex justify-between items-center w-screen h-screen sm:px-36 px-7 py-7">
       <div className="flex flex-col items-center sm:w-1/2 w-1/3 text-left  mr-auto">
         <h1
           data-aos="fade-left"

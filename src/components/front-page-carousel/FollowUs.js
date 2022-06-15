@@ -9,7 +9,7 @@ export function FollowUs(props) {
     AOS.init();
   }, []);
   return (
-    <div className="text-gray1 text-opacity-70 text-3xl text-center flex justify-around items-center pr-36 pl-36 h-screen">
+    <div className="max-w-tela text-gray1 text-opacity-70 text-3xl text-center flex justify-around items-center pr-36 pl-36 h-screen">
       <div data-aos="fade-up" data-aos-duration="3000">
         <span>SIGA NOSSAS REDES SOCIAIS</span>
       </div>

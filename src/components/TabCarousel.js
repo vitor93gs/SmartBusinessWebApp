@@ -25,9 +25,10 @@ export default function Tabs2() {
       autoPlay={true}
       interval={6500}
       stopOnHover={false}
+      showStatus={false}
       renderArrowNext={(clickHandler) => {
         const defStyle = {
-          position: "fixed",
+          position: "absolute",
           "z-index": "15",
 
           bottom: "3%",
@@ -47,9 +48,8 @@ export default function Tabs2() {
       }}
       renderArrowPrev={(clickHandler) => {
         const defStyle = {
-          position: "fixed",
           "z-index": "15",
-
+          position: "absolute",
           bottom: "3%",
           color: "#91a3ad",
           "font-size": "0.8rem",
@@ -94,138 +94,130 @@ export default function Tabs2() {
         }, 1000)
       }
     >
-      <div>
-        <div className="bg-bg1 h-screen w-screen bg-no-repeat bg-cover bg-center">
-          <Transition
-            show={selected === 0}
-            enter="transition-all ease-in duration-2000"
-            enterFrom="opacity-0"
-            enterTo="opacity-100"
-            leave="transition-all ease-out duration-750"
-            leaveFrom="opacity-100"
-            leaveTo="opacity-0"
-          >
-            <div className=" bg-fumaca1 h-screen w-screen bg-center sm:bg-contain bg-no-repeat">
-              <div className="sm:bg-elem1 bg-cover bg-no-repeat h-screen w-screen">
-                <Ebook />
-              </div>
+      <div className="bg-bg1 max-w-tela h-screen w-screen bg-no-repeat bg-cover bg-center">
+        <Transition
+          show={selected === 0}
+          enter="transition-all ease-in duration-2000"
+          enterFrom="opacity-0"
+          enterTo="opacity-100"
+          leave="transition-all ease-out duration-750"
+          leaveFrom="opacity-100"
+          leaveTo="opacity-0"
+        >
+          <div className=" bg-fumaca1 max-w-tela h-screen w-screen bg-center sm:bg-contain bg-no-repeat">
+            <div className="sm:bg-elem1 bg-cover bg-no-repeat max-w-tela h-screen w-screen">
+              <Ebook />
             </div>
-          </Transition>
-        </div>
+          </div>
+        </Transition>
       </div>
-      <div>
-        <div className="bg-bg2 h-screen w-screen bg-no-repeat bg-cover bg-center">
-          <Transition
-            show={selected === 1}
-            enter="transition-all ease-in duration-2000"
-            enterFrom="opacity-0"
-            enterTo="opacity-100"
-            leave="transition-all ease-out duration-750"
-            leaveFrom="opacity-100"
-            leaveTo="opacity-0"
-          >
-            <div className=" absolute bg-fumaca2 h-screen w-screen bg-center">
-              <div className="sm:bg-elem2 bg-cover bg-no-repeat h-screen w-screen">
-                <Franqueado />
-              </div>
+
+      <div className="bg-bg2 max-w-tela h-screen w-screen bg-no-repeat bg-cover bg-center">
+        <Transition
+          show={selected === 1}
+          enter="transition-all ease-in duration-2000"
+          enterFrom="opacity-0"
+          enterTo="opacity-100"
+          leave="transition-all ease-out duration-750"
+          leaveFrom="opacity-100"
+          leaveTo="opacity-0"
+        >
+          <div className=" absolute bg-fumaca2 max-w-tela h-screen w-screen bg-center">
+            <div className="sm:bg-elem2 bg-cover bg-no-repeat max-w-tela h-screen w-screen">
+              <Franqueado />
             </div>
-          </Transition>
-        </div>
+          </div>
+        </Transition>
       </div>
-      <div>
-        <div className="bg-bg3 h-screen w-screen bg-no-repeat bg-cover bg-center">
-          <Transition
-            show={selected === 2}
-            enter="transition-all ease-in duration-2000"
-            enterFrom="opacity-0"
-            enterTo="opacity-100"
-            leave="transition-all ease-out duration-750"
-            leaveFrom="opacity-100"
-            leaveTo="opacity-0"
-          >
-            <div className=" absolute bg-fumaca3 h-screen w-screen bg-center">
-              <div className="bg-elem3 bg-cover bg-no-repeat sm:bg-center h-screen w-screen">
-                <FreeCourse />
-              </div>
+
+      <div className="bg-bg3 max-w-tela h-screen w-screen bg-no-repeat bg-cover bg-center">
+        <Transition
+          show={selected === 2}
+          enter="transition-all ease-in duration-2000"
+          enterFrom="opacity-0"
+          enterTo="opacity-100"
+          leave="transition-all ease-out duration-750"
+          leaveFrom="opacity-100"
+          leaveTo="opacity-0"
+        >
+          <div className=" absolute bg-fumaca3 max-w-tela h-screen w-screen bg-center">
+            <div className="bg-elem3 bg-cover bg-no-repeat sm:bg-center max-w-tela h-screen w-screen">
+              <FreeCourse />
             </div>
-          </Transition>
-        </div>
+          </div>
+        </Transition>
       </div>
-      <div>
-        <div className="bg-bg4 h-screen w-screen bg-no-repeat bg-cover bg-center">
-          <Transition
-            show={selected === 3}
-            enter="transition-all ease-in duration-2000"
-            enterFrom="opacity-0"
-            enterTo="opacity-100"
-            leave="transition-all ease-out duration-750"
-            leaveFrom="opacity-100"
-            leaveTo="opacity-0"
-          >
-            <div className=" absolute bg-fumaca4 h-screen w-screen bg-center">
-              <div className="sm:bg-elem4 bg-cover bg-no-repeat h-screen w-screen">
-                <News />
-              </div>
+
+      <div className="bg-bg4 max-w-tela h-screen w-screen bg-no-repeat bg-cover bg-center">
+        <Transition
+          show={selected === 3}
+          enter="transition-all ease-in duration-2000"
+          enterFrom="opacity-0"
+          enterTo="opacity-100"
+          leave="transition-all ease-out duration-750"
+          leaveFrom="opacity-100"
+          leaveTo="opacity-0"
+        >
+          <div className=" absolute bg-fumaca4 max-w-tela h-screen w-screen bg-center">
+            <div className="sm:bg-elem4 bg-cover bg-no-repeat max-w-tela h-screen w-screen">
+              <News />
             </div>
-          </Transition>
-        </div>
+          </div>
+        </Transition>
       </div>
-      <div>
-        <div className="bg-bg5 h-screen w-screen bg-no-repeat bg-cover bg-center">
-          <Transition
-            show={selected === 4}
-            enter="transition-all ease-in duration-2000"
-            enterFrom="opacity-0"
-            enterTo="opacity-100"
-            leave="transition-all ease-out duration-750"
-            leaveFrom="opacity-100"
-            leaveTo="opacity-0"
-          >
-            <div className=" absolute bg-fumaca5 h-screen w-screen bg-center">
-              <div className="sm:bg-elem5 bg-cover bg-no-repeat h-screen w-screen">
-                <SmartBusiness />
-              </div>
+
+      <div className="bg-bg5 max-w-tela h-screen w-screen bg-no-repeat bg-cover bg-center">
+        <Transition
+          show={selected === 4}
+          enter="transition-all ease-in duration-2000"
+          enterFrom="opacity-0"
+          enterTo="opacity-100"
+          leave="transition-all ease-out duration-750"
+          leaveFrom="opacity-100"
+          leaveTo="opacity-0"
+        >
+          <div className=" absolute bg-fumaca5 max-w-tela h-screen w-screen bg-center">
+            <div className="sm:bg-elem5 bg-cover bg-no-repeat max-w-tela h-screen w-screen">
+              <SmartBusiness />
             </div>
-          </Transition>
-        </div>
+          </div>
+        </Transition>
       </div>
-      <div>
-        <div className="bg-bg6 h-screen w-screen bg-no-repeat bg-cover bg-center">
-          <Transition
-            show={selected === 5}
-            enter="transition-all ease-in duration-2000"
-            enterFrom="opacity-0"
-            enterTo="opacity-100"
-            leave="transition-all ease-out duration-750"
-            leaveFrom="opacity-100"
-            leaveTo="opacity-0"
-          >
-            <div className=" absolute bg-fumaca6 h-screen w-screen bg-center">
-              <div className="sm:bg-elem6 bg-cover bg-no-repeat h-screen w-screen">
-                <SmartAcademy />
-              </div>
+
+      <div className="bg-bg6 max-w-tela h-screen w-screen bg-no-repeat bg-cover bg-center">
+        <Transition
+          show={selected === 5}
+          enter="transition-all ease-in duration-2000"
+          enterFrom="opacity-0"
+          enterTo="opacity-100"
+          leave="transition-all ease-out duration-750"
+          leaveFrom="opacity-100"
+          leaveTo="opacity-0"
+        >
+          <div className=" absolute bg-fumaca6 max-w-tela h-screen w-screen bg-center">
+            <div className="sm:bg-elem6 bg-cover bg-no-repeat max-w-tela h-screen w-screen">
+              <SmartAcademy />
             </div>
-          </Transition>
-        </div>
+          </div>
+        </Transition>
       </div>
-      <div>
-        <div className="bg-bg7 h-screen w-screen bg-no-repeat bg-cover bg-center">
-          <Transition
-            show={selected === 6}
-            enter="transition-all ease-in duration-2000"
-            enterFrom="opacity-0"
-            enterTo="opacity-100"
-            leave="transition-all ease-out duration-750"
-            leaveFrom="opacity-100"
-            leaveTo="opacity-0"
-          >
-            <div className=" absolute bg-fumaca7 h-screen w-screen bg-center">
-              <div className="sm:bg-elem7 bg-cover bg-no-repeat h-screen w-screen">
-                <FollowUs />
-              </div>
+
+      <div className="bg-bg7 max-w-tela h-screen w-screen bg-no-repeat bg-cover bg-center">
+        <Transition
+          show={selected === 6}
+          enter="transition-all ease-in duration-2000"
+          enterFrom="opacity-0"
+          enterTo="opacity-100"
+          leave="transition-all ease-out duration-750"
+          leaveFrom="opacity-100"
+          leaveTo="opacity-0"
+        >
+          <div className=" absolute bg-fumaca7 max-w-tela h-screen w-screen bg-center">
+            <div className="sm:bg-elem7 bg-cover bg-no-repeat max-w-tela h-screen w-screen">
+              <FollowUs />
             </div>
-          </Transition>
-        </div>
+          </div>
+        </Transition>
       </div>
     </Carousel>
   );
