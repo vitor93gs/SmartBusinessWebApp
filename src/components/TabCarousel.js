@@ -22,8 +22,8 @@ export default function Tabs2() {
       showArrows={true}
       showThumbs={false}
       transitionTime={2000}
-      autoPlay={true}
-      interval={6500}
+      // autoPlay={true}
+      // interval={6500}
       stopOnHover={false}
       showStatus={false}
       renderArrowNext={(clickHandler) => {
@@ -93,6 +93,7 @@ export default function Tabs2() {
           setSelected(current);
         }, 1000)
       }
+      className="max-w-tela inline-flex min-w-0"
     >
       <div className="bg-bg1 max-w-tela h-screen w-screen bg-no-repeat bg-cover bg-center">
         <Transition

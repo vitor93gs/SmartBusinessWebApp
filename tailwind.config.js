@@ -10,7 +10,6 @@ module.exports = {
       },
       spacing: {
         custom: "150px",
-        tela: "1920px",
         navbartop: "0.8rem",
         navbarbottom: "0.8rem",
       },
