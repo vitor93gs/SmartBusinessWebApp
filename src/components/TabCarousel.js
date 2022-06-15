@@ -88,11 +88,12 @@ export default function Tabs2() {
         );
       }}
       infiniteLoop={true}
-      onChange={(current) =>
+      onChange={(current) => {
+        setSelected(0);
         setTimeout(() => {
           setSelected(current);
-        }, 1000)
-      }
+        }, 1200);
+      }}
       className="max-w-tela inline-flex min-w-0"
     >
       <div className="bg-bg1 max-w-tela h-screen w-screen bg-no-repeat bg-cover bg-center">
@@ -101,7 +102,7 @@ export default function Tabs2() {
           enter="transition-all ease-in duration-2000"
           enterFrom="opacity-0"
           enterTo="opacity-100"
-          leave="transition-all ease-out duration-750"
+          leave="transition-all ease-out duration-1000"
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
@@ -119,7 +120,7 @@ export default function Tabs2() {
           enter="transition-all ease-in duration-2000"
           enterFrom="opacity-0"
           enterTo="opacity-100"
-          leave="transition-all ease-out duration-750"
+          leave="transition-all ease-out duration-1000"
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
@@ -137,7 +138,7 @@ export default function Tabs2() {
           enter="transition-all ease-in duration-2000"
           enterFrom="opacity-0"
           enterTo="opacity-100"
-          leave="transition-all ease-out duration-750"
+          leave="transition-all ease-out duration-1000"
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
@@ -155,7 +156,7 @@ export default function Tabs2() {
           enter="transition-all ease-in duration-2000"
           enterFrom="opacity-0"
           enterTo="opacity-100"
-          leave="transition-all ease-out duration-750"
+          leave="transition-all ease-out duration-1000"
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
@@ -173,7 +174,7 @@ export default function Tabs2() {
           enter="transition-all ease-in duration-2000"
           enterFrom="opacity-0"
           enterTo="opacity-100"
-          leave="transition-all ease-out duration-750"
+          leave="transition-all ease-out duration-1000"
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
@@ -191,7 +192,7 @@ export default function Tabs2() {
           enter="transition-all ease-in duration-2000"
           enterFrom="opacity-0"
           enterTo="opacity-100"
-          leave="transition-all ease-out duration-750"
+          leave="transition-all ease-out duration-1000"
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
@@ -209,7 +210,7 @@ export default function Tabs2() {
           enter="transition-all ease-in duration-2000"
           enterFrom="opacity-0"
           enterTo="opacity-100"
-          leave="transition-all ease-out duration-750"
+          leave="transition-all ease-out duration-1000"
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
