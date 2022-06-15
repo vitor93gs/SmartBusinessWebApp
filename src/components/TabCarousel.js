@@ -92,7 +92,7 @@ export default function Tabs2() {
         setSelected(0);
         setTimeout(() => {
           setSelected(current);
-        }, 1200);
+        }, 1300);
       }}
       className="max-w-tela inline-flex min-w-0"
     >
