@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      maxWidth: {
+        tela: "1920px",
+      },
       spacing: {
         custom: "150px",
         tela: "1920px",
