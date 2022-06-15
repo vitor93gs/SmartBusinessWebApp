@@ -1,5 +1,5 @@
 import Image from "next/dist/client/image";
-import logoBig from "../../assets/book_-_livro.png";
+import logoBig from "../../assets/news.png";
 import Link from "next/link";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -26,7 +26,7 @@ export function News() {
         </div>
       </div>
       <div className="w-1/2">
-        <Image src={logoBig} alt="logoBig" width={400} height={540} />
+        <Image src={logoBig} alt="logoBig" width={540} height={540} />
       </div>
     </div>
   );

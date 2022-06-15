@@ -10,7 +10,7 @@ import { useEffect } from "react";
 
 export default function Home() {
   const [isLoading, setLoading] = useState(true);
-  
+
   setTimeout(() => {
     setLoading(false);
   }, 1500);
@@ -57,10 +57,12 @@ export default function Home() {
       {isLoading ? (
         <Loading />
       ) : (
-        <div>
-          <Navbar />
-          <Tabs2 />
-        </div>
+        <body className="bg-theme">
+          <div className="max-w-screen-tela">
+            <Navbar />
+            <Tabs2 />
+          </div>
+        </body>
       )}
     </div>
   );
