@@ -12,7 +12,7 @@ export function FreeCourse() {
   return (
     <div className="max-w-tela bg-transparent flex justify-between items-center w-screen h-screen sm:px-36 px-7 py-7">
       <div className="w-1/2 mt-36">
-        <Image src={logoBig} alt="logoBig" width={500} height={775} />
+        <Image src={logoBig} alt="logoBig" width={579} height={620} />
       </div>
       <div className="flex flex-col items-center sm:w-1/2 w-1/3 text-left  mr-auto">
         <h1

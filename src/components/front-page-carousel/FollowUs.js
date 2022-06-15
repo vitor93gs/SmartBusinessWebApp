@@ -14,7 +14,7 @@ export function FollowUs(props) {
         <span>SIGA NOSSAS REDES SOCIAIS</span>
       </div>
       <div className="sm:mt-52 m-0">
-        <Image src={celular} alt="celular" width={500} height={675} />
+        <Image src={celular} alt="celular" width={697} height={985} />
       </div>
     </div>
   );

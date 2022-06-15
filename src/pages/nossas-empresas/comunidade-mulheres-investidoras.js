@@ -15,8 +15,7 @@ export default function ComunidadeMulheres() {
           <h1 className=" sm:text-4xl text-2xl">
             COMUNIDADE MULHERES INVESTIDORAS
           </h1>
-          <h1 className=" sm:text-4xl text-2xl"
-          >
+          <h1 className=" sm:text-4xl text-2xl">
             Fazendo nossas próprias escolhas.
           </h1>
           <br />

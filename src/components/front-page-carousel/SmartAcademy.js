@@ -26,7 +26,7 @@ export function SmartAcademy() {
         </div>
       </div>
       <div className="w-1/2">
-        <Image src={logoBig} alt="logoBig" width={400} height={540} />
+        <Image src={logoBig} alt="logoBig" width={837} height={418} />
       </div>
     </div>
   );

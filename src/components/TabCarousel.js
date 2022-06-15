@@ -89,7 +89,7 @@ export default function Tabs2() {
       }}
       infiniteLoop={true}
       onChange={(current) => {
-        setSelected(0);
+        setSelected(69);
         setTimeout(() => {
           setSelected(current);
         }, 1300);
