@@ -12,6 +12,7 @@ module.exports = {
         custom: "150px",
         navbartop: "0.8rem",
         navbarbottom: "0.8rem",
+        book: "85vh",
       },
       fontSize: {
         xxs: ".65rem",

@@ -16,7 +16,7 @@ export function Navbar() {
   const [navbar, setNavbar] = useState(false);
 
   function handleNavbar() {
-    window.scrollY >= 56 ? setNavbar(true) : setNavbar(false);
+    window.scrollY >= 5 ? setNavbar(true) : setNavbar(false);
     console.log(navbar);
   }
 
@@ -24,8 +24,8 @@ export function Navbar() {
     <div
       className={
         !navbar
-          ? "absolute inline-flex text-xs font-thin items-center pt-navbartop pb-navbarbottom bg-opacity-0 z-10 w-full justify-around max-w-tela"
-          : "absolute inline-flex text-xs font-thin items-center pt-navbartop pb-navbarbottom z-10 w-full justify-around bg-theme transition-all duration-300 ease-in-out max-w-tela"
+          ? "absolute inline-flex text-xs font-thin items-center pt-navbartop pb-navbarbottom z-10 w-full justify-around max-w-tela bg-opacity-0"
+          : "fixed    inline-flex text-xs font-thin items-center pt-navbartop pb-navbarbottom z-10 w-full justify-around max-w-tela bg-theme transition-all duration-1000 ease-in-out "
       }
     >
       <div className="absolute left-1 sm:static sm:flex sm:justify-center w-44 mt-12 sm:mt-0">

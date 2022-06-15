@@ -39,7 +39,6 @@ export default function Tabs2() {
           <button
             style={defStyle}
             onClick={clickHandler}
-            onKeyDown={clickHandler}
             className="sm:right-1/4 right-10"
           >
             PRÓXIMO
@@ -58,7 +57,6 @@ export default function Tabs2() {
           <button
             style={defStyle}
             onClick={clickHandler}
-            onKeyDown={clickHandler}
             className="sm:left-1/4 left-10"
           >
             ANTERIOR
@@ -106,10 +104,8 @@ export default function Tabs2() {
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <div className=" bg-fumaca1 max-w-tela h-screen w-screen bg-center sm:bg-contain bg-no-repeat">
-            <div className="sm:bg-elem1 bg-cover bg-no-repeat max-w-tela h-screen w-screen">
-              <Ebook />
-            </div>
+          <div className="sm:bg-elem1 bg-cover bg-no-repeat max-w-tela h-screen w-screen">
+            <Ebook />
           </div>
         </Transition>
       </div>
