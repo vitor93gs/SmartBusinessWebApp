@@ -22,6 +22,7 @@ export default function Tabs2() {
       showArrows={true}
       showThumbs={false}
       transitionTime={2000}
+      swipeScrollTolerance={800}
       // autoPlay={true}
       // interval={6500}
       stopOnHover={false}
@@ -120,10 +121,8 @@ export default function Tabs2() {
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <div className=" absolute bg-fumaca2 max-w-tela h-screen w-screen bg-center">
-            <div className="sm:bg-elem2 bg-cover bg-no-repeat max-w-tela h-screen w-screen">
-              <Franqueado />
-            </div>
+          <div className="sm:bg-elem2 bg-cover bg-no-repeat max-w-tela h-screen w-screen">
+            <Franqueado />
           </div>
         </Transition>
       </div>
@@ -138,10 +137,8 @@ export default function Tabs2() {
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <div className=" absolute bg-fumaca3 max-w-tela h-screen w-screen bg-center">
-            <div className="bg-elem3 bg-cover bg-no-repeat sm:bg-center max-w-tela h-screen w-screen">
-              <FreeCourse />
-            </div>
+          <div className="bg-elem3 bg-cover bg-no-repeat sm:bg-center max-w-tela h-screen w-screen">
+            <FreeCourse />
           </div>
         </Transition>
       </div>
@@ -156,10 +153,8 @@ export default function Tabs2() {
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <div className=" absolute bg-fumaca4 max-w-tela h-screen w-screen bg-center">
-            <div className="sm:bg-elem4 bg-cover bg-no-repeat max-w-tela h-screen w-screen">
-              <News />
-            </div>
+          <div className="sm:bg-elem4 bg-cover bg-no-repeat max-w-tela h-screen w-screen">
+            <News />
           </div>
         </Transition>
       </div>
@@ -174,10 +169,8 @@ export default function Tabs2() {
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <div className=" absolute bg-fumaca5 max-w-tela h-screen w-screen bg-center">
-            <div className="sm:bg-elem5 bg-cover bg-no-repeat max-w-tela h-screen w-screen">
-              <SmartBusiness />
-            </div>
+          <div className="sm:bg-elem5 bg-cover bg-no-repeat max-w-tela h-screen w-screen">
+            <SmartBusiness />
           </div>
         </Transition>
       </div>
@@ -192,10 +185,8 @@ export default function Tabs2() {
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <div className=" absolute bg-fumaca6 max-w-tela h-screen w-screen bg-center">
-            <div className="sm:bg-elem6 bg-cover bg-no-repeat max-w-tela h-screen w-screen">
-              <SmartAcademy />
-            </div>
+          <div className="sm:bg-elem6 bg-cover bg-no-repeat max-w-tela h-screen w-screen">
+            <SmartAcademy />
           </div>
         </Transition>
       </div>
@@ -210,10 +201,8 @@ export default function Tabs2() {
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <div className=" absolute bg-fumaca7 max-w-tela h-screen w-screen bg-center">
-            <div className="sm:bg-elem7 bg-cover bg-no-repeat max-w-tela h-screen w-screen">
-              <FollowUs />
-            </div>
+          <div className="sm:bg-elem7 bg-cover bg-no-repeat max-w-tela h-screen w-screen">
+            <FollowUs />
           </div>
         </Transition>
       </div>

@@ -3,16 +3,34 @@ import logoBig from "../../assets/personagem.png";
 import Link from "next/link";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { Transition } from "@headlessui/react";
 
 export function FreeCourse() {
+  const [showLuz, setShowLuz] = useState(false);
+
   useEffect(() => {
     AOS.init();
+    setTimeout(() => {
+      setShowLuz(true);
+    }, 2000);
   }, []);
+  
   return (
     <div className="max-w-tela bg-transparent flex justify-between items-center w-screen h-screen sm:px-36 px-7 py-7">
-      <div className="w-1/2 mt-36">
-        <Image src={logoBig} alt="logoBig" width={579} height={620} />
+      <div className="w-1/2 mr-72">
+        <Image src={logoBig} alt="logoBig" width={450} height={482} />
+        <Transition
+          show={showLuz}
+          enter="transition-all ease-in duration-2000"
+          enterFrom="opacity-0"
+          enterTo="opacity-100"
+          leave="transition-all ease-out duration-1000"
+          leaveFrom="opacity-100"
+          leaveTo="opacity-0"
+        >
+          <div className="absolute bottom-0 left-0 bg-fumaca2 bg-no-repeat  bg-cover h-screen w-screen bg-center pointer-events-none"></div>
+        </Transition>
       </div>
       <div className="flex flex-col items-center sm:w-1/2 w-1/3 text-left  mr-auto">
         <h1
