@@ -51,7 +51,7 @@ export default function Tabs2() {
       showArrows={true}
       showThumbs={false}
       transitionTime={2000}
-      swipeScrollTolerance={800}
+      swipeScrollTolerance={250}
       // autoPlay={true}
       // interval={6500}
       stopOnHover={false}
