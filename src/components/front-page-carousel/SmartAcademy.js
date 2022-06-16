@@ -29,7 +29,7 @@ export function SmartAcademy() {
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <div className="absolute bottom-0 left-0 bg-fumaca4 bg-no-repeat  bg-cover h-screen w-screen bg-center pointer-events-none"></div>
+          <div className="max-w-tela absolute bottom-0 left-0 bg-fumaca4 bg-no-repeat  bg-cover h-screen w-screen bg-center pointer-events-none"></div>
         </Transition>
       </div>
       <div className="flex flex-col items-center sm:w-1/2 w-1/3 mr-auto">

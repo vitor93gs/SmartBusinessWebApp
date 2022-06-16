@@ -80,7 +80,7 @@ export function Ebook() {
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <div className="absolute bottom-0 left-0 bg-fumaca1 bg-no-repeat  bg-cover h-screen w-screen bg-center pointer-events-none"></div>
+          <div className="absolute bottom-0 left-0 bg-fumaca1 bg-no-repeat  bg-cover h-screen w-screen bg-center pointer-events-none max-w-tela"></div>
         </Transition>
       </div>
     </div>

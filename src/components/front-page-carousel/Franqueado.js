@@ -45,7 +45,7 @@ export function Franqueado() {
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <div className="absolute bottom-0 left-0 bg-fumaca3 bg-no-repeat  bg-cover h-screen w-screen bg-center pointer-events-none"></div>
+          <div className="max-w-tela absolute bottom-0 left-0 bg-fumaca3 bg-no-repeat  bg-cover h-screen w-screen bg-center pointer-events-none"></div>
         </Transition>
       </div>
     </div>
