@@ -16,6 +16,10 @@ module.exports = {
         personagem: "20%",
         academy: "6%",
         bookw: "300px",
+        "1/2": "50%",
+        "2/5": "40%",
+        "1/4": "25%",
+        "1/3": "33.33%",
       },
       fontSize: {
         xxs: ".65rem",
