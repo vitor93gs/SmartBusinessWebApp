@@ -13,7 +13,8 @@ module.exports = {
         navbartop: "0.8rem",
         navbarbottom: "0.8rem",
         book: "85vh",
-        personagem: "290px",
+        personagem: "20%",
+        academy: "6%",
       },
       fontSize: {
         xxs: ".65rem",
