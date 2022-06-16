@@ -1,5 +1,3 @@
-import Image from "next/dist/client/image";
-import logoBig from "../../assets/personagem.png";
 import Link from "next/link";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -17,9 +15,9 @@ export function FreeCourse() {
   }, []);
 
   return (
-    <div className="max-w-tela bg-transparent flex justify-between items-center w-screen h-screen sm:px-36 px-7 py-7">
-      <div className="w-1/2 mr-personagem">
-        <Image src={logoBig} alt="logoBig" width={450} height={482} />
+    <div className="max-w-tela bg-transparent flex justify-between items-center w-screen h-screen px-36 py-7">
+      <div className="flex flex-col items-center w-1/2 text-left  mr-auto">
+        <div className="absolute bottom-0 left-0 bg-no-repeat h-screen w-screen bg-contain bg-center pointer-events-none max-w-tela bg-personagem" />
         <Transition
           show={showLuz}
           enter="transition-all ease-in duration-2000"
@@ -29,14 +27,14 @@ export function FreeCourse() {
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <div className="max-w-tela absolute bottom-0 left-0 bg-fumaca2 bg-no-repeat  bg-cover h-screen w-screen bg-center pointer-events-none"></div>
+          <div className="absolute visible bottom-0 left-0 bg-no-repeat h-screen w-screen bg-contain bg-center pointer-events-none max-w-tela bg-fumaca2 " />
         </Transition>
       </div>
-      <div className="flex flex-col items-center sm:w-1/2 w-1/3 text-left  mr-auto">
+      <div className="flex flex-col items-center w-1/2 text-left  mr-auto">
         <h1
           data-aos="zoom-in"
           data-aos-duration="2500"
-          className="text-gray1 sm:text-2xl text-base text-opacity-70 text-center sm:mb-12 h-36 w-full sm:ml-10"
+          className="text-gray1 text-2xl text-opacity-70 text-center mb-12 h-36 w-full ml-10"
         >
           CURSO GRATUITO!
         </h1>

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Transition } from "@headlessui/react";
 import { Carousel } from "react-responsive-carousel";
 
@@ -11,8 +11,37 @@ import { FreeCourse } from "./front-page-carousel/FreeCourse";
 import { News } from "./front-page-carousel/News";
 import { SmartBusiness } from "./front-page-carousel/SmartBusiness";
 import { SmartAcademy } from "./front-page-carousel/SmartAcademy";
+import { MobilePage } from "./front-page-carousel/MobilePage";
+
+import personagem from "../assets/personagem.png";
+import livro from "../assets/book_-_livro.png";
+import celular from "../assets/celular.png";
+import franquia from "../assets/franquia.png";
+import news from "../assets/news.png";
+import academy from "../assets/SmartAcademy.png";
+import business from "../assets/business.png";
 
 export default function Tabs2() {
+  const [windowSize, setWindowSize] = useState(getWindowSize());
+
+  useEffect(() => {
+    function handleWindowResize() {
+      setWindowSize(getWindowSize());
+    }
+
+    window.addEventListener("resize", handleWindowResize);
+
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
+
+  function getWindowSize() {
+    const { innerWidth: width, innerHeight: height } = window;
+    console.log(width, height);
+    return { width, height };
+  }
+  
   const [selected, setSelected] = useState(0);
 
   return (
@@ -30,11 +59,10 @@ export default function Tabs2() {
       renderArrowNext={(clickHandler) => {
         const defStyle = {
           position: "absolute",
-          "z-index": "15",
-
+          zIndex: "15",
           bottom: "3%",
           color: "#91a3ad",
-          "font-size": "0.8rem",
+          fontSize: "0.8rem",
         };
         return (
           <button
@@ -48,11 +76,11 @@ export default function Tabs2() {
       }}
       renderArrowPrev={(clickHandler) => {
         const defStyle = {
-          "z-index": "15",
+          zIndex: "15",
           position: "absolute",
           bottom: "3%",
           color: "#91a3ad",
-          "font-size": "0.8rem",
+          fontSize: "0.8rem",
         };
         return (
           <button
@@ -69,13 +97,13 @@ export default function Tabs2() {
           marginLeft: "15px",
           height: "20px",
           width: "20px",
-          "background-position": "center",
-          "background-size": "contain",
+          backgroundPosition: "center",
+          backgroundSize: "contain",
           marginBottom: "1em",
         };
         const style = isSelected
-          ? { ...defStyle, "background-image": "url('/DualRing.svg')" }
-          : { ...defStyle, "background-image": "url('/bolinha.png')" };
+          ? { ...defStyle, backgroundImage: "url('/DualRing.svg')" }
+          : { ...defStyle, backgroundImage: "url('/bolinha.png')" };
         return (
           <button
             style={style}
@@ -106,7 +134,11 @@ export default function Tabs2() {
           leaveTo="opacity-0"
         >
           <div className="sm:bg-elem1 bg-cover bg-no-repeat max-w-tela h-screen w-screen">
-            <Ebook />
+            {windowSize.width > 768 ? (
+              <Ebook />
+            ) : (
+              <MobilePage image={livro} text="BAIXE NOSSOS EBOOKS!" />
+            )}
           </div>
         </Transition>
       </div>
@@ -122,7 +154,11 @@ export default function Tabs2() {
           leaveTo="opacity-0"
         >
           <div className="sm:bg-elem2 bg-cover bg-no-repeat max-w-tela h-screen w-screen">
-            <Franqueado />
+            {windowSize.width > 768 ? (
+              <Franqueado />
+            ) : (
+              <MobilePage image={franquia} text="SEJA NOSSO FRANQUEADO" />
+            )}
           </div>
         </Transition>
       </div>
@@ -138,7 +174,11 @@ export default function Tabs2() {
           leaveTo="opacity-0"
         >
           <div className="bg-elem3 bg-cover bg-no-repeat sm:bg-center max-w-tela h-screen w-screen">
-            <FreeCourse />
+            {windowSize.width > 768 ? (
+              <FreeCourse />
+            ) : (
+              <MobilePage image={personagem} text="CURSOS GRATUITOS" />
+            )}
           </div>
         </Transition>
       </div>
@@ -154,7 +194,11 @@ export default function Tabs2() {
           leaveTo="opacity-0"
         >
           <div className="sm:bg-elem4 bg-cover bg-no-repeat max-w-tela h-screen w-screen">
-            <News />
+            {windowSize.width > 768 ? (
+              <News />
+            ) : (
+              <MobilePage image={news} text="NOVIDADES AQUI" />
+            )}
           </div>
         </Transition>
       </div>
@@ -170,7 +214,11 @@ export default function Tabs2() {
           leaveTo="opacity-0"
         >
           <div className="sm:bg-elem5 bg-cover bg-no-repeat max-w-tela h-screen w-screen">
-            <SmartBusiness />
+            {windowSize.width > 768 ? (
+              <SmartBusiness />
+            ) : (
+              <MobilePage image={business} text="SMART BUSINESS" />
+            )}
           </div>
         </Transition>
       </div>
@@ -186,7 +234,11 @@ export default function Tabs2() {
           leaveTo="opacity-0"
         >
           <div className="sm:bg-elem6 bg-cover bg-no-repeat max-w-tela h-screen w-screen">
-            <SmartAcademy />
+            {windowSize.width > 768 ? (
+              <SmartAcademy />
+            ) : (
+              <MobilePage image={academy} text="SMART ACADEMY" />
+            )}
           </div>
         </Transition>
       </div>
@@ -202,7 +254,11 @@ export default function Tabs2() {
           leaveTo="opacity-0"
         >
           <div className="sm:bg-elem7 bg-cover bg-no-repeat max-w-tela h-screen w-screen">
-            <FollowUs />
+            {windowSize.width > 768 ? (
+              <FollowUs />
+            ) : (
+              <MobilePage image={celular} text="Siga nossas redes sociais" />
+            )}
           </div>
         </Transition>
       </div>

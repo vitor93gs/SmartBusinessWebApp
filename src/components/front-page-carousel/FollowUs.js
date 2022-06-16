@@ -1,5 +1,3 @@
-import Image from "next/image";
-import celular from "../../assets/celular.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
@@ -21,7 +19,8 @@ export function FollowUs(props) {
         <span>SIGA NOSSAS REDES SOCIAIS</span>
       </div>
       <div className=" ml-24 w-1/2">
-        <Image src={celular} alt="celular" width={697} height={985} />
+        <div className="absolute flex justify-center bottom-0 left-0 bg-no-repeat h-screen w-screen bg-contain bg-center pointer-events-none max-w-tela bg-celular" />
+
         <Transition
           show={showLuz}
           enter="transition-all ease-in duration-2000"
@@ -31,7 +30,7 @@ export function FollowUs(props) {
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <div className="max-w-tela absolute bottom-0 left-0 bg-fumaca5 bg-no-repeat  bg-cover h-screen w-screen bg-center pointer-events-none"></div>
+          <div className="absolute visible bottom-0 left-0 bg-no-repeat h-screen w-screen bg-contain bg-center pointer-events-none max-w-tela bg-fumaca5 " />
         </Transition>
       </div>
     </div>

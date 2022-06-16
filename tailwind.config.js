@@ -20,6 +20,7 @@ module.exports = {
         "2/5": "40%",
         "1/4": "25%",
         "1/3": "33.33%",
+        "3/4": "75%",
       },
       fontSize: {
         xxs: ".65rem",
@@ -48,6 +49,7 @@ module.exports = {
       fumaca3: "url('/luz_franquia.png')",
       fumaca4: "url('/luz_academy.png')",
       fumaca5: "url('/luz_celular.png')",
+      fumaca6: "url('/luz_megafone.png')",
       bg1: "url('/background.jpg')",
       bg2: "url('/background2.jpg')",
       elem1: "url('/element1.png')",
@@ -63,6 +65,11 @@ module.exports = {
       bg6: "url('/background6.jpg')",
       bg7: "url('/background7.jpg')",
       livro: "url('/book_-_livro.png')",
+      celular: "url('/celular.png')",
+      franquia: "url('/franqueado.png')",
+      academy: "url('/academy.png')",
+      personagem: "url('/personagem.png')",
+      megafone: "url('/megafone.png')",
     },
     fontFamily: {
       gotham: "Gotham HTF Medium",

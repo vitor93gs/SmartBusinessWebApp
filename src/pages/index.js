@@ -57,12 +57,12 @@ export default function Home() {
       {isLoading ? (
         <Loading />
       ) : (
-        <body className="bg-theme">
+        <div className="bg-theme">
           <div className="flex justify-center">
             <Navbar />
             <Tabs2 />
           </div>
-        </body>
+        </div>
       )}
     </div>
   );
