@@ -26,7 +26,7 @@ export default function SmartAcademy() {
           Disponibilizamos materiais complementares, para que o aluno possa
           praticar o autodesenvolvimento: matérias no blog; Instagram com
           conteúdo relacionado à Criptoeconomia, alimentado diariamente;
-          apostilas; PDF's; grupos virtuais de alunos por turma e muito mais.
+          apostilas; PDFs; grupos virtuais de alunos por turma e muito mais.
         </p>
       </section>
       <section className=" text-gray1 text-4xl text-opacity-70">
