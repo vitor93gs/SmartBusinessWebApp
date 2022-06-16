@@ -64,9 +64,10 @@ export default function Tabs2() {
           color: "#91a3ad",
           fontSize: "0.8rem",
         };
+        const style = { ...defStyle, bottom: "8%" };
         return (
           <button
-            style={defStyle}
+            style={windowSize.width > 768 ? defStyle : style}
             onClick={clickHandler}
             className="sm:right-1/4 right-10"
           >
@@ -82,9 +83,10 @@ export default function Tabs2() {
           color: "#91a3ad",
           fontSize: "0.8rem",
         };
+        const style = { ...defStyle, bottom: "8%" };
         return (
           <button
-            style={defStyle}
+            style={windowSize.width > 768 ? defStyle : style}
             onClick={clickHandler}
             className="sm:left-1/4 left-10"
           >
