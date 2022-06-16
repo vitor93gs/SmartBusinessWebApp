@@ -51,9 +51,9 @@ export default function Tabs2() {
       showArrows={true}
       showThumbs={false}
       transitionTime={2000}
-      swipeScrollTolerance={250}
-      // autoPlay={true}
-      // interval={6500}
+      swipeScrollTolerance={150}
+      autoPlay={true}
+      interval={6500}
       stopOnHover={false}
       showStatus={false}
       renderArrowNext={(clickHandler) => {
