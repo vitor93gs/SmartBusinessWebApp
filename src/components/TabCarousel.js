@@ -41,7 +41,7 @@ export default function Tabs2() {
     console.log(width, height);
     return { width, height };
   }
-  
+
   const [selected, setSelected] = useState(0);
 
   return (
