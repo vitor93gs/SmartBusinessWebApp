@@ -15,10 +15,10 @@ export function FreeCourse() {
       setShowLuz(true);
     }, 2000);
   }, []);
-  
+
   return (
     <div className="max-w-tela bg-transparent flex justify-between items-center w-screen h-screen sm:px-36 px-7 py-7">
-      <div className="w-1/2 mr-72">
+      <div className="w-1/2 mr-personagem">
         <Image src={logoBig} alt="logoBig" width={450} height={482} />
         <Transition
           show={showLuz}

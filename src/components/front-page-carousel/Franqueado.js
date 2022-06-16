@@ -34,7 +34,7 @@ export function Franqueado() {
           </Link>
         </div>
       </div>
-      <div className="w-1/2 mr-24 mb-24">
+      <div className="w-1/2 mr-28 mb-24">
         <Image src={logoBig} alt="logoBig" width={450} height={482} />
         <Transition
           show={showLuz}

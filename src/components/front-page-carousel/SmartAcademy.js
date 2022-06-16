@@ -18,7 +18,7 @@ export function SmartAcademy() {
 
   return (
     <div className="max-w-tela bg-transparent flex justify-between items-center w-screen h-screen sm:px-36 px-7 py-7">
-      <div className="w-1/2 mr-24">
+      <div className="w-1/2 mr-20">
         <Image src={logoBig} alt="logoBig" width={720} height={359} />
         <Transition
           show={showLuz}
