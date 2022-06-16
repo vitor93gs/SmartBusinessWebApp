@@ -12,9 +12,10 @@ module.exports = {
         custom: "150px",
         navbartop: "0.8rem",
         navbarbottom: "0.8rem",
-        book: "85vh",
+        book: "27%",
         personagem: "20%",
         academy: "6%",
+        bookw: "300px",
       },
       fontSize: {
         xxs: ".65rem",
@@ -57,6 +58,7 @@ module.exports = {
       bg5: "url('/background5.jpg')",
       bg6: "url('/background6.jpg')",
       bg7: "url('/background7.jpg')",
+      livro: "url('/book_-_livro.png')",
     },
     fontFamily: {
       gotham: "Gotham HTF Medium",

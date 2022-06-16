@@ -20,7 +20,7 @@ export function FollowUs(props) {
       <div data-aos="fade-up" data-aos-duration="3000" className="w-1/2">
         <span>SIGA NOSSAS REDES SOCIAIS</span>
       </div>
-      <div className="ml-24 w-1/2">
+      <div className=" ml-24 w-1/2">
         <Image src={celular} alt="celular" width={697} height={985} />
         <Transition
           show={showLuz}

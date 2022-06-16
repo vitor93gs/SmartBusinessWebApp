@@ -21,8 +21,8 @@ export function Ebook() {
   }, []);
 
   return (
-    <div className="bg-transparent flex justify-between items-center max-w-tela w-screen h-screen sm:px-36 px-7 py-7 z-0">
-      <div className="flex flex-col items-center sm:w-1/2 w-1/3 text-left sm:mt-20 mr-auto">
+    <div className="bg-transparent flex justify-around items-center max-w-tela w-screen h-screen sm:px-36 px-7 py-7 z-0">
+      <div className="flex flex-col items-center sm:w-1/2 w-1/3 text-left sm:mt-20">
         <h1 className="text-gray1 sm:text-2xl text-base text-opacity-70 text-left sm:mb-12 h-36 w-full sm:ml-10">
           <Typewriter
             options={{
@@ -68,9 +68,7 @@ export function Ebook() {
         </div>
       </div>
       <div className="sm:w-1/2 w-1/3 ">
-        <div className="mb-44 ml-24 ">
-          <Image src={logoBig} alt="logoBig" width={450} height={600} />
-        </div>
+        <div className="absolute bottom-0 left-0 bg-no-repeat h-screen w-screen bg-contain bg-center pointer-events-none max-w-tela bg-livro"></div>
         <Transition
           show={showLuz}
           enter="transition-all ease-in duration-2000"
@@ -80,7 +78,7 @@ export function Ebook() {
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <div className="absolute bottom-0 left-0 bg-fumaca1 bg-no-repeat  bg-cover h-screen w-screen bg-center pointer-events-none max-w-tela"></div>
+          <div className="absolute bottom-0 left-0 bg-no-repeat h-screen w-screen bg-contain bg-center pointer-events-none max-w-tela bg-fumaca1 "></div>
         </Transition>
       </div>
     </div>
