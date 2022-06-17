@@ -78,7 +78,7 @@ export function Navbar() {
 						/>
 					</li>
 					<li className="no-underline text-golden transition  delay-150 hover:text-gray1 ">
-						<Link href="">
+						<Link href="/login">
 							<button className="h-14">LOGIN</button>
 						</Link>
 					</li>
