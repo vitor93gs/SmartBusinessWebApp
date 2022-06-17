@@ -1,6 +1,3 @@
-import Image from 'next/image';
-import ebook from '../../assets/ebook.jpg';
-
 export default function Empodera() {
 	return (
 		<div className="h-full bg-theme pt-24">

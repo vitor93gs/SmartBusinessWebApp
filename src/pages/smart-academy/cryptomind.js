@@ -1,7 +1,3 @@
-import { Navbar } from '../../components/Navbar';
-import Image from 'next/image';
-import ebook from '../../assets/ebook.jpg';
-
 export default function Cryptomind() {
 	return (
 		<div className="bg-theme h-full  z-0">

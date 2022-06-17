@@ -1,7 +1,3 @@
-import { Navbar } from '../../components/Navbar';
-import Image from 'next/image';
-import ebook from '../../assets/ebook.jpg';
-
 export default function Supera() {
 	return (
 		<div className="h-full bg-theme pt-24">

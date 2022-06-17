@@ -1,16 +1,27 @@
-import Image from 'next/image';
-import ebook from '../assets/ebook.jpg';
+import Link from 'next/link';
+import { useState, useEffect } from 'react';
+import Login from '../components/Login';
+import LoginMobile from '../components/LoginMobile';
 
-export default function Empodera() {
-	return <div className="bg-theme h-screen pt-24 z-0">
-        <div>
+export default function LoginPage() {
+	const [windowSize, setWindowSize] = useState(getWindowSize());
 
-        </div>
-        <div>
+	useEffect(() => {
+		function handleWindowResize() {
+			setWindowSize(getWindowSize());
+		}
 
-        </div>
-        <div>
-            
-        </div>
-    </div>;
+		window.addEventListener('resize', handleWindowResize);
+
+		return () => {
+			window.removeEventListener('resize', handleWindowResize);
+		};
+	}, []);
+
+	function getWindowSize() {
+		const { innerWidth: width, innerHeight: height } = window;
+		return { width, height };
+	}
+
+	return windowSize.width > 768 ? <Login /> : <LoginMobile />;
 }
