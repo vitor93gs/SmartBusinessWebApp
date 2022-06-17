@@ -9,9 +9,9 @@ export default function LoginMobile() {
 	}, []);
 
 	return (
-		<div className="bg-theme h-screen z-0 flex justify-center items-center ">
-			<div className="w-full mx-6 space-y-5 h-5/6 items-center pt-1/5">
-				<div className="border-2 border-gray1 h-1/5 w-full bg-smartbtech">
+		<div className="bg-fundo h-screen z-0 flex justify-center items-center ">
+			<div className="w-full mx-6 space-y-5 h-5/6 items-center pt-1/5 transition-all duration-500 ease-in-out">
+				<div className="transition-all duration-1000 ease-in delay-700 h-1/5 w-full bg-academyLoginCinza270 bg-contain bg-no-repeat bg-center hover:bg-academyLogin270">
 					<Link href={'https://app.smartbusinessgroup.io/#/'}>
 						<button className="h-full w-full text-gray1">
 							EXCHANGE

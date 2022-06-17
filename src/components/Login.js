@@ -9,37 +9,29 @@ export default function Login() {
 	}, []);
 
 	return (
-		<div className="bg-theme h-screen items-center z-0 flex justify-center">
-			<div className="border-2 border-gray1 h-login w-60 mx-2 bg-smartbtech">
+		<div className="bg-fundo h-screen items-center z-0 flex justify-center">
+			<div className="h-login w-60 mx-2 bg-contain bg-no-repeat bg-center  duration-300 ease-in bg-academyLoginCinza hover:bg-academyLogin">
 				<Link href={'https://app.smartbusinessgroup.io/#/'}>
-					<button className="h-full w-full text-gray1">
-						EXCHANGE
-					</button>
+					<button className="h-full w-full text-gray1"></button>
 				</Link>
 			</div>
-			<div className="border-2 border-gray1 h-login w-60 mx-2">
+			<div className="h-login w-60 mx-2 bg-contain bg-no-repeat bg-center  duration-300 ease-in bg-academyLoginCinza hover:bg-academyLogin">
 				<Link
 					href={'https://sistema.smartbusinessgroup.io/users/login'}
 				>
-					<button className="h-full w-full text-gray1">
-						SMARTTECH
-					</button>
+					<button className="h-full w-full text-gray1"></button>
 				</Link>
 			</div>
-			<div className="border-2 border-gray1 h-login w-60 mx-2">
+			<div className="h-login w-60 mx-2 bg-contain bg-no-repeat bg-center  duration-300 ease-in bg-academyLoginCinza hover:bg-academyLogin">
 				<Link
 					href={'https://www.smartbusinessgroup.io/smart-academy-2/'}
 				>
-					<button className="h-full w-full text-gray1">
-						SMARTACADEMY
-					</button>
+					<button className="h-full w-full text-gray1"></button>
 				</Link>
 			</div>
-			<div className="border-2 border-gray1 h-login w-60 mx-2">
+			<div className="h-login w-60 mx-2 bg-contain bg-no-repeat bg-center  duration-300 ease-in bg-academyLoginCinza hover:bg-academyLogin">
 				<Link href={'/'}>
-					<button className="h-full w-full text-gray1">
-						SMARTBANK cade o link?
-					</button>
+					<button className="h-full w-full text-gray1"></button>
 				</Link>
 			</div>
 		</div>
