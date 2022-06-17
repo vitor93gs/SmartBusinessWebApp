@@ -91,10 +91,10 @@
 .div-neon {
 	position: relative;
 	display: inline-block;
-	padding: 10px 20px;
-	margin: 40px;
-	color: #91a3ad;
-	font-size: 1rem;
+	padding: 20px 60px;
+	
+	color: #c0d3dd;
+	font-size: 1.6rem;
 	transition: 0.5s;
 	letter-spacing: 3px;
 	overflow: hidden;
