@@ -1,21 +1,40 @@
-import Image from "next/dist/client/image";
-import logoBig from "../../assets/book_-_livro.png";
 import Link from "next/link";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { Transition } from "@headlessui/react";
 
 export function SmartAcademy() {
+  const [showLuz, setShowLuz] = useState(false);
+
   useEffect(() => {
     AOS.init();
+    setTimeout(() => {
+      setShowLuz(true);
+    }, 2000);
   }, []);
+
   return (
-    <div className="bg-transparent flex justify-between items-center w-screen h-screen sm:px-36 px-7 py-7">
-      <div className="flex flex-col items-center sm:w-1/2 w-1/3 mr-auto">
+    <div className="max-w-tela bg-transparent flex justify-between items-center w-screen h-screen px-36 py-7">
+      <div className="w-1/2">
+        <div className="absolute bottom-0 left-0 bg-no-repeat h-screen w-screen bg-contain bg-center pointer-events-none max-w-tela bg-academy" />
+        <Transition
+          show={showLuz}
+          enter="transition-all ease-in duration-2000"
+          enterFrom="opacity-0"
+          enterTo="opacity-100"
+          leave="transition-all ease-out duration-1000"
+          leaveFrom="opacity-100"
+          leaveTo="opacity-0"
+        >
+          <div className="absolute visible bottom-0 left-0 bg-no-repeat h-screen w-screen bg-contain bg-center pointer-events-none max-w-tela bg-fumaca4 " />
+        </Transition>
+      </div>
+      <div className="flex flex-col items-center w-1/2 mr-auto">
         <h1
           data-aos="zoom-out-down"
           data-aos-duration="2500"
-          className="text-gray1 sm:text-2xl text-base text-opacity-70 text-center sm:mb-12 h-36 w-full sm:ml-10"
+          className="text-gray1 sm:text-2xl text-base text-opacity-70 text-center mb-12 h-36 w-full ml-10"
         >
           SMART ACADEMY!
         </h1>
@@ -24,9 +43,6 @@ export function SmartAcademy() {
             <button className="btn-6 btn-62">SAIBA MAIS</button>
           </Link>
         </div>
-      </div>
-      <div className="w-1/2">
-        <Image src={logoBig} alt="logoBig" width={400} height={540} />
       </div>
     </div>
   );
