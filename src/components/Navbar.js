@@ -47,7 +47,7 @@ export function Navbar() {
 					</li>
 
 					<li className="after:block after:absolute after:transition-all after:w-3 after:bg-golden after:bg-opacity-60 after:h-0.5 after:duration-600 after:ease-in-out after:bottom-5 after:hover:w-10 after:hover:bg-golden after:hover:bg-opacity-60 ">
-						<Link href="/">
+						<Link href="https://blog.smartbusinessgroup.tech">
 							<button className="no-underline text-gray1 transition  delay-150 hover:text-golden h-14">
 								COMUNIDADE
 							</button>

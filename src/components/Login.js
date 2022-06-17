@@ -10,12 +10,12 @@ export default function Login() {
 
 	return (
 		<div className="bg-fundo h-screen items-center z-0 flex justify-center">
-			<div className="h-login w-60 mx-2 bg-contain bg-no-repeat bg-center  duration-300 ease-in bg-academyLoginCinza hover:bg-academyLogin">
+			<div className="h-login w-60 mx-2 bg-contain bg-no-repeat bg-center  duration-300 ease-in bg-exchangeLoginCinza hover:bg-exchangeLogin">
 				<Link href={'https://app.smartbusinessgroup.io/#/'}>
 					<button className="h-full w-full text-gray1"></button>
 				</Link>
 			</div>
-			<div className="h-login w-60 mx-2 bg-contain bg-no-repeat bg-center  duration-300 ease-in bg-academyLoginCinza hover:bg-academyLogin">
+			<div className="h-login w-60 mx-2 bg-contain bg-no-repeat bg-center  duration-300 ease-in bg-techLoginCinza hover:bg-techLogin">
 				<Link
 					href={'https://sistema.smartbusinessgroup.io/users/login'}
 				>
@@ -29,7 +29,7 @@ export default function Login() {
 					<button className="h-full w-full text-gray1"></button>
 				</Link>
 			</div>
-			<div className="h-login w-60 mx-2 bg-contain bg-no-repeat bg-center  duration-300 ease-in bg-academyLoginCinza hover:bg-academyLogin">
+			<div className="h-login w-60 mx-2 bg-contain bg-no-repeat bg-center  duration-300 ease-in bg-bankLoginCinza hover:bg-bankLogin">
 				<Link href={'/'}>
 					<button className="h-full w-full text-gray1"></button>
 				</Link>
