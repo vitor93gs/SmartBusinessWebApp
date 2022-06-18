@@ -1,9 +1,11 @@
 import Image from 'next/image';
 import ebook from '../../assets/ebook.jpg';
+import { Navbar } from '../../components/Navbar';
 
 export default function ComunidadeMulheres() {
 	return (
 		<div className="h-full bg-theme">
+			<Navbar />
 			<section className="pt-24 flex text-opacity-70 justify-around items-center">
 				<div>
 					<Image src={ebook} alt="ebook" width={400} height={400} />

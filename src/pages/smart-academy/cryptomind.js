@@ -1,6 +1,9 @@
+import { Navbar } from '../../components/Navbar';
+
 export default function Cryptomind() {
 	return (
 		<div className="bg-theme h-full  z-0">
+			<Navbar />
 			<section className=" text-gray1 pt-24 text-4xl text-opacity-70">
 				<h1>CriptoMind</h1>
 

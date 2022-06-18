@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import Login from '../components/Login';
+import { Navbar } from '../components/Navbar';
 import LoginMobile from '../components/LoginMobile';
 
 export default function LoginPage() {
@@ -23,5 +24,10 @@ export default function LoginPage() {
 	// }
 
 	// return windowSize.width > 768 ? <Login /> : <LoginMobile />;
-	return <Login />;
+	return (
+		<div>
+			<Navbar />
+			<Login />
+		</div>
+	);
 }

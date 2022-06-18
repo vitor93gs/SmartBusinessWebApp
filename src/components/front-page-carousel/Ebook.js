@@ -39,8 +39,19 @@ export function Ebook() {
 						}}
 					/>
 				</h1>
-				<Image src={texto} alt="texto do banner" />
-				<div className='mt-12' data-aos="zoom-out-down" data-aos-duration="3000">
+				<div
+					className="mt-12"
+					data-aos="fade-up"
+					data-aos-duration="2000"
+				>
+					<Image src={texto} alt="texto do banner" />
+				</div>
+
+				<div
+					className="mt-12"
+					data-aos="slide-up"
+					data-aos-duration="2000"
+				>
 					<Link href="">
 						<div className="div-neon opacity-60 rounded-sm text-center m-0 text-sm z-50">
 							<span></span>
