@@ -5,7 +5,7 @@ import { Navbar } from '../../components/Navbar';
 
 export default function SmartDuck() {
 	return (
-		<div className="bg-theme h-screen  z-0">
+		<div className="bg-theme h-screen pb-2 z-0">
 			<Navbar />
 			<div className="h-36"></div>
 			<section className="bg-banner1 bg-no-repeat h-5/6 flex text-theme text-4xl text-right text-opacity-70 justify-around items-center">
