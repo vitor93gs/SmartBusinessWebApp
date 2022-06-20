@@ -79,7 +79,7 @@ export function Navbar() {
           </li>
         </ul>
       </div>
-      <div className="absolute right-1/3 sm:flex sm:justify-center sm:static sm:w-44 mb-3 sm:mt-0">
+      <div className="absolute right-1/3 sm:flex sm:justify-center sm:static sm:w-44 sm:mb-3 mt-3 sm:mt-0">
         {/* <Image
           src={isMouseOver ? lupa2 : lupa1}
           alt="Logo smart Business"
