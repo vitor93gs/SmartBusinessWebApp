@@ -124,7 +124,7 @@ export default function Tabs2() {
       }}
       className="max-w-tela inline-flex min-w-0"
     >
-      <div className="bg-bg1 max-w-tela h-screen w-screen bg-no-repeat bg-cover bg-center">
+      <div className="bg-bg1 min-w-0 max-w-tela h-screen w-screen bg-no-repeat bg-cover bg-center">
         <Transition
           show={selected === 0}
           enter="transition-all ease-in duration-2000"
@@ -144,7 +144,7 @@ export default function Tabs2() {
         </Transition>
       </div>
 
-      <div className="bg-bg2 max-w-tela h-screen w-screen bg-no-repeat bg-cover bg-center">
+      <div className="bg-bg2 min-w-0 max-w-tela h-screen w-screen bg-no-repeat bg-cover bg-center">
         <Transition
           show={selected === 1}
           enter="transition-all ease-in duration-2000"
@@ -164,7 +164,7 @@ export default function Tabs2() {
         </Transition>
       </div>
 
-      <div className="bg-bg3 max-w-tela h-screen w-screen bg-no-repeat bg-cover bg-center">
+      <div className="bg-bg3 min-w-0 max-w-tela h-screen w-screen bg-no-repeat bg-cover bg-center">
         <Transition
           show={selected === 2}
           enter="transition-all ease-in duration-2000"
@@ -184,7 +184,7 @@ export default function Tabs2() {
         </Transition>
       </div>
 
-      <div className="bg-bg4 max-w-tela h-screen w-screen bg-no-repeat bg-cover bg-center">
+      <div className="bg-bg4 min-w-0 max-w-tela h-screen w-screen bg-no-repeat bg-cover bg-center">
         <Transition
           show={selected === 3}
           enter="transition-all ease-in duration-2000"
@@ -204,7 +204,7 @@ export default function Tabs2() {
         </Transition>
       </div>
 
-      <div className="bg-bg5 max-w-tela h-screen w-screen bg-no-repeat bg-cover bg-center">
+      <div className="bg-bg5 min-w-0 max-w-tela h-screen w-screen bg-no-repeat bg-cover bg-center">
         <Transition
           show={selected === 4}
           enter="transition-all ease-in duration-2000"
@@ -224,7 +224,7 @@ export default function Tabs2() {
         </Transition>
       </div>
 
-      <div className="bg-bg6 max-w-tela h-screen w-screen bg-no-repeat bg-cover bg-center">
+      <div className="bg-bg6 min-w-0 max-w-tela h-screen w-screen bg-no-repeat bg-cover bg-center">
         <Transition
           show={selected === 5}
           enter="transition-all ease-in duration-2000"
