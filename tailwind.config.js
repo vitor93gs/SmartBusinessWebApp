@@ -78,7 +78,7 @@ module.exports = {
       academyLogin: "url('/academyLogin.png')",
       academyLoginCinza: "url('/academyLoginCinza.png')",
       fundo: "url('/fundo.jpg')",
-      academySLogin: "url('/academySLogin.png')",
+      academySLogin: "url('/academySmallLogin.png')",
       exchangeLogin: "url('/exchangeLogin.png')",
       exchangeLoginCinza: "url('/exchangeLoginCinza.png')",
       exchangeSLogin: "url('/exchangeSLogin.png')",
