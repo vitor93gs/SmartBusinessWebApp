@@ -75,7 +75,7 @@ export function Franqueado() {
             }}
           />
         </h1>
-        <div className="mt-5" data-aos="fade-right" data-aos-duration="3000">
+        <div className="mt-5 text-2xl" data-aos="fade-right" data-aos-duration="3000">
           <Link href="">
             <button className="btn btn-three"> SAIBA MAIS! </button>
           </Link>

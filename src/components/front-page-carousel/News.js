@@ -73,7 +73,11 @@ export function News() {
             }}
           />
         </h1>
-        <div className="mt-5" data-aos="zoom-in" data-aos-duration="3000">
+        <div
+          className="mt-5 text-2xl"
+          data-aos="zoom-in"
+          data-aos-duration="3000"
+        >
           <Link href="">
             <button className="btn-4">SAIBA MAIS</button>
           </Link>

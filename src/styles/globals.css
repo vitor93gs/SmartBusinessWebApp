@@ -185,9 +185,9 @@
 
 .btn {
   line-height: 50px;
-  height: 50px;
+  height: 60px;
   text-align: center;
-  width: 180px;
+  width: 250px;
   cursor: pointer;
 }
 .btn-three {
@@ -235,7 +235,7 @@
   color: #91a3ad;
   text-align: center;
   display: inline-block;
-  padding: 15px 40px;
+  padding: 10px 60px;
   border: 1px solid rgba(214, 168, 76, 0.5);
   cursor: pointer;
   letter-spacing: 2px;
@@ -270,8 +270,8 @@
   position: relative;
   overflow: hidden;
   color: #91a3ad;
-  height: 50px;
-  width: 180px;
+  height: 60px;
+  width: 250px;
   -webkit-box-reflect: below 20px linear-gradient(transparent, #d0b2);
 }
 
@@ -304,16 +304,16 @@
 .btn-5 {
   color: #91a3ad;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 400;
   line-height: 50px;
   margin: 0 0 2em;
-  max-width: 160px;
+
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
-  width: 180px;
-  height: 50px;
+  width: 250px;
+  height: 60px;
 }
 .btn-52 {
   border: 0 solid;
@@ -344,8 +344,8 @@
   border: 2px solid rgba(214, 168, 76, 0.5);
   overflow: hidden;
   transition: 1s all ease;
-  width: 180px;
-  height: 50px;
+  width: 250px;
+  height: 60px;
   -webkit-box-reflect: below 20px linear-gradient(transparent, #d0b2);
 }
 .btn-6::before {

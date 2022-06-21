@@ -62,7 +62,7 @@ export function Ebook() {
         </h1>
         <div className="mt-6" data-aos="slide-up" data-aos-duration="2000">
           <Link href="">
-            <div className="div-neon opacity-60 rounded-sm text-center m-0 text-sm z-50">
+            <div className="div-neon opacity-60 text-center m-0 text-sm z-50">
               <span></span>
               <span></span>
               <span></span>

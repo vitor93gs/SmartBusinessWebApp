@@ -90,7 +90,7 @@ export function SmartAcademy() {
           />
         </h1>
         <div
-          className="absolute right-0"
+          className="absolute right-0 text-2xl"
           data-aos="fade-left"
           data-aos-duration="3000"
         >
