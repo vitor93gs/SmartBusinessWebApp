@@ -14,8 +14,8 @@ export function SmartBusiness() {
     }, 2000);
   }, []);
   return (
-    <div className="max-w-tela bg-transparent flex items-center w-screen h-screen py-7">
-      <div className="w-1/2">
+    <div className="max-w-tela bg-transparent flex justify-between items-center w-screen h-screen px-36 py-7">
+      <div>
         <div className="absolute bottom-0 left-0 bg-no-repeat h-screen w-screen bg-contain bg-center pointer-events-none max-w-tela bg-logo" />
         <Transition
           show={showLuz}
@@ -29,7 +29,7 @@ export function SmartBusiness() {
           <div className="absolute visible bottom-0 left-0 bg-no-repeat h-screen w-screen bg-contain bg-center pointer-events-none max-w-tela bg-fumaca7 " />
         </Transition>
       </div>
-      <div className="w-1/2 relative mr-1/6">
+      <div className=" relative xl:mr-1/6">
         <h1 className="text-white2 text-right text-4xl h-12">
           <Typewriter
             options={{

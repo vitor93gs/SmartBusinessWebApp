@@ -25,6 +25,7 @@ module.exports = {
         "1/5": "20%",
         "1/6": "16.66%",
         login: "650px",
+        
       },
       fontSize: {
         xxs: ".65rem",

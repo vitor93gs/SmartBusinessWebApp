@@ -17,7 +17,7 @@ export function FreeCourse() {
 
   return (
     <div className="max-w-tela bg-transparent flex justify-between items-center w-screen h-screen px-36 py-7">
-      <div className="flex flex-col items-center w-1/2 text-left  mr-auto">
+      <div className="flex flex-col items-center text-left  mr-auto">
         <div className="absolute bottom-0 left-0 bg-no-repeat h-screen w-screen bg-contain bg-center pointer-events-none max-w-tela bg-personagem" />
         <Transition
           show={showLuz}
@@ -46,7 +46,7 @@ export function FreeCourse() {
           </Link>
         </div>
       </div> */}
-      <div className="w-1/2 relative mr-1/6">
+      <div className="relative xl:mr-1/6">
         <h1 className="text-white2 text-right text-4xl h-12">
           <Typewriter
             options={{

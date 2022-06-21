@@ -17,7 +17,7 @@ export function SmartAcademy() {
 
   return (
     <div className="max-w-tela bg-transparent flex justify-between items-center w-screen h-screen px-36 py-7">
-      <div className="w-1/2">
+      <div>
         <div className="absolute bottom-0 left-0 bg-no-repeat h-screen w-screen bg-contain bg-center pointer-events-none max-w-tela bg-academy" />
         <Transition
           show={showLuz}
@@ -45,7 +45,7 @@ export function SmartAcademy() {
           </Link>
         </div>
       </div> */}
-      <div className="w-1/2 relative mr-1/6">
+      <div className="relative xl:mr-1/6">
         <h1 className="text-white2 text-right text-4xl h-12">
           <Typewriter
             options={{
