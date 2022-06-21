@@ -10,6 +10,7 @@ module.exports = {
       },
       spacing: {
         custom: "150px",
+        imagemTexto: "500px",
         navbartop: "0.8rem",
         navbarbottom: "0.8rem",
         book: "27%",
@@ -22,6 +23,7 @@ module.exports = {
         "1/3": "33.33%",
         "3/4": "75%",
         "1/5": "20%",
+        "1/6": "16.66%",
         login: "650px",
       },
       fontSize: {
