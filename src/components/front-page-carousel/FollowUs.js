@@ -69,6 +69,7 @@ export function FollowUs(props) {
               <a
                 href="https://web.whatsapp.com/send?phone=5547996236478&text=Ol%C3%A1%2C%20eu%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Smart%20Business"
                 target="_blank"
+                rel="noreferrer"
                 className="aSocial"
               >
                 <i className="fab" aria-hidden="true">
@@ -80,6 +81,7 @@ export function FollowUs(props) {
               <a
                 href="https://www.instagram.com/smartbusiness.oficial/"
                 target="_blank"
+                rel="noreferrer"
                 className="aSocial"
               >
                 <i className="fab" aria-hidden="true">

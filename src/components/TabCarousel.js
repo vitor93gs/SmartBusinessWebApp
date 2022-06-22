@@ -12,6 +12,7 @@ import { News } from "./front-page-carousel/News";
 import { SmartBusiness } from "./front-page-carousel/SmartBusiness";
 import { SmartAcademy } from "./front-page-carousel/SmartAcademy";
 import { MobilePage } from "./front-page-carousel/MobilePage";
+import { MobilePageFollow} from "./front-page-carousel/MobilePageFollow"
 
 import personagem from "../assets/personagem.png";
 import livro from "../assets/book_-_livro.png";
@@ -258,7 +259,10 @@ export default function Tabs2() {
             {windowSize.width > 768 ? (
               <FollowUs />
             ) : (
-              <MobilePage image={celular} text="Siga nossas redes sociais" />
+              <MobilePageFollow
+                image={celular}
+                text="Siga nossas redes sociais!"
+              />
             )}
           </div>
         </Transition>
