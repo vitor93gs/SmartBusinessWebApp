@@ -12,7 +12,7 @@ export function MobilePageFollow(props) {
   }, []);
 
   return (
-    <div className="h-screen w-screen pt-24">
+    <div className={`h-screen w-screen pt-24 bg-${props.bg}`}>
       <div className="w-screen justify-center flex">
         <div className="w-64">
           <Image src={props.image} alt="logoBig" layout="intrinsic" />

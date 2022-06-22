@@ -25,7 +25,6 @@ module.exports = {
         "1/5": "20%",
         "1/6": "16.66%",
         login: "650px",
-        
       },
       fontSize: {
         xxs: ".65rem",
@@ -89,6 +88,13 @@ module.exports = {
       techLogin: "url('/techLogin.png')",
       techLoginCinza: "url('/techLoginCinza.png')",
       techSLogin: "url('/techSLogin.png')",
+      mobile1: "url('/bgMobile1.png')",
+      mobile2: "url('/bgMobile2.png')",
+      mobile3: "url('/bgMobile3.png')",
+      mobile4: "url('/bgMobile4.png')",
+      mobile5: "url('/bgMobile5.png')",
+      mobile6: "url('/bgMobile6.png')",
+      mobile7: "url('/bgMobile7.png')",
     },
     fontFamily: {
       gotham: "Gotham HTF Medium",

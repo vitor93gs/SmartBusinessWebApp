@@ -12,7 +12,7 @@ import { News } from "./front-page-carousel/News";
 import { SmartBusiness } from "./front-page-carousel/SmartBusiness";
 import { SmartAcademy } from "./front-page-carousel/SmartAcademy";
 import { MobilePage } from "./front-page-carousel/MobilePage";
-import { MobilePageFollow} from "./front-page-carousel/MobilePageFollow"
+import { MobilePageFollow } from "./front-page-carousel/MobilePageFollow";
 
 import personagem from "../assets/personagem.png";
 import livro from "../assets/book_-_livro.png";
@@ -125,147 +125,169 @@ export default function Tabs2() {
       }}
       className="max-w-tela inline-flex min-w-0"
     >
-      <div className="bg-bg1 min-w-0 max-w-tela h-screen w-screen bg-no-repeat bg-cover bg-center">
-        <Transition
-          show={selected === 0}
-          enter="transition-all ease-in duration-2000"
-          enterFrom="opacity-0"
-          enterTo="opacity-100"
-          leave="transition-all ease-out duration-1000"
-          leaveFrom="opacity-100"
-          leaveTo="opacity-0"
-        >
-          <div className="sm:bg-elem1 bg-cover bg-no-repeat max-w-tela h-screen w-screen">
-            {windowSize.width > 768 ? (
-              <Ebook />
-            ) : (
-              <MobilePage image={livro} text="BAIXE NOSSOS EBOOKS!" />
-            )}
+      <div>
+        {windowSize.width > 768 ? (
+          <div className="bg-bg1 min-w-0 max-w-tela h-screen w-screen bg-no-repeat bg-cover bg-center">
+            <Transition
+              show={selected === 0}
+              enter="transition-all ease-in duration-2000"
+              enterFrom="opacity-0"
+              enterTo="opacity-100"
+              leave="transition-all ease-out duration-1000"
+              leaveFrom="opacity-100"
+              leaveTo="opacity-0"
+            >
+              <div className="sm:bg-elem1 bg-cover bg-no-repeat max-w-tela h-screen w-screen">
+                <Ebook />
+              </div>
+            </Transition>
           </div>
-        </Transition>
+        ) : (
+          <div className="h-screen w-screen pt-24 bg-mobile1 bg-cover bg-center bg-no-repeat">
+            <MobilePage image={livro} text="BAIXE NOSSOS EBOOKS!" />
+          </div>
+        )}
       </div>
-
-      <div className="bg-bg2 min-w-0 max-w-tela h-screen w-screen bg-no-repeat bg-cover bg-center">
-        <Transition
-          show={selected === 1}
-          enter="transition-all ease-in duration-2000"
-          enterFrom="opacity-0"
-          enterTo="opacity-100"
-          leave="transition-all ease-out duration-1000"
-          leaveFrom="opacity-100"
-          leaveTo="opacity-0"
-        >
-          <div className="sm:bg-elem2 bg-cover bg-no-repeat max-w-tela h-screen w-screen">
-            {windowSize.width > 768 ? (
-              <Franqueado />
-            ) : (
-              <MobilePage image={franquia} text="SEJA NOSSO FRANQUEADO" />
-            )}
+      <div>
+        {windowSize.width > 768 ? (
+          <div className="bg-bg2 min-w-0 max-w-tela h-screen w-screen bg-no-repeat bg-cover bg-center">
+            <Transition
+              show={selected === 1}
+              enter="transition-all ease-in duration-2000"
+              enterFrom="opacity-0"
+              enterTo="opacity-100"
+              leave="transition-all ease-out duration-1000"
+              leaveFrom="opacity-100"
+              leaveTo="opacity-0"
+            >
+              <div className="sm:bg-elem2 bg-cover bg-no-repeat max-w-tela h-screen w-screen">
+                <Franqueado />
+              </div>
+            </Transition>
           </div>
-        </Transition>
+        ) : (
+          <div className="h-screen w-screen pt-24 bg-mobile2 bg-cover bg-center bg-no-repeat">
+            <MobilePage image={franquia} text="SEJA NOSSO FRANQUEADO" />
+          </div>
+        )}
       </div>
-
-      <div className="bg-bg3 min-w-0 max-w-tela h-screen w-screen bg-no-repeat bg-cover bg-center">
-        <Transition
-          show={selected === 2}
-          enter="transition-all ease-in duration-2000"
-          enterFrom="opacity-0"
-          enterTo="opacity-100"
-          leave="transition-all ease-out duration-1000"
-          leaveFrom="opacity-100"
-          leaveTo="opacity-0"
-        >
-          <div className="bg-elem3 bg-cover bg-no-repeat sm:bg-center max-w-tela h-screen w-screen">
-            {windowSize.width > 768 ? (
-              <FreeCourse />
-            ) : (
-              <MobilePage image={personagem} text="CURSOS GRATUITOS" />
-            )}
+      <div>
+        {windowSize.width > 768 ? (
+          <div className="bg-bg2 min-w-0 max-w-tela h-screen w-screen bg-no-repeat bg-cover bg-center">
+            <Transition
+              show={selected === 2}
+              enter="transition-all ease-in duration-2000"
+              enterFrom="opacity-0"
+              enterTo="opacity-100"
+              leave="transition-all ease-out duration-1000"
+              leaveFrom="opacity-100"
+              leaveTo="opacity-0"
+            >
+              <div className="sm:bg-elem2 bg-cover bg-no-repeat max-w-tela h-screen w-screen">
+                <FreeCourse />
+              </div>
+            </Transition>
           </div>
-        </Transition>
+        ) : (
+          <div className="h-screen w-screen pt-24 bg-mobile3 bg-cover bg-center bg-no-repeat">
+            <MobilePage image={personagem} text="CURSOS GRATUITOS" />
+          </div>
+        )}
       </div>
-
-      <div className="bg-bg4 min-w-0 max-w-tela h-screen w-screen bg-no-repeat bg-cover bg-center">
-        <Transition
-          show={selected === 3}
-          enter="transition-all ease-in duration-2000"
-          enterFrom="opacity-0"
-          enterTo="opacity-100"
-          leave="transition-all ease-out duration-1000"
-          leaveFrom="opacity-100"
-          leaveTo="opacity-0"
-        >
-          <div className="sm:bg-elem4 bg-cover bg-no-repeat max-w-tela h-screen w-screen">
-            {windowSize.width > 768 ? (
-              <News />
-            ) : (
-              <MobilePage image={news} text="NOVIDADES AQUI" />
-            )}
+      <div>
+        {windowSize.width > 768 ? (
+          <div className="bg-bg2 min-w-0 max-w-tela h-screen w-screen bg-no-repeat bg-cover bg-center">
+            <Transition
+              show={selected === 3}
+              enter="transition-all ease-in duration-2000"
+              enterFrom="opacity-0"
+              enterTo="opacity-100"
+              leave="transition-all ease-out duration-1000"
+              leaveFrom="opacity-100"
+              leaveTo="opacity-0"
+            >
+              <div className="sm:bg-elem2 bg-cover bg-no-repeat max-w-tela h-screen w-screen">
+                <News />
+              </div>
+            </Transition>
           </div>
-        </Transition>
+        ) : (
+          <div className="h-screen w-screen pt-24 bg-mobile4 bg-cover bg-center bg-no-repeat">
+            <MobilePage image={news} text="NOVIDADES AQUI" />
+          </div>
+        )}
       </div>
-
-      <div className="bg-bg5 min-w-0 max-w-tela h-screen w-screen bg-no-repeat bg-cover bg-center">
-        <Transition
-          show={selected === 4}
-          enter="transition-all ease-in duration-2000"
-          enterFrom="opacity-0"
-          enterTo="opacity-100"
-          leave="transition-all ease-out duration-1000"
-          leaveFrom="opacity-100"
-          leaveTo="opacity-0"
-        >
-          <div className="sm:bg-elem5 bg-cover bg-no-repeat max-w-tela h-screen w-screen">
-            {windowSize.width > 768 ? (
-              <SmartBusiness />
-            ) : (
-              <MobilePage image={business} text="SMART BUSINESS" />
-            )}
+      <div>
+        {windowSize.width > 768 ? (
+          <div className="bg-bg2 min-w-0 max-w-tela h-screen w-screen bg-no-repeat bg-cover bg-center">
+            <Transition
+              show={selected === 4}
+              enter="transition-all ease-in duration-2000"
+              enterFrom="opacity-0"
+              enterTo="opacity-100"
+              leave="transition-all ease-out duration-1000"
+              leaveFrom="opacity-100"
+              leaveTo="opacity-0"
+            >
+              <div className="sm:bg-elem2 bg-cover bg-no-repeat max-w-tela h-screen w-screen">
+                <SmartAcademy />
+              </div>
+            </Transition>
           </div>
-        </Transition>
+        ) : (
+          <div className="h-screen w-screen pt-24 bg-mobile5 bg-cover bg-center bg-no-repeat">
+            <MobilePage image={business} text="SMART BUSINESS" />
+          </div>
+        )}
       </div>
-
-      <div className="bg-bg6 min-w-0 max-w-tela h-screen w-screen bg-no-repeat bg-cover bg-center">
-        <Transition
-          show={selected === 5}
-          enter="transition-all ease-in duration-2000"
-          enterFrom="opacity-0"
-          enterTo="opacity-100"
-          leave="transition-all ease-out duration-1000"
-          leaveFrom="opacity-100"
-          leaveTo="opacity-0"
-        >
-          <div className="sm:bg-elem6 bg-cover bg-no-repeat max-w-tela h-screen w-screen">
-            {windowSize.width > 768 ? (
-              <SmartAcademy />
-            ) : (
-              <MobilePage image={academy} text="SMART ACADEMY" />
-            )}
+      <div>
+        {windowSize.width > 768 ? (
+          <div className="bg-bg2 min-w-0 max-w-tela h-screen w-screen bg-no-repeat bg-cover bg-center">
+            <Transition
+              show={selected === 5}
+              enter="transition-all ease-in duration-2000"
+              enterFrom="opacity-0"
+              enterTo="opacity-100"
+              leave="transition-all ease-out duration-1000"
+              leaveFrom="opacity-100"
+              leaveTo="opacity-0"
+            >
+              <div className="sm:bg-elem2 bg-cover bg-no-repeat max-w-tela h-screen w-screen">
+                <SmartBusiness />
+              </div>
+            </Transition>
           </div>
-        </Transition>
+        ) : (
+          <div className="h-screen w-screen pt-24 bg-mobile6 bg-cover bg-center bg-no-repeat">
+            <MobilePage image={academy} text="SMART ACADEMY" />
+          </div>
+        )}
       </div>
-
-      <div className="bg-bg7 max-w-tela h-screen w-screen bg-no-repeat bg-cover bg-center">
-        <Transition
-          show={selected === 6}
-          enter="transition-all ease-in duration-2000"
-          enterFrom="opacity-0"
-          enterTo="opacity-100"
-          leave="transition-all ease-out duration-1000"
-          leaveFrom="opacity-100"
-          leaveTo="opacity-0"
-        >
-          <div className="sm:bg-elem7 bg-cover bg-no-repeat max-w-tela h-screen w-screen">
-            {windowSize.width > 768 ? (
-              <FollowUs />
-            ) : (
-              <MobilePageFollow
-                image={celular}
-                text="Siga nossas redes sociais!"
-              />
-            )}
+      <div>
+        {windowSize.width > 768 ? (
+          <div className="bg-bg2 min-w-0 max-w-tela h-screen w-screen bg-no-repeat bg-cover bg-center">
+            <Transition
+              show={selected === 6}
+              enter="transition-all ease-in duration-2000"
+              enterFrom="opacity-0"
+              enterTo="opacity-100"
+              leave="transition-all ease-out duration-1000"
+              leaveFrom="opacity-100"
+              leaveTo="opacity-0"
+            >
+              <div className="sm:bg-elem2 bg-cover bg-no-repeat max-w-tela h-screen w-screen">
+                <FollowUs />
+              </div>
+            </Transition>
           </div>
-        </Transition>
+        ) : (
+          <div className="h-screen w-screen pt-24 bg-mobile7 bg-cover bg-center bg-no-repeat">
+            <MobilePageFollow
+              image={celular}
+              text="SIGA NOSSAS REDES SOCIAIS"
+            />
+          </div>
+        )}
       </div>
     </Carousel>
   );
