@@ -19,7 +19,7 @@ export function MobilePageFollow(props) {
         </div>
       </div>
 
-      <h1 className="text-gray1 text-base text-opacity-70 text-center my-6">
+      <h1 className="text-white2 text-2xl text-opacity-90 text-center my-6">
         {props.text}
       </h1>
       <div className="flex justify-center">
