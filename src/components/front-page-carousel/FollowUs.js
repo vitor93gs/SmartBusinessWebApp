@@ -66,14 +66,22 @@ export function FollowUs(props) {
         <div className="mt-5 h-10 w-10">
           <ul className="ulSocial opacity-80">
             <li className="liSocial">
-              <a href="#" className="aSocial">
+              <a
+                href="https://web.whatsapp.com/send?phone=5547996236478&text=Ol%C3%A1%2C%20eu%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Smart%20Business"
+                target="_blank"
+                className="aSocial"
+              >
                 <i className="fab" aria-hidden="true">
                   <FontAwesomeIcon icon={faWhatsapp} />
                 </i>
               </a>
             </li>
             <li className="liSocial">
-              <a href="#" className="aSocial">
+              <a
+                href="https://www.instagram.com/smartbusiness.oficial/"
+                target="_blank"
+                className="aSocial"
+              >
                 <i className="fab" aria-hidden="true">
                   <FontAwesomeIcon icon={faInstagram} />
                 </i>
