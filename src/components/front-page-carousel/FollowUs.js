@@ -67,14 +67,14 @@ export function FollowUs(props) {
           <ul className="ulSocial opacity-80">
             <li className="liSocial">
               <a href="#" className="aSocial">
-                <i class="fab" aria-hidden="true">
+                <i className="fab" aria-hidden="true">
                   <FontAwesomeIcon icon={faWhatsapp} />
                 </i>
               </a>
             </li>
             <li className="liSocial">
               <a href="#" className="aSocial">
-                <i class="fab" aria-hidden="true">
+                <i classname="fab" aria-hidden="true">
                   <FontAwesomeIcon icon={faInstagram} />
                 </i>
               </a>
