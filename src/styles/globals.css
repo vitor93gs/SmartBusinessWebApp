@@ -2,9 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-/* NPROGRESS */
 @import url("//db.onlinewebfonts.com/c/09d57d76383244264b7bdef717efcb36?family=Gotham+HTF+Book");
 @import url("//db.onlinewebfonts.com/c/bd317adf74e5e7e564eb61ce9926cc6d?family=Gotham");
+
+/* NPROGRESS */
 
 #nprogress {
   pointer-events: none;
@@ -349,7 +350,7 @@
   -webkit-box-reflect: below 20px linear-gradient(transparent, #d0b2);
 }
 .btn-6::before {
-  background: rgba(214, 168, 76, 0.1);
+  background: rgba(214, 168, 76, 0.9);
   content: "";
   position: absolute;
   top: 50%;
@@ -365,4 +366,59 @@
 }
 .btn-62:hover::before {
   height: 380%;
+}
+.btn-6:hover {
+  color: #000000;
+}
+
+/* social */
+
+.ulSocial {
+  display: flex;
+}
+
+.ulSocial .liSocial {
+  list-style: none;
+}
+
+.ulSocial .liSocial .aSocial {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: block;
+  text-align: center;
+  margin: 0 10px;
+  border-radius: 50%;
+  padding: 6px;
+  box-sizing: border-box;
+  text-decoration: none;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(0deg, rgb(122, 135, 212), #fff);
+  transition: 1s;
+  transition-delay: 150ms;
+}
+
+.ulSocial .liSocial .aSocial:hover {
+  box-shadow: 0 0 4px #cfb47e;
+  text-decoration: none;
+}
+
+.ulSocial .liSocial .aSocial .fab {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: linear-gradient(0deg, #fff, rgb(170, 176, 212));
+  border-radius: 50%;
+  line-height: calc(40px - 14px);
+  font-size: 20px;
+  color: #262626;
+  transition: 0.5s;
+}
+
+.ulSocial .liSocial:nth-child(1) .aSocial:hover .fab {
+  color: #34af23;
+}
+
+.ulSocial .liSocial:nth-child(2) .aSocial:hover .fab {
+  color: #e4405f;
 }

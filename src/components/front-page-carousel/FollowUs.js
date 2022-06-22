@@ -1,4 +1,5 @@
 import Image from "next/dist/client/image";
+import botao from "../../assets/botaoWhats.svg";
 import texto from "../../assets/Banner1_texto.png";
 import Link from "next/link";
 import Typewriter from "typewriter-effect";
@@ -6,6 +7,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import { Transition } from "@headlessui/react";
+import ReactDOM from "react-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 export function FollowUs(props) {
   const [showLuz, setShowLuz] = useState(false);
@@ -59,10 +63,23 @@ export function FollowUs(props) {
             }}
           />
         </h1>
-        <div className="mt-5" data-aos="zoom-in" data-aos-duration="3000">
-          <Link href="">
-            <button className="btn-4">SAIBA MAIS</button>
-          </Link>
+        <div className="mt-5 h-10 w-10">
+          <ul className="ulSocial opacity-80">
+            <li className="liSocial">
+              <a href="#" className="aSocial">
+                <i class="fab" aria-hidden="true">
+                  <FontAwesomeIcon icon={faWhatsapp} />
+                </i>
+              </a>
+            </li>
+            <li className="liSocial">
+              <a href="#" className="aSocial">
+                <i class="fab" aria-hidden="true">
+                  <FontAwesomeIcon icon={faInstagram} />
+                </i>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
       <div className=" ml-24 w-1/2">
