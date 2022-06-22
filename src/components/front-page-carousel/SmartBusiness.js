@@ -26,7 +26,7 @@ export function SmartBusiness() {
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <div className="absolute visible bottom-0 left-0 bg-no-repeat h-screen w-screen bg-contain bg-center pointer-events-none max-w-tela bg-fumaca7 " />
+          <div className="absolute visible bottom-0 left-0 bg-no-repeat h-screen w-screen bg-contain bg-center pointer-events-none max-w-tela lg:bg-fumaca7 " />
         </Transition>
       </div>
       <div className=" relative xl:mr-1/6">

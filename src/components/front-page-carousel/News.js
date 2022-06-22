@@ -55,7 +55,18 @@ export function News() {
           data-aos="fade-up"
           data-aos-duration="2000"
         >
-          <Image src={texto} alt="texto do banner" />
+          <div className="h-40 text-4xl font-thin tracking-wider text-white2 text-left before:-left-0.5 before:absolute before:w-0.5 before:bg-golden before:bg-opacity-100 before:h-44 before:top-0">
+            <h1 className="pl-3 mb-2">AS CRIPTOMOEDAS SÃO</h1>
+            <h1 className="text-preto mb-2">
+              <span className="bg-golden pr-1 pl-3 font-medium">
+                O FUTURO DO DINHEIRO,
+              </span>
+            </h1>
+            <h1 className="pl-3 mb-2">
+              PREPARE-SE PARA A <br />
+              ERA DIGITAL!
+            </h1>
+          </div>
         </div>
         <h1 className="text-gray1 w-full text-lg mt-5 font-thin h-14">
           <Typewriter
@@ -94,7 +105,7 @@ export function News() {
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <div className="absolute invisible sm:visible bottom-0 left-0 bg-no-repeat h-screen w-screen bg-contain bg-center pointer-events-none max-w-tela bg-fumaca6 " />
+          <div className="absolute invisible sm:visible bottom-0 left-0 bg-no-repeat h-screen w-screen bg-contain bg-center pointer-events-none max-w-tela lg:bg-fumaca6 " />
         </Transition>
       </div>
     </div>
