@@ -2,7 +2,7 @@ import { Navbar } from '../../components/Navbar';
 
 export default function Empodera() {
 	return (
-		<div className="h-full bg-theme">
+		<div className="h-full pb-2 bg-theme">
 			<Navbar />
 			<div className="pt-24">
 				<section className=" text-gray1 text-4xl text-opacity-70 items-center">

@@ -2,362 +2,422 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("//db.onlinewebfonts.com/c/09d57d76383244264b7bdef717efcb36?family=Gotham+HTF+Book");
+@import url("//db.onlinewebfonts.com/c/bd317adf74e5e7e564eb61ce9926cc6d?family=Gotham");
+
 /* NPROGRESS */
-@import url('//db.onlinewebfonts.com/c/09d57d76383244264b7bdef717efcb36?family=Gotham+HTF+Book');
-@import url('//db.onlinewebfonts.com/c/bd317adf74e5e7e564eb61ce9926cc6d?family=Gotham');
 
 #nprogress {
-	pointer-events: none;
+  pointer-events: none;
 }
 #nprogress .bar {
-	background: white;
-	position: fixed;
-	z-index: 1031;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 2px;
+  background: white;
+  position: fixed;
+  z-index: 1031;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
 }
 #nprogress .peg {
-	display: block;
-	position: absolute;
-	right: 0;
-	width: 100px;
-	height: 100%;
-	box-shadow: 0 0 10px #29d, 0 0 5px #29d;
-	opacity: 1;
-	-webkit-transform: rotate(3deg) translate(0, -4px);
-	-ms-transform: rotate(3deg) translate(0, -4px);
-	transform: rotate(3deg) translate(0, -4px);
+  display: block;
+  position: absolute;
+  right: 0;
+  width: 100px;
+  height: 100%;
+  box-shadow: 0 0 10px #29d, 0 0 5px #29d;
+  opacity: 1;
+  -webkit-transform: rotate(3deg) translate(0, -4px);
+  -ms-transform: rotate(3deg) translate(0, -4px);
+  transform: rotate(3deg) translate(0, -4px);
 }
 .nprogress-custom-parent {
-	overflow: hidden;
-	position: relative;
+  overflow: hidden;
+  position: relative;
 }
 .nprogress-custom-parent #nprogress .bar,
 
 /* Dropdown Button */
 
 .dropbtn {
-	border: none;
+  border: none;
 }
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
-	position: relative;
-	display: block;
+  position: relative;
+  display: block;
 }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-	visibility: hidden;
-	position: absolute;
-	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-	transition: all 0.8s ease-in-out;
-	transform: translateY(-1em);
-	opacity: 0;
-	left: -50%;
+  visibility: hidden;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  transition: all 0.8s ease-in-out;
+  transform: translateY(-1em);
+  opacity: 0;
+  left: -50%;
 }
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
-	visibility: visible;
-	transform: translateY(0);
-	opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .dropdown2 {
-	position: relative;
-	display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content2 {
-	visibility: hidden;
-	position: absolute;
-	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-	transition: all 0.8s ease-in-out;
-	transform: translateY(-1em);
-	opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  transition: all 0.8s ease-in-out;
+  transform: translateY(-1em);
+  opacity: 0;
 }
 /* Show the dropdown menu on hover */
 .dropdown2:hover .dropdown-content2 {
-	visibility: visible;
-	transform: translateY(0);
-	opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  opacity: 1;
 }
 
 /* BOTAO 1 */
 
 .div-neon {
-	position: relative;
-	display: inline-block;
-	padding: 20px 60px;
-	
-	color: #c0d3dd;
-	font-size: 1.6rem;
-	transition: 0.5s;
-	letter-spacing: 3px;
-	overflow: hidden;
-	-webkit-box-reflect: below 1px linear-gradient(transparent, #d0b2);
+  position: relative;
+  display: inline-block;
+  padding: 20px 60px;
+
+  color: #c0d3dd;
+  font-size: 1.6rem;
+  transition: 0.5s;
+  letter-spacing: 3px;
+  overflow: hidden;
+  -webkit-box-reflect: below 20px linear-gradient(transparent, #d0b2);
 }
 .div-neon:hover {
-	background: #d0b281;
-	color: #000013;
-	box-shadow: 0 0 5px #d0b281, 0 0 25px #d0b281, 0 0 50px #d0b281;
+  background: #d0b281;
+  color: #000013;
+  box-shadow: 0 0 5px #d0b281, 0 0 25px #d0b281, 0 0 50px #d0b281;
 }
 .div-neon span {
-	position: absolute;
-	display: block;
+  position: absolute;
+  display: block;
 }
 .div-neon span:nth-child(1) {
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 2px;
-	background: linear-gradient(90deg, transparent, #d0b281);
-	animation: animate1 1s linear infinite;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #d0b281);
+  animation: animate1 1s linear infinite;
 }
 @keyframes animate1 {
-	0% {
-		left: -100%;
-	}
-	50%,
-	100% {
-		left: 100%;
-	}
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
 }
 .div-neon span:nth-child(2) {
-	top: -100%;
-	right: 0;
-	width: 2px;
-	height: 100%;
-	background: linear-gradient(180deg, transparent, #d0b281);
-	animation: animate2 1s linear infinite;
-	animation-delay: 0.25s;
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #d0b281);
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
 }
 @keyframes animate2 {
-	0% {
-		top: -100%;
-	}
-	50%,
-	100% {
-		top: 100%;
-	}
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
 }
 .div-neon span:nth-child(3) {
-	bottom: 0;
-	right: -100%;
-	width: 100%;
-	height: 2px;
-	background: linear-gradient(270deg, transparent, #d0b281);
-	animation: animate3 1s linear infinite;
-	animation-delay: 0.5s;
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #d0b281);
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.5s;
 }
 @keyframes animate3 {
-	0% {
-		right: -100%;
-	}
-	50%,
-	100% {
-		right: 100%;
-	}
+  0% {
+    right: -100%;
+  }
+  50%,
+  100% {
+    right: 100%;
+  }
 }
 .div-neon span:nth-child(4) {
-	bottom: -100%;
-	left: 0;
-	width: 2px;
-	height: 100%;
-	background: linear-gradient(360deg, transparent, #d0b281);
-	animation: animate4 1s linear infinite;
-	animation-delay: 0.75s;
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #d0b281);
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
 }
 @keyframes animate4 {
-	0% {
-		bottom: -100%;
-	}
-	50%,
-	100% {
-		bottom: 100%;
-	}
+  0% {
+    bottom: -100%;
+  }
+  50%,
+  100% {
+    bottom: 100%;
+  }
 }
 
 /* BOTAO 2 */
 
 .btn {
-	line-height: 50px;
-	height: 50px;
-	text-align: center;
-	width: 180px;
-	cursor: pointer;
+  line-height: 50px;
+  height: 60px;
+  text-align: center;
+  width: 250px;
+  cursor: pointer;
 }
 .btn-three {
-	color: #91a3ad;
-	transition: all 0.5s;
-	position: relative;
+  color: #91a3ad;
+  transition: all 0.5s;
+  position: relative;
+  -webkit-box-reflect: below 20px linear-gradient(transparent, #d0b2);
 }
 .btn-three::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-	background-color: rgba(255, 255, 255, 0.014);
-	transition: all 0.3s;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.014);
+  transition: all 0.3s;
 }
 .btn-three:hover::before {
-	opacity: 0;
-	transform: scale(0.5, 0.5);
+  opacity: 0;
+  transform: scale(0.5, 0.5);
 }
 .btn-three::after {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-	opacity: 0;
-	transition: all 0.3s;
-	border: 1px solid rgba(214, 168, 76, 0.5);
-	transform: scale(1.2, 1.2);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border: 1px solid rgba(214, 168, 76, 0.5);
+  transform: scale(1.2, 1.2);
 }
 .btn-three:hover::after {
-	opacity: 1;
-	transform: scale(1, 1);
+  opacity: 1;
+  transform: scale(1, 1);
 }
 
 /* BOTAO 3 */
 
 .btn-1 {
-	color: #91a3ad;
-	text-align: center;
-	display: inline-block;
-	padding: 15px 40px;
-	border: 1px solid rgba(214, 168, 76, 0.5);
-	cursor: pointer;
-	letter-spacing: 2px;
-	position: relative;
-	overflow: hidden;
-	margin: 0 20px;
+  color: #91a3ad;
+  text-align: center;
+  display: inline-block;
+  padding: 10px 60px;
+  border: 1px solid rgba(214, 168, 76, 0.5);
+  cursor: pointer;
+  letter-spacing: 2px;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-reflect: below 20px linear-gradient(transparent, #d0b2);
 }
 
 .btn-1:before {
-	content: '';
-	position: absolute;
-	height: 150px;
-	width: 50px;
-	background: #d6a84c;
-	left: -55px;
-	top: -40px;
-	transform: rotate(37deg);
-	transition: all 0.3s;
-	opacity: 0.3;
+  content: "";
+  position: absolute;
+  height: 150px;
+  width: 50px;
+  background: #d6a84c;
+  left: -55px;
+  top: -40px;
+  transform: rotate(37deg);
+  transition: all 0.3s;
+  opacity: 0.3;
 }
 
 .btn-1:hover:before {
-	left: 95%;
+  left: 95%;
 }
 
 /* BOTAO 4 */
 
 .btn-4 {
-	text-decoration: none;
-	border: 1px solid rgba(214, 168, 76, 0.5);
-	position: relative;
-	overflow: hidden;
-	color: #91a3ad;
-	height: 50px;
-	width: 180px;
+  text-decoration: none;
+  border: 1px solid rgba(214, 168, 76, 0.5);
+  position: relative;
+  overflow: hidden;
+  color: #91a3ad;
+  height: 60px;
+  width: 250px;
+  -webkit-box-reflect: below 20px linear-gradient(transparent, #d0b2);
 }
 
 .btn-4:hover {
-	box-shadow: 1px 1px 5px 2px rgba(214, 168, 76, 0.5);
+  box-shadow: 1px 1px 5px 2px rgba(214, 168, 76, 0.5);
 }
 
 .btn-4:before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: -100%;
-	width: 100%;
-	height: 100%;
-	background: linear-gradient(
-		120deg,
-		transparent,
-		rgba(214, 168, 76, 0.5),
-		transparent
-	);
-	transition: all 650ms;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(214, 168, 76, 0.5),
+    transparent
+  );
+  transition: all 650ms;
 }
 
 .btn-4:hover:before {
-	left: 100%;
+  left: 100%;
 }
 
 /* BOTAO 5 */
 
 .btn-5 {
-	color: #91a3ad;
-	cursor: pointer;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 50px;
-	margin: 0 0 2em;
-	max-width: 160px;
-	position: relative;
-	text-decoration: none;
-	text-transform: uppercase;
-	width: 180px;
-	height: 50px;
+  color: #91a3ad;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 50px;
+  margin: 0 0 2em;
+
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 250px;
+  height: 60px;
 }
 .btn-52 {
-	border: 0 solid;
-	box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
-	outline: 1px solid;
-	outline-color: rgba(214, 168, 76, 0.5);
-	outline-offset: 0px;
-	text-shadow: none;
-	transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  border: 0 solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: rgba(214, 168, 76, 0.5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-box-reflect: below 20px linear-gradient(transparent, #d0b2);
 }
 
 .btn-52:hover {
-	box-shadow: inset 0 0 20px rgba(214, 168, 76, 0.5),
-		0 0 20px rgba(214, 168, 76, 0.2);
-	outline-color: rgba(214, 168, 76, 0);
-	outline-offset: 15px;
-	text-shadow: 1px 1px 2px #000000;
+  box-shadow: inset 0 0 20px rgba(214, 168, 76, 0.5),
+    0 0 20px rgba(214, 168, 76, 0.2);
+  outline-color: rgba(214, 168, 76, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #000000;
 }
 
 /* BOTAO 6 */
 
 .btn-6 {
-	position: relative;
-	display: block;
-	color: #91a3ad;
-	text-decoration: none;
-	border: 2px solid rgba(214, 168, 76, 0.5);
-	overflow: hidden;
-	transition: 1s all ease;
-	width: 180px;
-	height: 50px;
+  position: relative;
+  display: block;
+  color: #91a3ad;
+  text-decoration: none;
+  border: 2px solid rgba(214, 168, 76, 0.5);
+  overflow: hidden;
+  transition: 1s all ease;
+  width: 250px;
+  height: 60px;
+  -webkit-box-reflect: below 20px linear-gradient(transparent, #d0b2);
 }
 .btn-6::before {
-	background: rgba(214, 168, 76, 0.1);
-	content: '';
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	z-index: -1;
-	transition: all 0.6s ease;
+  background: rgba(214, 168, 76, 0.9);
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: all 0.6s ease;
 }
 .btn-62::before {
-	width: 100%;
-	height: 0%;
-	transform: translate(-50%, -50%) rotate(45deg);
+  width: 100%;
+  height: 0%;
+  transform: translate(-50%, -50%) rotate(45deg);
 }
 .btn-62:hover::before {
-	height: 380%;
+  height: 380%;
+}
+.btn-6:hover {
+  color: #000000;
+}
+
+/* social */
+
+.ulSocial {
+  display: flex;
+}
+
+.ulSocial .liSocial {
+  list-style: none;
+}
+
+.ulSocial .liSocial .aSocial {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: block;
+  text-align: center;
+  margin: 0 15px 0 0;
+  border-radius: 50%;
+  padding: 6px;
+  box-sizing: border-box;
+  text-decoration: none;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(0deg, rgb(122, 135, 212), #fff);
+  transition: 1s;
+  transition-delay: 150ms;
+}
+
+.ulSocial .liSocial .aSocial:hover {
+  box-shadow: 0 0 4px #cfb47e;
+  text-decoration: none;
+}
+
+.ulSocial .liSocial .aSocial .fab {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: linear-gradient(0deg, #fff, rgb(170, 176, 212));
+  border-radius: 50%;
+  line-height: calc(40px - 14px);
+  font-size: 20px;
+  color: #262626;
+  transition: 0.5s;
+}
+
+.ulSocial .liSocial:nth-child(1) .aSocial:hover .fab {
+  color: #34af23;
+}
+
+.ulSocial .liSocial:nth-child(2) .aSocial:hover .fab {
+  color: #e4405f;
 }
