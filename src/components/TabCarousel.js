@@ -64,7 +64,7 @@ export default function Tabs2() {
           color: "#91a3ad",
           fontSize: "0.8rem",
         };
-        const style = { ...defStyle, bottom: "8%" };
+        const style = { ...defStyle, bottom: "15%" };
         return (
           <button
             style={windowSize.width > 768 ? defStyle : style}
@@ -83,7 +83,7 @@ export default function Tabs2() {
           color: "#91a3ad",
           fontSize: "0.8rem",
         };
-        const style = { ...defStyle, bottom: "8%" };
+        const style = { ...defStyle, bottom: "15%" };
         return (
           <button
             style={windowSize.width > 768 ? defStyle : style}
