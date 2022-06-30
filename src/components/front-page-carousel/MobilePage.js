@@ -12,7 +12,7 @@ export function MobilePage(props) {
   return (
     <div className="h-screen w-screen pt-24">
       <div className="w-screen justify-center flex">
-        <div className="w-64 h-80 flex items-center">
+        <div className="w-64 h-60 flex items-center">
           <Image src={props.image} alt="logoBig" layout="intrinsic" />
         </div>
       </div>

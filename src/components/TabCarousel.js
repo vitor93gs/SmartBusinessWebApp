@@ -148,34 +148,12 @@ export default function Tabs2() {
           </div>
         )}
       </div>
+
       <div>
         {windowSize.width > 768 ? (
           <div className="bg-bg2 min-w-0 max-w-tela h-screen w-screen bg-no-repeat bg-cover bg-center">
             <Transition
               show={selected === 1}
-              enter="transition-all ease-in duration-2000"
-              enterFrom="opacity-0"
-              enterTo="opacity-100"
-              leave="transition-all ease-out duration-1000"
-              leaveFrom="opacity-100"
-              leaveTo="opacity-0"
-            >
-              <div className="sm:bg-elem2 bg-cover bg-no-repeat max-w-tela h-screen w-screen">
-                <Franqueado />
-              </div>
-            </Transition>
-          </div>
-        ) : (
-          <div className="h-screen w-screen pt-24 bg-mobile2 bg-cover bg-center bg-no-repeat">
-            <MobilePage image={franquia} text="SEJA NOSSO FRANQUEADO" />
-          </div>
-        )}
-      </div>
-      <div>
-        {windowSize.width > 768 ? (
-          <div className="bg-bg2 min-w-0 max-w-tela h-screen w-screen bg-no-repeat bg-cover bg-center">
-            <Transition
-              show={selected === 2}
               enter="transition-all ease-in duration-2000"
               enterFrom="opacity-0"
               enterTo="opacity-100"
@@ -198,6 +176,29 @@ export default function Tabs2() {
         {windowSize.width > 768 ? (
           <div className="bg-bg2 min-w-0 max-w-tela h-screen w-screen bg-no-repeat bg-cover bg-center">
             <Transition
+              show={selected === 2}
+              enter="transition-all ease-in duration-2000"
+              enterFrom="opacity-0"
+              enterTo="opacity-100"
+              leave="transition-all ease-out duration-1000"
+              leaveFrom="opacity-100"
+              leaveTo="opacity-0"
+            >
+              <div className="sm:bg-elem2 bg-cover bg-no-repeat max-w-tela h-screen w-screen">
+                <Franqueado />
+              </div>
+            </Transition>
+          </div>
+        ) : (
+          <div className="h-screen w-screen pt-24 bg-mobile2 bg-cover bg-center bg-no-repeat">
+            <MobilePage image={franquia} text="SEJA NOSSO FRANQUEADO" />
+          </div>
+        )}
+      </div>
+      <div>
+        {windowSize.width > 768 ? (
+          <div className="bg-bg2 min-w-0 max-w-tela h-screen w-screen bg-no-repeat bg-cover bg-center">
+            <Transition
               show={selected === 3}
               enter="transition-all ease-in duration-2000"
               enterFrom="opacity-0"
@@ -207,13 +208,13 @@ export default function Tabs2() {
               leaveTo="opacity-0"
             >
               <div className="sm:bg-elem2 bg-cover bg-no-repeat max-w-tela h-screen w-screen">
-                <News />
+                <SmartAcademy />
               </div>
             </Transition>
           </div>
         ) : (
-          <div className="h-screen w-screen pt-24 bg-mobile4 bg-cover bg-center bg-no-repeat">
-            <MobilePage image={news} text="NOVIDADES AQUI" />
+          <div className="h-screen w-screen pt-24 bg-mobile5 bg-cover bg-center bg-no-repeat">
+            <MobilePage image={business} text="SMART BUSINESS" />
           </div>
         )}
       </div>
@@ -230,13 +231,13 @@ export default function Tabs2() {
               leaveTo="opacity-0"
             >
               <div className="sm:bg-elem2 bg-cover bg-no-repeat max-w-tela h-screen w-screen">
-                <SmartAcademy />
+                <News />
               </div>
             </Transition>
           </div>
         ) : (
-          <div className="h-screen w-screen pt-24 bg-mobile5 bg-cover bg-center bg-no-repeat">
-            <MobilePage image={business} text="SMART BUSINESS" />
+          <div className="h-screen w-screen pt-24 bg-mobile4 bg-cover bg-center bg-no-repeat">
+            <MobilePage image={news} text="NOVIDADES AQUI" />
           </div>
         )}
       </div>

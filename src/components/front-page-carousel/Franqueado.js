@@ -46,31 +46,26 @@ export function Franqueado() {
             onInit={(typewriter) => {
               typewriter
                 .pauseFor(1000)
-                .typeString("<strong>BAIXE NOSSO</strong>")
-                .typeString(' <strong style="color:#D6A84C">EBOOK!</strong>')
+                .typeString("<strong>SEJA UM</strong>")
+                .typeString(
+                  ' <strong style="color:#D6A84C"> FRANQUEADO!</strong>'
+                )
                 .start();
             }}
           />
         </h1>
-        <div
-          className="mt-6 w-imagemTexto z-10"
-          data-aos="fade-up"
-          data-aos-duration="2000"
-        >
-          <div className="h-40 text-4xl font-thin tracking-wider text-white2 text-left before:-left-0.5 before:absolute before:w-0.5 before:bg-golden before:bg-opacity-100 before:h-44 before:top-0">
-            <h1 className="pl-3 mb-2">AS CRIPTOMOEDAS SÃO</h1>
-            <h1 className="text-preto mb-2">
-              <span className="bg-golden pr-1 pl-3 font-medium">
-                O FUTURO DO DINHEIRO,
-              </span>
-            </h1>
-            <h1 className="pl-3 mb-2">
-              PREPARE-SE PARA A <br />
-              ERA DIGITAL!
+
+        <div className="mt-2 z-10" data-aos="fade-up" data-aos-duration="2000">
+          <div className="h-40 text-4xl font-thin tracking-wider text-white2 text-left w-full">
+            <h1 className="mb-2">A SMARTBUSINESS TEM A</h1>
+            <h1 className="mb-2">OPORTUNIDADE DE</h1>
+            <h1 className="mb-2 ">
+              NEGÓCIO CERTO PARA VOCÊ VENHA
+              <span className="text-golden pl-3">TRABALHAR CONOSCO!</span>
             </h1>
           </div>
         </div>
-        <h1 className="text-gray1 w-full text-lg mt-5 font-thin h-14">
+        <h1 className="text-gray1 text-lg mt-5 font-thin h-18">
           <Typewriter
             options={{
               delay: 30,
@@ -80,8 +75,9 @@ export function Franqueado() {
             onInit={(typewriter) => {
               typewriter
                 .pauseFor(1800)
-                .typeString("APRENDA AGORA CONCEITOS E<br/>")
-                .typeString("CURIOSIDADES DA CRIPTOECONOMIA")
+                .typeString("NOSSO SISTEMA DE FRANQUIA OFERECE<br/>")
+                .typeString("TREINAMENTO E FERRAMENTAS PARA O<br/>")
+                .typeString("SUCESSO DO SEU NEGÓCIO")
                 .start();
             }}
           />
