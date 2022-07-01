@@ -421,3 +421,16 @@
 .ulSocial .liSocial:nth-child(2) .aSocial:hover .fab {
 	color: #e4405f;
 }
+
+.cortado {
+	background: linear-gradient(to right, #fef2e8 50%, #d6a84c 50%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.cortado-2 {
+	background: linear-gradient(to bottom, #fef2e8 40%, #d6a84c 50%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
