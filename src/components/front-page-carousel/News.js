@@ -91,7 +91,7 @@ export function News() {
 					/>
 				</h1>
 				<div
-					className="mt-5 text-2xl"
+					className="mt-5 pl-3 text-2xl"
 					data-aos="zoom-in"
 					data-aos-duration="3000"
 				>
