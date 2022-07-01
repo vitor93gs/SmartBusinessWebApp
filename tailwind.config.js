@@ -44,6 +44,7 @@ module.exports = {
 			white2: '#FEF2E8',
 			theme2: '#04042D',
 			preto: '#000000',
+			gray2: '#727e8c',
 		},
 		backgroundImage: {
 			gifTab: "url('/DualRing.svg')",

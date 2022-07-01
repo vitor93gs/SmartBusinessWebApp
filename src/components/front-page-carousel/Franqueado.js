@@ -19,22 +19,6 @@ export function Franqueado() {
 
   return (
     <div className="max-w-tela bg-transparent flex justify-between items-center w-screen h-screen pl-1/6 py-7">
-      {/* <div className="flex flex-col items-center w-1/2 text-left mr-auto">
-        <div data-aos="zoom-in-left" data-aos-duration="2500">
-          <h1
-            data-aos="fade-up"
-            data-aos-duration="2500"
-            className="text-gray1 text-2xl text-opacity-70 text-center mb-12 h-36 w-full ml-10"
-          >
-            SEJA NOSSO FRANQUEADO!
-          </h1>
-        </div>
-        <div className="ml-10" data-aos="fade-right" data-aos-duration="3000">
-          <Link href="">
-            <button className="btn btn-three"> SAIBA MAIS! </button>
-          </Link>
-        </div>
-      </div> */}
       <div className="flex flex-col items-left w-1/2 text-left mb-10 justify-start">
         <h1 className="text-white2 w-full text-4xl">
           <Typewriter
