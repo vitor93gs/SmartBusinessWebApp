@@ -1,9 +1,11 @@
 import Typewriter from 'typewriter-effect';
+import Image from 'next/image';
 import Link from 'next/link';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect, useState } from 'react';
 import { Transition } from '@headlessui/react';
+import losango from '../../assets/Rectangle_10.svg';
 
 export function SmartBusiness() {
 	const [showLuz, setShowLuz] = useState(false);
@@ -46,11 +48,13 @@ export function SmartBusiness() {
 					/>
 				</h1>
 				<div className="text-4xl font-thin tracking-wider text-white2 text-right ">
-					<h1 className="mb-2">
+					<h1>
 						ATUAMOS COMO UMA GESTORA DE ATIVOS
 						<br /> POTENCIALIZANDO NEGOCIAÇÕES
+						<Image src={losango} alt="losango" height={15} />
 						<br />
 						TRANSAÇÕES SEGURAS
+						<Image src={losango} alt="losango" height={15} />
 					</h1>
 				</div>
 				<h1 className="text-gray1 w-full text-right text-3xl mb-5 mt-5 font-thin">
